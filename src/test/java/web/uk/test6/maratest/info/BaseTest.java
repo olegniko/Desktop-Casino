@@ -1,6 +1,7 @@
 package web.uk.test6.maratest.info;
 
 import org.testng.annotations.*;
+import pages.CasinoPage;
 import pages.MainPage;
 
 import java.net.MalformedURLException;
@@ -12,7 +13,7 @@ public class BaseTest {
 
     Locale locale;
     ResourceBundle exampleBundle;
-    MainPage mainPage;
+    CasinoPage casinoPage;
 
 
 
@@ -22,8 +23,8 @@ public class BaseTest {
 
         locale = new Locale(language);
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
-        mainPage = new MainPage(browser);
-        mainPage.open(locale);
+        casinoPage = new CasinoPage(browser);
+        casinoPage.open(locale);
 
 
     }
@@ -31,6 +32,6 @@ public class BaseTest {
 
     @AfterSuite
     public void tearDown()  {
-        mainPage.close();
+        casinoPage.close();
     }
 }

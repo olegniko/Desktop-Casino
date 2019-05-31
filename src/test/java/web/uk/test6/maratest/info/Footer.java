@@ -13,7 +13,7 @@ public class Footer extends BaseTest {
     //наличие AboutUs in Footer
     public void translationAboutUs() {
 
-        assertEquals(mainPage.getAboutUs(), exampleBundle.getString("about_us"));
+        assertEquals(casinoPage.getAboutUs(), exampleBundle.getString("about_us"));
 
     }
 
@@ -21,7 +21,7 @@ public class Footer extends BaseTest {
     //наличие PrivacyPolicy in Footer
     public void translationPrivacyPolicy() {
 
-        assertEquals(mainPage.getPrivacyPolicy(), exampleBundle.getString("privacy_policy"));
+        assertEquals(casinoPage.getPrivacyPolicy(), exampleBundle.getString("privacy_policy"));
 
     }
 
@@ -29,7 +29,7 @@ public class Footer extends BaseTest {
     //наличие Responsible Gaming in Footer
     public void translationResponsibleGambling() {
 
-        assertEquals(mainPage.getResponsibleGambling(), exampleBundle.getString("responsible_gambling"));
+        assertEquals(casinoPage.getResponsibleGambling(), exampleBundle.getString("responsible_gambling"));
 
     }
 
@@ -37,7 +37,7 @@ public class Footer extends BaseTest {
     //наличие Terms and Conditions in Footer
     public void translationTermsAndConditions() {
 
-        assertEquals(mainPage.getTermsAndConditions(), exampleBundle.getString("terms_and_conditions"));
+        assertEquals(casinoPage.getTermsAndConditions(), exampleBundle.getString("terms_and_conditions"));
 
     }
 
@@ -45,7 +45,7 @@ public class Footer extends BaseTest {
     //наличие Contact Us in Footer
     public void translationContactUs() {
 
-        assertEquals(mainPage.getContactUs(), exampleBundle.getString("contact_us"));
+        assertEquals(casinoPage.getContactUs(), exampleBundle.getString("contact_us"));
 
     }
 
@@ -53,7 +53,7 @@ public class Footer extends BaseTest {
     //наличие Payments in Footer
     public void translationPayments() {
 
-        assertEquals(mainPage.getPayments(), exampleBundle.getString("payments"));
+        assertEquals(casinoPage.getPayments(), exampleBundle.getString("payments"));
 
     }
 
@@ -61,7 +61,7 @@ public class Footer extends BaseTest {
     //наличие Mobile Site in Footer
     public void translationMobileSite() {
 
-        assertEquals(mainPage.getMobileSite(), exampleBundle.getString("mobile_site"));
+        assertEquals(casinoPage.getMobileSite(), exampleBundle.getString("mobile_site"));
 
     }
 

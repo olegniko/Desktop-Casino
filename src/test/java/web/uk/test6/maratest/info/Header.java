@@ -13,7 +13,7 @@ public class Header extends BaseTest {
     //наличие Sport in Header
     public void translationSportInHeader() {
 
-        assertEquals(mainPage.getSport_label_header(),exampleBundle.getString("sport_label_header"));
+        assertEquals(casinoPage.getSport_label_header(),exampleBundle.getString("sport_label_header"));
 
     }
 
@@ -21,7 +21,7 @@ public class Header extends BaseTest {
     //наличие Live in Header
     public void translationLiveInHeader() {
 
-        assertEquals(mainPage.getLive_label_header(),exampleBundle.getString("live_label_header"));
+        assertEquals(casinoPage.getLive_label_header(),exampleBundle.getString("live_label_header"));
 
     }
 
@@ -29,7 +29,7 @@ public class Header extends BaseTest {
     //наличие Toto in Header
     public void translationTotoInHeader() {
 
-        assertEquals(mainPage.getToto_label_header(),exampleBundle.getString("toto_label_header"));
+        assertEquals(casinoPage.getToto_label_header(),exampleBundle.getString("toto_label_header"));
 
     }
 
@@ -37,7 +37,7 @@ public class Header extends BaseTest {
     //наличие Casino in Header
     public void translationCasinoInHeader() {
 
-        assertEquals(mainPage.getCasino_label_header(),exampleBundle.getString("casino_label_header"));
+        assertEquals(casinoPage.getCasino_label_header(),exampleBundle.getString("casino_label_header"));
 
     }
 
@@ -45,7 +45,7 @@ public class Header extends BaseTest {
     //наличие Live Casino in Header
     public void translationLiveCasinoInHeader() {
 
-        assertEquals(mainPage.getLiveCasino_label_header(),exampleBundle.getString("live_casino_label_header"));
+        assertEquals(casinoPage.getLiveCasino_label_header(),exampleBundle.getString("live_casino_label_header"));
 
     }
 
@@ -53,7 +53,7 @@ public class Header extends BaseTest {
     //наличие Constructor in Header
     public void translationConstructorCasinoInHeader() {
 
-        assertEquals(mainPage.getConstructor_label_header(),exampleBundle.getString("constructor_label_header"));
+        assertEquals(casinoPage.getConstructor_label_header(),exampleBundle.getString("constructor_label_header"));
 
     }
 
@@ -61,7 +61,7 @@ public class Header extends BaseTest {
     //наличие Bingo in Header
     public void translationBingoInHeader() {
 
-        assertEquals(mainPage.getBingo_label_header(),exampleBundle.getString("bingo_label_header"));
+        assertEquals(casinoPage.getBingo_label_header(),exampleBundle.getString("bingo_label_header"));
 
     }
 
@@ -69,7 +69,7 @@ public class Header extends BaseTest {
     //наличие Financials in Header
     public void translationFinancialInHeader() {
 
-        assertEquals(mainPage.getFinancials_label_header(),exampleBundle.getString("financial_label_header"));
+        assertEquals(casinoPage.getFinancials_label_header(),exampleBundle.getString("financial_label_header"));
 
     }
 
@@ -77,7 +77,7 @@ public class Header extends BaseTest {
     //наличие Lost Password in Header
     public void translationLostPassword() {
 
-        assertEquals(mainPage.getLost_password(),exampleBundle.getString("lost_password"));
+        assertEquals(casinoPage.getLost_password(),exampleBundle.getString("lost_password"));
 
     }
 
@@ -85,7 +85,7 @@ public class Header extends BaseTest {
     //наличие Help in Header
     public void translationHelp() {
 
-        assertEquals(mainPage.getHelp(),exampleBundle.getString("help"));
+        assertEquals(casinoPage.getHelp(),exampleBundle.getString("help"));
 
     }
 
@@ -93,7 +93,7 @@ public class Header extends BaseTest {
     //наличие Language in Header
     public void translationLanguage() {
 
-        assertEquals(mainPage.getLanguage(),exampleBundle.getString("language"));
+        assertEquals(casinoPage.getLanguage(),exampleBundle.getString("language"));
 
     }
 
@@ -101,7 +101,7 @@ public class Header extends BaseTest {
     //наличие Results&Statistic in Header
     public void translationResults() {
 
-        assertEquals(mainPage.getResults(),exampleBundle.getString("results"));
+        assertEquals(casinoPage.getResults(),exampleBundle.getString("results"));
 
     }
 
@@ -109,7 +109,7 @@ public class Header extends BaseTest {
     //наличие Settings in Header
     public void translationSettings() {
 
-        assertEquals(mainPage.getSettings(),exampleBundle.getString("settings"));
+        assertEquals(casinoPage.getSettings(),exampleBundle.getString("settings"));
 
     }
 
@@ -117,7 +117,7 @@ public class Header extends BaseTest {
     //наличие Mobile in Header
     public void isMobilePresent() {
 
-        Assert.assertTrue(mainPage.isMobileIconPresent());
+        Assert.assertTrue(casinoPage.isMobileIconPresent());
 
     }
 
@@ -126,7 +126,7 @@ public class Header extends BaseTest {
     //наличие Maraathon in Header
     public void isMarathonPresent() {
 
-        Assert.assertTrue(mainPage.isMarathonIconPresent());
+        Assert.assertTrue(casinoPage.isMarathonIconPresent());
 
     }
 }

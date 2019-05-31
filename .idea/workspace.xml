@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/current_project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Chrome-DE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Chrome-DE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Chrome-DE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Chrome-DE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Footer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Footer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Header.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Header.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,53 +29,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="454">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,10 +50,89 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="463">
+              <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="49" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4175#4176#0" expanded="true" />
+                <element signature="e#4215#4216#0" expanded="true" />
+                <element signature="e#5392#5393#0" expanded="true" />
+                <element signature="e#5426#5427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-151">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -107,12 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/translation/ResourceBundle_EN.properties" />
-        <option value="$PROJECT_DIR$/resources/translation/ResourceBundle_az.properties" />
-        <option value="$PROJECT_DIR$/resources/ResourceBundle_en.properties" />
-        <option value="$PROJECT_DIR$/resources/ResourceBundle.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/web/com/test8/maratest/info/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/com/test8/maratest/info/FirstClassChrome.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/com/test8/maratest/firefox/FirstClassFirefox.java" />
         <option value="$PROJECT_DIR$/src/main/java/helper/decorator/Browser.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/com/test8/maratest/chrome/FirstClassChrome.java" />
@@ -142,12 +187,10 @@
         <option value="$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-EN.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-FR.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Opera-DE.xml" />
         <option value="$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle_fr.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties" />
@@ -158,6 +201,14 @@
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/target/classes/ResourceBundle.properties" />
+        <option value="$PROJECT_DIR$/target/test-classes/Chrome-DE.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
       </list>
     </option>
   </component>
@@ -179,11 +230,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="10" />
-    <option name="width" value="1400" />
-    <option name="height" value="978" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,8 +248,73 @@
         <subPane>
           <expand>
             <path>
-              <item name="test_from_comp_to_git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test_from_comp_to_git" type="462c0819:PsiDirectoryNode" />
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_from_git_to-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,34 +406,34 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559310238067" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559313365318" />
+    <property name="last_opened_file_path" value="D:/обучение/from course for investigation/Training" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\main\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\java\web\uk\test6\maratest\chrome" />
-      <recent name="E:\projects\learning_auto_youtube\src\test\java\web\com\test8\maratest\firefox" />
-      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="helper.factory" />
-      <recent name="web.uk.test6.maratest.info" />
-      <recent name="web.com.test8.maratest.chrome" />
-      <recent name="web.com.test8.maratest.firefox" />
-      <recent name="web.com.test8.maratest.info" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\resources" />
       <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\src\main\resources" />
       <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\java" />
       <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources" />
       <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources\translation" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="web.uk.test6.maratest.info" />
+      <recent name="helper.factory" />
+      <recent name="web.com.test8.maratest.chrome" />
+      <recent name="web.com.test8.maratest.firefox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikulenko.o\Desktop\test_from_git_to-git\src\test\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\main\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\java\web\uk\test6\maratest\chrome" />
+      <recent name="E:\projects\learning_auto_youtube\src\test\java\web\com\test8\maratest\firefox" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -332,10 +448,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Chrome-DE.xml">
-    <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="current_project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE.xml" />
+  <component name="RunManager" selected="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml">
+    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -343,9 +459,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-EN.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="current_project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-EN.xml" />
+    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Opera-DE.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/target/test-classes/Opera-DE.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -353,36 +468,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-FR.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="current_project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-FR.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Chrome-DE.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/target/test-classes/Chrome-DE.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Header" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="current_project" />
+    <configuration name="Search" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml" />
       <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Header" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Search.isSearchPresent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
+      <option name="METHOD_NAME" value="isSearchPresent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Search.translationAboutUs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
+      <option name="METHOD_NAME" value="translationAboutUs" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -391,11 +522,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Chrome-DE.xml" />
-        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-FR.xml" />
-        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" />
-        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-EN.xml" />
-        <item itemvalue="TestNG.Header" />
+        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" />
+        <item itemvalue="TestNG.Search.isSearchPresent" />
+        <item itemvalue="TestNG.Search" />
+        <item itemvalue="TestNG.Search.translationAboutUs" />
+        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Opera-DE.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -452,39 +583,46 @@
       <option name="project" value="LOCAL" />
       <updated>1556782357212</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit 31/05/2019">
+      <created>1559310362365</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559310362365</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-Several-Tests_xml - 2019.05.02 at 16h 38m 34s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-Several-Tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_target_test-classes_Chrome-FR_xml - 2019.05.31 at 16h 49m 33s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Chrome-FR.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-Several-Tests_xml - 2019.05.02 at 16h 39m 48s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-Several-Tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_target_test-classes_Firefox-DE_xml - 2019.05.31 at 16h 50m 29s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Firefox-DE.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Header - 2019.05.02 at 16h 54m 48s.xml">
-      <configuration name="Header" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_target_test-classes_Chrome-Several-Tests_xml - 2019.05.31 at 16h 52m 28s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Chrome-Several-Tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-Several-Tests_xml - 2019.05.02 at 16h 54m 58s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-Several-Tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_target_test-classes_Opera-DE_xml - 2019.05.31 at 16h 53m 52s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Opera-DE.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-DE_xml - 2019.05.02 at 16h 55m 02s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_target_test-classes_Opera-DE_xml - 2019.05.31 at 16h 54m 31s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/target/test-classes/Opera-DE.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-DE_xml - 2019.05.02 at 16h 55m 20s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" configurationId="TestNG" />
+    <history-entry file="Search - 2019.05.31 at 17h 14m 55s.xml">
+      <configuration name="Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-EN_xml - 2019.05.02 at 16h 55m 40s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-EN.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.05.31 at 17h 18m 40s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-DE_xml - 2019.05.02 at 16h 57m 15s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" configurationId="TestNG" />
+    <history-entry file="Search_isSearchPresent - 2019.05.31 at 17h 30m 48s.xml">
+      <configuration name="Search.isSearchPresent" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-DE_xml - 2019.05.02 at 17h 00m 44s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-DE.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.05.31 at 17h 32m 53s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_current_project_src_test_resources_Chrome-FR_xml - 2019.05.02 at 17h 18m 50s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/current_project/src/test/resources/Chrome-FR.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.05.31 at 17h 35m 52s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -497,10 +635,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="10" width="1400" height="978" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761194" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -509,7 +647,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59746253" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850747" weight="0.4698225" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49850747" visible="true" weight="0.4301192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,7 +655,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49925372" weight="0.3289941" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50149256" side_tool="true" weight="0.4698225" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32781065" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -575,7 +713,8 @@
     <MESSAGE value="commit 30/04/2018" />
     <MESSAGE value="commit 30/04/2018.2" />
     <MESSAGE value="commit 02/05/2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 02/05/2018" />
+    <MESSAGE value="commit 31/05/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 31/05/2019" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -656,103 +795,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6987">
-          <caret line="454" selection-start-line="454" selection-end-line="454" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestNG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="314" column="5" lean-forward="true" selection-start-line="314" selection-start-column="5" selection-end-line="314" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/firefox/HeaderFirefox.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/firefox/BaseTestFirefox.java" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/suite.xml" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/chrome/HeaderChrome.class" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/chrome/BaseTest.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/TestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2206">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/suite.xml" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/testng.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/Login.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Firefox-FR.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="5" selection-start-line="8" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="208" column="5" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-            <element signature="e#4215#4216#0" expanded="true" />
-            <element signature="e#4520#4521#0" expanded="true" />
-            <element signature="e#4557#4558#0" expanded="true" />
-            <element signature="e#5046#5047#0" expanded="true" />
-            <element signature="e#5088#5089#0" expanded="true" />
-            <element signature="e#5233#5234#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
-            <element signature="e#5392#5393#0" expanded="true" />
-            <element signature="e#5424#5425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle_fr.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
-      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Firefox-EN.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,34 +862,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
-      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
-      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/dictionaries/DELL.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle_de.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -878,30 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/util/annotations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/net/UrlChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -916,6 +934,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/current_project.iml" />
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -924,7 +946,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="221">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
@@ -939,35 +961,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/ResourceBundle_de.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/ResourceBundle_en.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Chrome-DE.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Chrome-Several-Tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Opera-DE.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Edge-DE.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/ResourceBundle_fr.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/ResourceBundle.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Chrome-EN.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Header.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTest.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Footer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/util/annotations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="49" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4175#4176#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#5392#5393#0" expanded="true" />
+            <element signature="e#5426#5427#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/current_project.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="-151">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
