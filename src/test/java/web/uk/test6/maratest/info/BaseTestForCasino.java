@@ -1,13 +1,16 @@
 package web.uk.test6.maratest.info;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import pages.CasinoPage;
+
 import java.net.MalformedURLException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 
-public class BaseTest {
+public class BaseTestForCasino {
 
     Locale locale;
     ResourceBundle exampleBundle;
@@ -23,6 +26,8 @@ public class BaseTest {
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
+        casinoPage.click_Casino();
+
 
     }
 
