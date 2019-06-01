@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-public class Search extends BaseTestForCasino {
+public class Search extends BaseTestForCasinoUnregistred {
 
 
     @Test
@@ -35,7 +35,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegMGautotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("mg_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("mg_game_title"));
 
     }
 
@@ -46,7 +46,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegEvolutionAutotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("evolution_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("evolution_game_title"));
 
     }
 
@@ -57,7 +57,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegIssoftAutotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("issoft_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("issoft_game_title"));
 
     }
 
@@ -68,7 +68,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("relax_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("relax_game_title"));
 
     }
 
@@ -79,7 +79,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegYggdrasilAutotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("yggdrasil_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("yggdrasil_game_title"));
 
     }
 
@@ -90,7 +90,7 @@ public class Search extends BaseTestForCasino {
 
         casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
 
-        assertEquals(casinoPage.getGameTitle(),exampleBundle.getString("playngo_game_title"));
+        assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("playngo_game_title"));
 
     }
 

@@ -35,8 +35,12 @@ public  class CasinoPage extends MainPage {
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/div")
     protected WebElement Game_Title_After_search;
 
-    public String getGameTitle(){
+    public String getGameTitleText(){
         return Game_Title_After_search.getText();
+    }
+
+    public WebElement getGameTitle(){
+        return Game_Title_After_search;
     }
 
 

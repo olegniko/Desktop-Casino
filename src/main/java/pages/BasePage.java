@@ -18,7 +18,7 @@ public abstract  class BasePage {
 	@FindBy(id = "auth_login_password")
 	protected WebElement password_field_element;
 
-	@FindBy(css=".login-pass .btn-login")
+	@FindBy(xpath="//*[@id=\"auth\"]/div[1]/div[3]/button")
 	protected WebElement login_button_element;
 
 	@FindBy(className = "field-search")

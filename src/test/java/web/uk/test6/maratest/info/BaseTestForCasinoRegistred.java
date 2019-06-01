@@ -10,7 +10,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 
-public class BaseTestForCasino {
+public class BaseTestForCasinoRegistred {
 
     Locale locale;
     ResourceBundle exampleBundle;
@@ -27,6 +27,7 @@ public class BaseTestForCasino {
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
         casinoPage.click_Casino();
+        casinoPage.login("olegeng60","Password1");
 
 
     }
