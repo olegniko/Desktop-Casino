@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
     <suite name = "chrome">
-    <parameter name="language"  value="de" />
+    <parameter name="language"  value="en" />
     <parameter name="browser"  value="chrome" />
 
     <test name="TestCase4">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.GameLaunchIssoft">
+            <class name="web.uk.test6.maratest.info.Search">
             </class>
 
         </classes>
