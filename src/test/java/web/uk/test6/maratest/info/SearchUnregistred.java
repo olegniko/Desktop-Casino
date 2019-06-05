@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-public class Search extends BaseTestForCasinoUnregistred {
+public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
 
     @Test (priority=9)
@@ -22,7 +22,8 @@ public class Search extends BaseTestForCasinoUnregistred {
 
     @Test (priority=2)
     //
-    public void enter_3_incorrect_symbols_in_search()  {
+    public void enter_3_incorrect_symbols_in_search() throws InterruptedException {
+
 
         casinoPage.enter_symbols_to_Search("ddd");
 

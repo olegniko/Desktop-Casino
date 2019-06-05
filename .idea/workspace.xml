@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Unregistred.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Registred.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,13 +25,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -42,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="374">
+              <caret line="244" column="32" lean-forward="true" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,33 +58,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Unregistred.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Registred.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -86,7 +76,7 @@
           <provider editor-type-id="ResourceBundle" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -94,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="240">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -112,11 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +122,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="408">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,9 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/LoginChrome.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/firefox/HeaderFirefox.java" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/target/test-classes/suite.xml" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/HeaderChrome.java" />
@@ -193,15 +192,18 @@
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Unregistred.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
       </list>
     </option>
   </component>
@@ -414,7 +416,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559721068836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559723881233" />
     <property name="last_opened_file_path" value="D:/обучение/from course for investigation/Training" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -422,12 +424,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nikulenko.o\Desktop\test_from_git_to-git\src\test\resources" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\main\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\java\web\uk\test6\maratest\chrome" />
-      <recent name="E:\projects\learning_auto_youtube\src\test\java\web\com\test8\maratest\firefox" />
+      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\src\main\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\java" />
+      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources\translation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="web.uk.test6.maratest.info" />
@@ -436,12 +438,12 @@
       <recent name="web.com.test8.maratest.chrome" />
       <recent name="web.com.test8.maratest.firefox" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikulenko.o\Desktop\test_from_git_to-git\src\test\resources" />
       <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\src\main\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\java" />
-      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources" />
-      <recent name="C:\Users\nikulenko.o\Desktop\learning_auto_youtube\resources\translation" />
+      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\main\resources" />
+      <recent name="C:\Users\nikulenko.o\Desktop\current_project\src\test\java\web\uk\test6\maratest\chrome" />
+      <recent name="E:\projects\learning_auto_youtube\src\test\java\web\com\test8\maratest\firefox" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -456,17 +458,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml">
-    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-GameLaunch.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="learning" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml">
     <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
@@ -477,41 +469,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Registred.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search.enter_3_incorrect_symbols_in_search" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Unregistred.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
-      <option name="METHOD_NAME" value="enter_3_incorrect_symbols_in_search" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Unregistred.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search.enter_correct_symbols_for_MG_in_search" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchRegistred" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <extension name="coverage">
         <pattern>
@@ -520,9 +498,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
-      <option name="METHOD_NAME" value="enter_correct_symbols_for_MG_in_search" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.SearchRegistred" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchUnregistred" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.SearchUnregistred" />
       <properties />
       <listeners />
       <method v="2">
@@ -531,11 +523,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" />
+        <item itemvalue="TestNG.SearchRegistred" />
+        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Unregistred.xml" />
+        <item itemvalue="TestNG.SearchUnregistred" />
         <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" />
-        <item itemvalue="TestNG.Search.enter_correct_symbols_for_MG_in_search" />
-        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-GameLaunch.xml" />
-        <item itemvalue="TestNG.Search" />
-        <item itemvalue="TestNG.Search.enter_3_incorrect_symbols_in_search" />
       </list>
     </recent_temporary>
   </component>
@@ -620,39 +612,46 @@
       <option name="project" value="LOCAL" />
       <updated>1559385183602</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit 05/06/2019">
+      <created>1559721176706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559721176706</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 12m 47s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="SearchUnregistred - 2019.06.05 at 11h 09m 07s.xml">
+      <configuration name="SearchUnregistred" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 18m 05s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="SearchUnregistred - 2019.06.05 at 11h 09m 28s.xml">
+      <configuration name="SearchUnregistred" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 27m 03s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Unregistred_xml - 2019.06.05 at 11h 11m 49s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Unregistred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 31m 24s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Unregistred_xml - 2019.06.05 at 11h 13m 32s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Unregistred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 38m 33s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Unregistred_xml - 2019.06.05 at 11h 15m 42s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Unregistred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 41m 01s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Registred_xml - 2019.06.05 at 11h 21m 53s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 44m 31s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Registred_xml - 2019.06.05 at 11h 27m 13s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 45m 30s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="SearchRegistred - 2019.06.05 at 11h 29m 02s.xml">
+      <configuration name="SearchRegistred" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 49m 12s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Registred_xml - 2019.06.05 at 11h 29m 33s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 50m 51s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Search-Registred_xml - 2019.06.05 at 11h 32m 40s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Search-Registred.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -665,10 +664,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -677,7 +676,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59746253" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850747" visible="true" weight="0.4301192" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49850747" visible="true" weight="0.4301192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -747,7 +746,8 @@
     <MESSAGE value="commit 31/05/2019.2" />
     <MESSAGE value="commit 01/06/2019" />
     <MESSAGE value="commit 01/06/2019 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 01/06/2019 2nd" />
+    <MESSAGE value="commit 05/06/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 05/06/2019" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -828,23 +828,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-FR.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/net/UrlChecker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#1537#1538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/net/UrlChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -1092,20 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1116,10 +1085,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Registred.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Search-Unregistred.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="244" column="32" lean-forward="true" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1129,32 +1151,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

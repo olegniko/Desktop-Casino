@@ -1,6 +1,7 @@
 package pages;
 
 import helper.factory.WebDriverSingleton;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -36,7 +37,18 @@ public  class CasinoPage extends MainPage {
         Search_Casino.clear();
     }
 
+    public void clearSearchInCasinoByCross(){
 
+        Cross_In_Search.clear();
+    }
+
+    @FindBy(xpath = "//*[@id=\"loginMessage\"]/div")
+    protected WebElement OK_In_successfull_Message;
+
+    public void clickOK_In_successfull_Message(){
+
+        OK_In_successfull_Message.sendKeys(Keys.ENTER);
+    }
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/div/h1")
     protected WebElement Search_Result;
