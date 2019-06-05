@@ -42,12 +42,16 @@ public  class CasinoPage extends MainPage {
         Cross_In_Search.clear();
     }
 
-    @FindBy(xpath = "//*[@id=\"loginMessage\"]/div")
+    @FindBy(xpath = "//*[@id=\"loginMessage\"]/div/button")
     protected WebElement OK_In_successfull_Message;
+
+    //*[@id="loginMessage"]/div/button
+    //*[@id="loginMessage"]/div/button
 
     public void clickOK_In_successfull_Message(){
 
         OK_In_successfull_Message.sendKeys(Keys.ENTER);
+
     }
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/div/h1")
