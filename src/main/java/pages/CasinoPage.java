@@ -24,6 +24,20 @@ public  class CasinoPage extends MainPage {
 
 
 
+    @FindBy( className = "gi-svg-button__base-layer ng-scope")
+    protected WebElement Cross_In_Search;
+
+    public WebElement getCross_In_Search(){
+        return Cross_In_Search;
+    }
+
+    public void clearSearchInCasino(){
+
+        Search_Casino.clear();
+    }
+
+
+
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/div/h1")
     protected WebElement Search_Result;
 

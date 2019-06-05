@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 
@@ -243,7 +242,9 @@ public abstract  class BasePage {
 		fillLogin(login);
 		login_field_element.sendKeys(Keys.TAB);
 		fillPassword(password);
-		clickLoginButton();
+		password_field_element.sendKeys(Keys.ENTER);
+		//clickLoginButton();
+
 	}
 
 }

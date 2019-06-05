@@ -26,15 +26,15 @@ public class BaseTestForCasinoRegistred {
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
-        casinoPage.click_Casino();
         casinoPage.login("olegeng60","Password1");
 
 
+
     }
 
 
-    @AfterSuite
-    public void tearDown()  {
-        casinoPage.close();
-    }
+   // @AfterSuite
+  //  public void tearDown()  {
+   //     casinoPage.close();
+  //  }
 }

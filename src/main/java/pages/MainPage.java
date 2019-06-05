@@ -4,6 +4,7 @@ import helper.factory.WebDriverSingleton;
 import org.openqa.selenium.support.PageFactory;
 import java.net.MalformedURLException;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 
 public  class MainPage extends BasePage {
@@ -25,10 +26,11 @@ public  class MainPage extends BasePage {
 		else
 			lan=locale.getLanguage();
 
-		String url = "https://web.uk.test6.maratest.info/%lan%/".replace("%lan%", lan);
+		String url = "https://web.uk.test6.maratest.info/%lan%/casino/lobby".replace("%lan%", lan);
 
 		driver.get(url);
-		driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();
 	}
 	public void close()  {
 

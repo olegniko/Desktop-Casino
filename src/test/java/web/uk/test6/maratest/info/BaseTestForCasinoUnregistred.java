@@ -26,8 +26,6 @@ public class BaseTestForCasinoUnregistred {
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
-        casinoPage.click_Casino();
-
 
     }
 

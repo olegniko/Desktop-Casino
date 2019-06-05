@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MainPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,6 +28,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -40,84 +72,51 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
+          <provider editor-type-id="ResourceBundle" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="306">
+              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4175#4176#0" expanded="true" />
-                <element signature="e#4215#4216#0" expanded="true" />
-                <element signature="e#5392#5393#0" expanded="true" />
-                <element signature="e#5426#5427#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="374">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -125,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="374">
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -152,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/web/com/test8/maratest/firefox/LoginChrome.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/LoginChrome.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/firefox/HeaderFirefox.java" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
@@ -163,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/Header.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/chrome/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Firefox-DE.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Firefox-EN.xml" />
@@ -189,20 +186,22 @@
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasino.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" />
       </list>
     </option>
   </component>
@@ -225,8 +224,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="-38" />
+    <option name="y" value="-14" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -238,6 +237,85 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="maratest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="maratest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="chrome" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,85 +407,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="maratest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learning_auto_youtube" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learning" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="uk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test6" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="maratest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="chrome" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,7 +414,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559385125089" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559721068836" />
     <property name="last_opened_file_path" value="D:/обучение/from course for investigation/Training" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -458,6 +457,16 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml">
+    <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-GameLaunch.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml" />
@@ -502,7 +511,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search.isSearchPresent" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Search.enter_correct_symbols_for_MG_in_search" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <extension name="coverage">
         <pattern>
@@ -512,25 +521,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
       <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
-      <option name="METHOD_NAME" value="isSearchPresent" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Search.translationAboutUs" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.Search" />
-      <option name="METHOD_NAME" value="translationAboutUs" />
+      <option name="METHOD_NAME" value="enter_correct_symbols_for_MG_in_search" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -541,10 +532,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" />
-        <item itemvalue="TestNG.Search.enter_3_incorrect_symbols_in_search" />
-        <item itemvalue="TestNG.Search.isSearchPresent" />
+        <item itemvalue="TestNG.Search.enter_correct_symbols_for_MG_in_search" />
+        <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-GameLaunch.xml" />
         <item itemvalue="TestNG.Search" />
-        <item itemvalue="TestNG.Search.translationAboutUs" />
+        <item itemvalue="TestNG.Search.enter_3_incorrect_symbols_in_search" />
       </list>
     </recent_temporary>
   </component>
@@ -622,38 +613,45 @@
       <option name="project" value="LOCAL" />
       <updated>1559382559487</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit 01/06/2019 2nd">
+      <created>1559385183602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559385183602</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 11h 45m 22s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 12m 47s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 11h 58m 28s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 18m 05s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Search_enter_3_incorrect_symbols_in_search - 2019.06.01 at 11h 59m 17s.xml">
-      <configuration name="Search.enter_3_incorrect_symbols_in_search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 11h 59m 57s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 27m 03s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 12h 05m 10s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 31m 24s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 12h 06m 47s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 38m 33s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 12h 22m 09s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 41m 01s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 13h 09m 42s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 44m 31s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 13h 28m 57s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 45m 30s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.01 at 13h 32m 19s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 49m 12s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-DE-Search_xml - 2019.06.05 at 10h 50m 51s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-DE-Search.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -667,10 +665,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -679,7 +677,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59746253" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49850747" visible="true" weight="0.4301192" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850747" visible="true" weight="0.4301192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -748,7 +746,8 @@
     <MESSAGE value="commit 31/05/2019" />
     <MESSAGE value="commit 31/05/2019.2" />
     <MESSAGE value="commit 01/06/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 01/06/2019" />
+    <MESSAGE value="commit 01/06/2019 2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 01/06/2019 2nd" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -829,9 +828,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-FR.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -960,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1019,91 +1008,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties">
       <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#899#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1128,41 +1037,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+        <state relative-caret-position="178">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Footer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="374">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-            <element signature="e#4215#4216#0" expanded="true" />
-            <element signature="e#5392#5393#0" expanded="true" />
-            <element signature="e#5426#5427#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-DE-Search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
