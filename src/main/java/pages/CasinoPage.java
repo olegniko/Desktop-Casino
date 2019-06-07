@@ -1,13 +1,10 @@
 package pages;
 
-import helper.factory.WebDriverSingleton;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
 import java.net.MalformedURLException;
-import java.util.Locale;
+
 
 
 public  class CasinoPage extends MainPage {
@@ -15,6 +12,7 @@ public  class CasinoPage extends MainPage {
 	public CasinoPage(String browser) throws MalformedURLException {
 		super(browser);
 	}
+
 
     public void click_Casino(){
         Casino_label_header.click();
@@ -24,8 +22,23 @@ public  class CasinoPage extends MainPage {
     protected WebElement Search_Casino;
 
 
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[1]/a[2]/svg-button[2]/div")
+    protected WebElement Favourites;
 
-    @FindBy( className = "gi-svg-button__base-layer ng-scope")
+    public WebElement getFavourites(){
+        return Favourites;
+    }
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[1]/a[2]/svg-button[2]")
+    protected WebElement numberFavourites;
+
+    public WebElement getNumberFavourites(){
+        return numberFavourites;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")
     protected WebElement Cross_In_Search;
 
     public WebElement getCross_In_Search(){
@@ -39,18 +52,19 @@ public  class CasinoPage extends MainPage {
 
     public void clearSearchInCasinoByCross(){
 
-        Cross_In_Search.clear();
+        Cross_In_Search.click();
     }
 
-    @FindBy(xpath = "//*[@id=\"loginMessage\"]/div/button")
+    @FindBy(xpath = "//*[@id=\"loginMessage\"]/div")
     protected WebElement OK_In_successfull_Message;
 
-    //*[@id="loginMessage"]/div/button
-    //*[@id="loginMessage"]/div/button
+    public WebElement getOK_In_successfull_Message(){
+        return OK_In_successfull_Message;
+    }
 
     public void clickOK_In_successfull_Message(){
 
-        OK_In_successfull_Message.sendKeys(Keys.ENTER);
+        OK_In_successfull_Message.click();
 
     }
 
@@ -83,6 +97,8 @@ public  class CasinoPage extends MainPage {
 
         Search_Casino.sendKeys(Symbols);
     }
+
+
 
 
 }
