@@ -8,12 +8,11 @@
     <test name="TestCase4">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.SearchUnregistred">
+            <class name="web.uk.test6.maratest.info.Favourites">
             </class>
 
         </classes>
     </test>
-
 
 
 </suite>
