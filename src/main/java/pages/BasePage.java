@@ -63,6 +63,12 @@ public abstract  class BasePage {
 
 	}
 
+	public void waitIfElementIsClickable(WebElement element1 ){
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(element1));
+
+	}
+
 
 
 }

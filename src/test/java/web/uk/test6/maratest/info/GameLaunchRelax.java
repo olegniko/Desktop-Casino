@@ -13,7 +13,7 @@ public class GameLaunchRelax extends BaseTestForCasinoRegistred {
 
         casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
 
-        casinoPage.getGameTitle().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 
     }
 }

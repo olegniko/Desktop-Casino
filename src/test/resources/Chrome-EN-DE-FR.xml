@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "chrome">
+    <parameter name="language"  value="en" />
+    <parameter name="browser"  value="chrome" />
+
+    <test name="TestCase5">
+        <classes>
+            <class name="web.uk.test6.maratest.info.Footer">
+            </class>
+        </classes>
+    </test>
+
+    <parameter name="language"  value="de" />
+    <parameter name="browser"  value="chrome" />
+
+    <test name="TestCase4">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.Footer">
+            </class>
+
+        </classes>
+    </test>
+
+    <parameter name="language"  value="fr" />
+    <parameter name="browser"  value="chrome" />
+
+    <test name="TestCase6">
+        <classes>
+            <class name="web.uk.test6.maratest.info.Footer">
+            </class>
+        </classes>
+    </test>
+
+
+
+</suite>
+
+
+
+

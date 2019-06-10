@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import java.net.MalformedURLException;
 
 
-
 public  class CasinoPage extends MainPage {
 
-	public CasinoPage(String browser) throws MalformedURLException {
-		super(browser);
-	}
+    public CasinoPage(String browser) throws MalformedURLException {
+        super(browser);
+    }
+
 
 
     public void click_Casino(){
@@ -21,21 +21,47 @@ public  class CasinoPage extends MainPage {
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/input")
     protected WebElement Search_Casino;
 
+    public WebElement getSearch_Casino(){
+
+        return Search_Casino;
+
+
+    }
+
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[1]/a[2]/svg-button[2]/div")
     protected WebElement Favourites;
 
     public WebElement getFavourites(){
+
         return Favourites;
+
+
     }
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[1]/a[2]/svg-button[2]")
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[1]/a[2]/div")
     protected WebElement numberFavourites;
 
     public WebElement getNumberFavourites(){
         return numberFavourites;
     }
 
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForIssoft;
+
+    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button
+
+    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div
+
+    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div/div[1]
+
+    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div/div[2]
+
+    public WebElement getFavouriteForIssoft(){
+        return FavouriteForIssoft;
+    }
 
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")

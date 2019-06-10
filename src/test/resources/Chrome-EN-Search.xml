@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "chrome">
+
+    <parameter name="language"  value="en" />
+    <parameter name="browser"  value="chrome" />
+
+    <test name="TestCase5">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.SearchUnregistred">
+            </class>
+
+        </classes>
+    </test>
+
+
+    <test name="TestCase8">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.SearchRegistred">
+            </class>
+
+        </classes>
+    </test>
+
+
+</suite>

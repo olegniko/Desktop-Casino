@@ -2,13 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
     <suite name = "chrome">
-    <parameter name="language"  value="fr" />
+    <parameter name="language"  value="en" />
     <parameter name="browser"  value="chrome" />
 
     <test name="TestCase6">
         <classes>
-            <class name="web.uk.test6.maratest.info.Header">
+            <class name="web.uk.test6.maratest.info.Footer">
             </class>
+
         </classes>
     </test>
 

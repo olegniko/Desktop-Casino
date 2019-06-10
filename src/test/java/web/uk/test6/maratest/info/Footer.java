@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-public class Footer extends BaseTest {
+public class Footer extends BaseTestForCasinoUnregistred {
 
 
     @Test(groups = {"footerTestChrome", "footerTestOpera", "footerTestFirefox"})

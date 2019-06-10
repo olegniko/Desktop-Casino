@@ -8,11 +8,13 @@
     <test name="TestCase4">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.Footer">
+            <class name="web.uk.test6.maratest.info.Header">
             </class>
 
         </classes>
     </test>
+
+
 
 </suite>
 

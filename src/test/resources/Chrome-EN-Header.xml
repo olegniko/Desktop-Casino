@@ -5,10 +5,11 @@
     <parameter name="language"  value="en" />
     <parameter name="browser"  value="chrome" />
 
-    <test name="TestCase5">
+    <test name="TestCase6">
         <classes>
             <class name="web.uk.test6.maratest.info.Header">
             </class>
+
         </classes>
     </test>
 

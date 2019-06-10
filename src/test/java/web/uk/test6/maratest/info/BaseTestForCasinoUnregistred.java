@@ -20,12 +20,15 @@ public class BaseTestForCasinoUnregistred {
 
     @BeforeSuite
     @Parameters({"language","browser"})
-    public  void setUp(String language,String browser) throws MalformedURLException, InterruptedException {
+    public  void setUp(String language,String browser) throws MalformedURLException {
 
         locale = new Locale(language);
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
+
+
 
     }
 

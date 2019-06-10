@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 
-public class Header extends BaseTest {
+public class Header extends BaseTestForCasinoUnregistred {
 
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Sport in Header
     public void translationSportInHeader() {
 
@@ -17,7 +17,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Live in Header
     public void translationLiveInHeader() {
 
@@ -25,7 +25,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Toto in Header
     public void translationTotoInHeader() {
 
@@ -33,7 +33,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Casino in Header
     public void translationCasinoInHeader() {
 
@@ -41,7 +41,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Live Casino in Header
     public void translationLiveCasinoInHeader() {
 
@@ -49,7 +49,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Constructor in Header
     public void translationConstructorCasinoInHeader() {
 
@@ -57,7 +57,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Bingo in Header
     public void translationBingoInHeader() {
 
@@ -65,7 +65,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Financials in Header
     public void translationFinancialInHeader() {
 
@@ -73,7 +73,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Lost Password in Header
     public void translationLostPassword() {
 
@@ -81,7 +81,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Help in Header
     public void translationHelp() {
 
@@ -89,7 +89,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Language in Header
     public void translationLanguage() {
 
@@ -97,7 +97,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Results&Statistic in Header
     public void translationResults() {
 
@@ -105,7 +105,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Settings in Header
     public void translationSettings() {
 
@@ -113,7 +113,7 @@ public class Header extends BaseTest {
 
     }
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Mobile in Header
     public void isMobilePresent() {
 
@@ -122,7 +122,7 @@ public class Header extends BaseTest {
     }
 
 
-    @Test(groups = { "headerTestChrome", "headerTestOpera","headerTestFirefox"})
+    @Test
     //наличие Maraathon in Header
     public void isMarathonPresent() {
 

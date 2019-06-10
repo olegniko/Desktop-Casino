@@ -15,7 +15,7 @@ public class GameLaunchMG extends BaseTestForCasinoRegistred {
 
         casinoPage.enter_symbols_to_Search("olegMgAutotest");
 
-        casinoPage.getGameTitle().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 
     }
 }
