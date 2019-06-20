@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Full Regression" verbose="1" preserve-order="true">
+
+    <parameter name="language"  value="de" />
+    <parameter name="browser"  value="chrome" />
+
     <test name="Footer and Header">
         <classes>
             <class name="web.uk.test6.maratest.info.Header"/>
