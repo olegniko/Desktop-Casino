@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Full Regression" parallel="false" preserve-order="false">
+
+    <parameter name="language"  value="en" />
+    <parameter name="browser"  value="chrome" />
+
+
+
+    <test name="72">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.Header"/>
+
+
+
+        </classes>
+    </test>
+    <test name="73">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.Footer"/>
+
+
+
+        </classes>
+    </test>
+
+    <test name="74">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.Favourites"/>
+
+
+
+        </classes>
+    </test>
+
+    <test name="75">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.AddFavouritesUnregistred"/>
+
+
+
+        </classes>
+    </test>
+
+    <test name="76">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.SearchUnregistred"/>
+
+
+
+        </classes>
+    </test>
+
+
+
+</suite>
