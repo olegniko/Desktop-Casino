@@ -37,12 +37,12 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=4)
     //
-    public void add_MG_in_favourites() {
+    public void addMgInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegMGautotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
 
         assertEquals(casinoPage.getNumberFavourites().getText(),"1");
 
@@ -52,12 +52,12 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=5)
     //
-    public void add_Evolution_in_favourites() {
+    public void addEvolutionInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegEvolutionAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
 
         assertEquals(casinoPage.getNumberFavourites().getText(),"2");
 
@@ -67,12 +67,12 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=6)
     //
-    public void add_Issoft_in_favourites() {
+    public void addIssoftInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegIssoftAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
 
         assertEquals(casinoPage.getNumberFavourites().getText(),"3");
 
@@ -82,12 +82,12 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=7)
     //
-    public void add_Relax_in_favourites() {
+    public void addRelaxInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
 
         assertEquals(casinoPage.getNumberFavourites().getText(),"4");
 
@@ -97,12 +97,12 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=8)
     //
-    public void add_Yggdrasil_in_favourites() {
+    public void addYggdrasilInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegYggdrasilAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
 
         assertEquals(casinoPage.getNumberFavourites().getText(),"5");
 
@@ -112,18 +112,67 @@ public class Favourites extends BaseTestForCasinoUnregistred {
 
     @Test (priority=9)
     //
-    public void add_Playngo_in_favourites() {
+    public void addPlayngoInFavourites() {
 
 
         casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoft());
-
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForIssoftSearchPage());
         assertEquals(casinoPage.getNumberFavourites().getText(),"6");
-
         casinoPage.clearSearchInCasino();
 
     }
+
+    @Test (priority=10)
+    //
+    public void numberFavouritesAfterLogin() {
+
+        casinoPage.login("olegeng60","Password2");
+        casinoPage.clickIfElementIsClickable(casinoPage.getOK_In_successfull_Message());
+        assertEquals(casinoPage.getNumberFavourites().getText(),"6");
+
+    }
+
+    @Test (priority=11)
+    //
+    public void eraseFavouritesAfterLogin() {
+
+        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
+
+        for (int i =1;i<7;i++){
+            casinoPage.getFavouriteForIssoft().click();
+        }
+
+        assertEquals(casinoPage.getNumberFavourites().getText(),"0");
+
+    }
+
+    @Test (priority=12)
+    //
+    public void addFavouritesforRegistredUserFromSearch() {
+
+        addMgInFavourites();
+        addEvolutionInFavourites();
+        addIssoftInFavourites();
+        addRelaxInFavourites();
+        addYggdrasilInFavourites();
+        addPlayngoInFavourites();
+        eraseFavouritesAfterLogin();
+
+    }
+
+    @Test (priority=13)
+    //
+    public void addFavouritesforRegistredUserFromCategory() {
+
+        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDown());
+        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
+
+
+
+    }
+
+
+
 
 
 }
