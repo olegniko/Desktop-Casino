@@ -9,60 +9,41 @@
 
 
 
-    <test name="72">
-        <classes>
-
-
-            <class name="web.uk.test6.maratest.info.Header"/>
-
-
-
-        </classes>
-    </test>
-    <test name="73">
-        <classes>
-
-
-            <class name="web.uk.test6.maratest.info.Footer"/>
-
-
-
-        </classes>
-    </test>
-
-    <test name="74">
+    <test name="unregistred">
         <classes>
 
 
             <class name="web.uk.test6.maratest.info.Favourites"/>
 
 
-
         </classes>
     </test>
-
-    <test name="75">
+    <test name="unregistred1">
         <classes>
 
-
-            <class name="web.uk.test6.maratest.info.AddFavouritesUnregistred"/>
-
+            <class name="web.uk.test6.maratest.info.HeaderAndFooterTranslation"/>
 
 
         </classes>
     </test>
-
-    <test name="76">
+    <test name="unregistred2">
         <classes>
-
 
             <class name="web.uk.test6.maratest.info.SearchUnregistred"/>
 
 
-
         </classes>
     </test>
 
 
+    <test name="registred">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.SearchRegistred"/>
+
+
+        </classes>
+    </test>
 
 </suite>
+

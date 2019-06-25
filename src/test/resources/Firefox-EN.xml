@@ -7,7 +7,7 @@
 
     <test name="TestCase2">
         <classes>
-            <class name="web.uk.test6.maratest.info.Header">
+            <class name="web.uk.test6.maratest.info.HeaderAndFooterTranslation">
             </class>
         </classes>
     </test>

@@ -57,7 +57,6 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[1]")
 	protected WebElement Sport_label_header;
 
-
 	public  String getSport_label_header(){
 		return Sport_label_header.getText();
 	}
@@ -175,11 +174,19 @@ public  class MainPage extends BasePage {
 		return PrivacyPolicy.getText();
 	}
 
+	public WebElement getPrivacyPolicyElement(){
+		return PrivacyPolicy;
+	}
+
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[3]/span")
 	protected WebElement ResponsibleGambling;
 
 	public String getResponsibleGambling(){
 		return ResponsibleGambling.getText();
+	}
+
+	public WebElement getResponsibleGamblingElement(){
+		return ResponsibleGambling;
 	}
 
 
@@ -190,11 +197,19 @@ public  class MainPage extends BasePage {
 		return TermsAndConditions.getText();
 	}
 
+	public WebElement getTermsAndConditionsElement(){
+		return TermsAndConditions;
+	}
+
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[5]/span")
 	protected WebElement ContactUs;
 
 	public String getContactUs(){
 		return ContactUs.getText();
+	}
+
+	public WebElement getContactUsElement(){
+		return ContactUs;
 	}
 
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[6]/span")

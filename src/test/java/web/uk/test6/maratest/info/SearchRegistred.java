@@ -8,9 +8,11 @@ import static org.testng.Assert.assertEquals;
 public class SearchRegistred extends BaseTestForCasinoRegistred {
 
 
-    @Test (priority=9)
+    @Test (priority=50)
     //
     public void enter_2_symbols_in_search() {
+
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
         casinoPage.enter_symbols_to_Search("12");
 
@@ -20,26 +22,26 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=2)
+    @Test (priority=51)
     //
     public void enter_3_incorrect_symbols_in_search()  {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
 
         casinoPage.enter_symbols_to_Search("ddd");
 
         assertEquals(casinoPage.getSearch_Result(),exampleBundle.getString("no_result"));
 
-        casinoPage.clearSearchInCasino();
+        casinoPage.clearSearchInCasinoByCross();
 
     }
 
-    @Test (priority=3)
+    @Test (priority=52)
     //
     public void enter_correct_symbols_for_MG_in_search() {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
         casinoPage.enter_symbols_to_Search("olegMGautotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("mg_game_title"));
@@ -48,11 +50,11 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=4)
+    @Test (priority=53)
     //
     public void enter_correct_symbols_for_Evolution_in_search() {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
 
         casinoPage.enter_symbols_to_Search("olegEvolutionAutotest");
@@ -63,10 +65,10 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=5)
+    @Test (priority=54)
     //
     public void enter_correct_symbols_for_Issoft_in_search() {
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
         casinoPage.enter_symbols_to_Search("olegIssoftAutotest");
 
@@ -76,11 +78,11 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=6)
+    @Test (priority=55)
     //
     public void enter_correct_symbols_for_Relax_in_search() {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
         casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("relax_game_title"));
@@ -89,10 +91,10 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=7)
+    @Test (priority=56)
     //
     public void enter_correct_symbols_for_Yggdrasil_in_search() {
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
         casinoPage.enter_symbols_to_Search("olegYggdrasilAutotest");
 
@@ -102,11 +104,11 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=8)
+    @Test (priority=57)
     //
     public void enter_correct_symbols_for_Playngo_in_search() {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
         casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("playngo_game_title"));
@@ -115,10 +117,10 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     }
 
-    @Test (priority=10)
+    @Test (priority=58)
     //
     public void after_refresh_in_search() {
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
 
         casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
 
