@@ -13,7 +13,7 @@ public class GameLaunchMG extends BaseTestForCasinoRegistred {
     public void launch_MG_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegMgAutotest");
+        casinoPage.enterSymbolsToSearch("olegMgAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 

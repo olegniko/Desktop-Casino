@@ -11,9 +11,9 @@ public class GameLaunchEvolution extends BaseTestForCasinoRegistred {
     public void launch_Evolution_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegEvolutionAutotest");
+        casinoPage.enterSymbolsToSearch("olegEvolutionAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
+        casinoPage.getFavouriteForIssoft().click();
 
     }
 }

@@ -3,13 +3,12 @@
 
     <suite name = "chrome">
     <parameter name="language"  value="de" />
-    <parameter name="browser"  value="edge" />
+    <parameter name="browser"  value="chrome" />
 
     <test name="TestCase4">
         <classes>
 
-
-            <class name="web.uk.test6.maratest.info.HeaderAndFooterTranslation">
+            <class name="web.uk.test6.maratest.info.GameLaunchEvolution">
             </class>
 
         </classes>

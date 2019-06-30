@@ -11,7 +11,7 @@ public class GameLaunchYggdrasil extends BaseTestForCasinoRegistred {
     public void launch_Yggdrasil_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegYggdrasilAutotest");
+        casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 

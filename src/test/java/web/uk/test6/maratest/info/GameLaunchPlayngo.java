@@ -11,7 +11,7 @@ public class GameLaunchPlayngo extends BaseTestForCasinoRegistred {
     public void launch_Playngo_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
+        casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 

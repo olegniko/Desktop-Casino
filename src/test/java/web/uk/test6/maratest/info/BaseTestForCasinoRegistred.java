@@ -24,7 +24,7 @@ public class BaseTestForCasinoRegistred {
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
         casinoPage.login("olegeng60","Password2");
-        casinoPage.clickIfElementIsClickable(casinoPage.getOK_In_successfull_Message());
+        casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
 
     }
 

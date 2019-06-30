@@ -11,7 +11,7 @@ public class GameLaunchIssoft extends BaseTestForCasinoRegistred {
     public void launch_Issoft_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegIssoftAutotest");
+        casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 

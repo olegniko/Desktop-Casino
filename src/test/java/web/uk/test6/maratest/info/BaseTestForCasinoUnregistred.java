@@ -23,7 +23,7 @@ public class BaseTestForCasinoUnregistred {
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
-        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
     }
 

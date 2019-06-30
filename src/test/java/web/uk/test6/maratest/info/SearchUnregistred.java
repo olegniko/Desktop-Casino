@@ -10,15 +10,15 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=1)
     //
-    public void enter_2_symbols_in_search() {
+    public void enter2SymbolsInSearch() {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
-        casinoPage.enter_symbols_to_Search("12");
+        casinoPage.enterSymbolsToSearch("12");
 
-        assertEquals(casinoPage.getSearch_Result(),exampleBundle.getString("request_too_short"));
+        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("request_too_short"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -26,14 +26,14 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=2)
     //
-    public void enter_3_incorrect_symbols_in_search()  {
+    public void enter3IncorrectSymbolsInSearch()  {
 
 
-        casinoPage.enter_symbols_to_Search("ddd");
+        casinoPage.enterSymbolsToSearch("ddd");
 
-        assertEquals(casinoPage.getSearch_Result(),exampleBundle.getString("no_result"));
+        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("no_result"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -41,14 +41,14 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=3)
     //
-    public void enter_correct_symbols_for_MG_in_search() {
+    public void enterCorrectSymbolsForMgInSearch() {
 
 
-        casinoPage.enter_symbols_to_Search("olegMGautotest");
+        casinoPage.enterSymbolsToSearch("olegMGautotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("mg_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -56,14 +56,14 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=4)
     //
-    public void enter_correct_symbols_for_Evolution_in_search() {
+    public void enterCorrectSymbolsForEvolutionInSearch() {
 
 
-        casinoPage.enter_symbols_to_Search("olegEvolutionAutotest");
+        casinoPage.enterSymbolsToSearch("olegEvolutionAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("evolution_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -71,14 +71,14 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=5)
     //
-    public void enter_correct_symbols_for_Issoft_in_search() {
+    public void enterCorrectSymbolsForIssoftInSearch() {
 
 
-        casinoPage.enter_symbols_to_Search("olegIssoftAutotest");
+        casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("issoft_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -86,14 +86,14 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=6)
     //
-    public void enter_correct_symbols_for_Relax_in_search() {
+    public void enterCorrectSymbolsForRelaxInSearch() {
 
 
-        casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
+        casinoPage.enterSymbolsToSearch("olegRelaxAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("relax_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -104,11 +104,11 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
     public void enter_correct_symbols_for_Yggdrasil_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegYggdrasilAutotest");
+        casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("yggdrasil_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -119,11 +119,11 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
     public void enter_correct_symbols_for_Playngo_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
+        casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("playngo_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 
@@ -134,13 +134,13 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
     public void after_refresh_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegPlayngoAutotest");
+        casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
 
         casinoPage.refreshPage();
 
         assertEquals(casinoPage.getGameTitleText(),exampleBundle.getString("playngo_game_title"));
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getCross_In_Search());
+        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
 

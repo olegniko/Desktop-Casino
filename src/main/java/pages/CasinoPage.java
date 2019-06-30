@@ -14,17 +14,16 @@ public  class CasinoPage extends MainPage {
 
 
 
-    public void click_Casino(){
-        Casino_label_header.click();
+    public void clickCasino(){
+        CasinoLabelHeader.click();
     }
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/input")
-    protected WebElement Search_Casino;
+    protected WebElement SearchCasino;
 
-    public WebElement getSearch_Casino(){
+    public WebElement getSearchCasino(){
 
-        return Search_Casino;
-
+        return SearchCasino;
 
     }
 
@@ -35,7 +34,6 @@ public  class CasinoPage extends MainPage {
     public WebElement getFavourites(){
 
         return Favourites;
-
 
     }
 
@@ -48,82 +46,100 @@ public  class CasinoPage extends MainPage {
         return numberFavourites;
     }
 
+
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForIssoftSearchPage;
+
+    public WebElement getFavouriteForIssoftSearchPage(){
+        return FavouriteForIssoftSearchPage;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
     protected WebElement FavouriteForIssoft;
-
-    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button
-
-    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div
-
-    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div/div[1]
-
-    //*[@id="casino_app"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/button/svg-button[2]/div/div[2]
 
     public WebElement getFavouriteForIssoft(){
         return FavouriteForIssoft;
     }
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")
-    protected WebElement Cross_In_Search;
 
-    public WebElement getCross_In_Search(){
-        return Cross_In_Search;
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")
+    protected WebElement CrossInSearch;
+
+    public WebElement getCrossInSearch(){
+        return CrossInSearch;
     }
 
     public void clearSearchInCasino(){
 
-        Search_Casino.clear();
+        SearchCasino.clear();
     }
 
     public void clearSearchInCasinoByCross(){
 
-        Cross_In_Search.click();
+        CrossInSearch.click();
     }
+
 
     @FindBy(xpath = "//*[@id=\"loginMessage\"]/div")
-    protected WebElement OK_In_successfull_Message;
+    protected WebElement OkInSuccessfullMessage;
 
-    public WebElement getOK_In_successfull_Message(){
-        return OK_In_successfull_Message;
+    public WebElement getOkInSuccessfullMessage(){
+        return OkInSuccessfullMessage;
     }
 
-    public void clickOK_In_successfull_Message(){
+    public void clickOkInSuccessfullMessage(){
 
-        OK_In_successfull_Message.click();
+        OkInSuccessfullMessage.click();
 
     }
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/div/h1")
-    protected WebElement Search_Result;
+    protected WebElement SearchResult;
 
-    public String getSearch_Result(){
-        return Search_Result.getText();
+    public String getSearchResult(){
+        return SearchResult.getText();
     }
 
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/div")
-    protected WebElement Game_Title_After_search;
+    protected WebElement GameTitleAfterSearch;
 
     public String getGameTitleText(){
-        return Game_Title_After_search.getText();
+        return GameTitleAfterSearch.getText();
     }
 
     public WebElement getGameTitle(){
-        return Game_Title_After_search;
+        return GameTitleAfterSearch;
     }
 
 
-    public void click_Search_in_casino(){
+    public void clickSearchInCasino(){
 
-        Search_Casino.click();
+        SearchCasino.click();
     }
 
-    public void  enter_symbols_to_Search(String Symbols){
+    public void  enterSymbolsToSearch(String Symbols){
 
-        Search_Casino.sendKeys(Symbols);
+        SearchCasino.sendKeys(Symbols);
     }
 
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[1]")
+    protected WebElement OtherDropDown;
+
+    public WebElement getOtherDropDown(){
+        return OtherDropDown;
+    }
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]")
+    protected WebElement AutotestCategory;
+
+    public WebElement getAutotestCategory(){
+        return AutotestCategory;
+    }
 
 
 

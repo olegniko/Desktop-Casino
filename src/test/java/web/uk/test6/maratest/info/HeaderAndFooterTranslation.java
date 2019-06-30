@@ -12,8 +12,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Sport in HeaderAndFooterTranslation
     public void translationSportInHeader() {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getSearch_Casino());
-        assertEquals(casinoPage.getSport_label_header(),exampleBundle.getString("sport_label_header"));
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
+        assertEquals(casinoPage.getSportLabelHeader(),exampleBundle.getString("sport_label_header"));
 
     }
 
@@ -29,7 +29,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Toto in HeaderAndFooterTranslation
     public void translationTotoInHeader() {
 
-        assertEquals(casinoPage.getToto_label_header(),exampleBundle.getString("toto_label_header"));
+        assertEquals(casinoPage.getTotoLabelHeader(),exampleBundle.getString("toto_label_header"));
 
     }
 
@@ -37,7 +37,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Casino in HeaderAndFooterTranslation
     public void translationCasinoInHeader() {
 
-        assertEquals(casinoPage.getCasino_label_header(),exampleBundle.getString("casino_label_header"));
+        assertEquals(casinoPage.getCasinoLabelHeader(),exampleBundle.getString("casino_label_header"));
 
     }
 
@@ -45,7 +45,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Live Casino in HeaderAndFooterTranslation
     public void translationLiveCasinoInHeader() {
 
-        assertEquals(casinoPage.getLiveCasino_label_header(),exampleBundle.getString("live_casino_label_header"));
+        assertEquals(casinoPage.getLiveCasinoLabelHeader(),exampleBundle.getString("live_casino_label_header"));
 
     }
 
@@ -53,7 +53,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Constructor in HeaderAndFooterTranslation
     public void translationConstructorCasinoInHeader() {
 
-        assertEquals(casinoPage.getConstructor_label_header(),exampleBundle.getString("constructor_label_header"));
+        assertEquals(casinoPage.getConstructorLabelHeader(),exampleBundle.getString("constructor_label_header"));
 
     }
 
@@ -61,7 +61,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Bingo in HeaderAndFooterTranslation
     public void translationBingoInHeader() {
 
-        assertEquals(casinoPage.getBingo_label_header(),exampleBundle.getString("bingo_label_header"));
+        assertEquals(casinoPage.getBingoLabelHeader(),exampleBundle.getString("bingo_label_header"));
 
     }
 
@@ -69,7 +69,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Financials in HeaderAndFooterTranslation
     public void translationFinancialInHeader() {
 
-        assertEquals(casinoPage.getFinancials_label_header(),exampleBundle.getString("financial_label_header"));
+        assertEquals(casinoPage.getFinancialsLabelHeader(),exampleBundle.getString("financial_label_header"));
 
     }
 
@@ -77,7 +77,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     //наличие Lost Password in HeaderAndFooterTranslation
     public void translationLostPassword() {
 
-        assertEquals(casinoPage.getLost_password(),exampleBundle.getString("lost_password"));
+        assertEquals(casinoPage.getLostPassword(),exampleBundle.getString("lost_password"));
 
     }
 

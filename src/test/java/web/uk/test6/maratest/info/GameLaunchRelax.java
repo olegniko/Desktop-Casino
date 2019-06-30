@@ -11,7 +11,7 @@ public class GameLaunchRelax extends BaseTestForCasinoRegistred {
     public void launch_Relax_in_search() {
 
 
-        casinoPage.enter_symbols_to_Search("olegRelaxAutotest");
+        casinoPage.enterSymbolsToSearch("olegRelaxAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
 
