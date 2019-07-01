@@ -13,7 +13,7 @@ public class GameLaunchPlayngo extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
+        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
 
     }
 }

@@ -13,12 +13,24 @@
         <classes>
 
 
-            <class name="web.uk.test6.maratest.info.Favourites"/>
+            <class name="web.uk.test6.maratest.info.FavouritesFromSearch"/>
 
 
         </classes>
     </test>
+
     <test name="unregistred1">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.FavouritesFromCategory"/>
+
+
+        </classes>
+    </test>
+
+
+    <test name="unregistred2">
         <classes>
 
             <class name="web.uk.test6.maratest.info.HeaderAndFooterTranslation"/>
@@ -26,7 +38,7 @@
 
         </classes>
     </test>
-    <test name="unregistred2">
+    <test name="unregistred3">
         <classes>
 
             <class name="web.uk.test6.maratest.info.SearchUnregistred"/>

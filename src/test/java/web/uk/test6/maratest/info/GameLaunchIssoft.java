@@ -13,7 +13,7 @@ public class GameLaunchIssoft extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
+        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
 
     }
 }

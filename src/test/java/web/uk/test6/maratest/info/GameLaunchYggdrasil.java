@@ -13,7 +13,7 @@ public class GameLaunchYggdrasil extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitle());
+        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
 
     }
 }

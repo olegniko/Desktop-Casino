@@ -48,19 +48,63 @@ public  class CasinoPage extends MainPage {
 
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
-    protected WebElement FavouriteForIssoftSearchPage;
+    protected WebElement FavouriteForFirstElementSearchPage;
 
-    public WebElement getFavouriteForIssoftSearchPage(){
-        return FavouriteForIssoftSearchPage;
+    public WebElement getFavouriteForFirstElementSearchPage(){
+        return FavouriteForFirstElementSearchPage;
     }
 
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
-    protected WebElement FavouriteForIssoft;
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForFirstElementInCategory;
 
-    public WebElement getFavouriteForIssoft(){
-        return FavouriteForIssoft;
+    public WebElement getFavouriteForFirstElementInCategory(){
+        return FavouriteForFirstElementInCategory;
+    }
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[2]/div/div/div[2]/button")
+    protected WebElement FavouriteForSecondElementInCategory;
+
+    public WebElement getFavouriteForSecondElementInCategory(){
+        return FavouriteForSecondElementInCategory;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[3]/div/div/div[2]/button")
+    protected WebElement FavouriteForThirdElementInCategory;
+
+    public WebElement getFavouriteForThirdElementInCategory(){
+        return FavouriteForThirdElementInCategory;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[4]/div/div/div[2]/button")
+    protected WebElement FavouriteForForthElementInCategory;
+
+    public WebElement getFavouriteForForthElementInCategory(){
+        return FavouriteForForthElementInCategory;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[5]/div/div/div[2]/button")
+    protected WebElement FavouriteForFifthElementInCategory;
+
+    public WebElement getFavouriteForFifthElementInCategory(){
+        return FavouriteForFifthElementInCategory;
+    }
+
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[6]/div/div/div[2]/button")
+    protected WebElement FavouriteForSixthElementInCategory;
+
+    public WebElement getFavouriteForSixthElementInCategory(){
+        return FavouriteForSixthElementInCategory;
     }
 
 
@@ -111,8 +155,21 @@ public  class CasinoPage extends MainPage {
         return GameTitleAfterSearch.getText();
     }
 
-    public WebElement getGameTitle(){
+    public WebElement getGameTitleElement(){
         return GameTitleAfterSearch;
+    }
+
+
+
+    @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/div")
+    protected WebElement GameTitleInCategory;
+
+    public String getGameTitleInCategoryText(){
+        return GameTitleInCategory.getText();
+    }
+
+    public WebElement getGameTitleInCategoryElement(){
+        return GameTitleInCategory;
     }
 
 
@@ -127,12 +184,17 @@ public  class CasinoPage extends MainPage {
     }
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[1]")
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button")
     protected WebElement OtherDropDown;
 
-    public WebElement getOtherDropDown(){
+    public WebElement getOtherDropDownElement(){
         return OtherDropDown;
     }
+
+    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
+
+
+
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]")
     protected WebElement AutotestCategory;

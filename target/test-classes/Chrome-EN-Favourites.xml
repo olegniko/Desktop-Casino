@@ -8,7 +8,7 @@
     <test name="TestCase4">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.Favourites">
+            <class name="web.uk.test6.maratest.info.FavouritesFromCategory">
             </class>
 
         </classes>
