@@ -25,6 +25,7 @@ public class BaseTestForCasinoUnregistred {
         casinoPage.open(locale);
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
+
     }
 
 

@@ -193,7 +193,7 @@ public  class CasinoPage extends MainPage {
 
     //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
 
-
+//*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
 
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]")
