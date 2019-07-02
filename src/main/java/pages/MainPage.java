@@ -57,7 +57,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[1]")
 	protected WebElement SportLabelHeader;
 
-	public  String getSportLabelHeader(){
+	public  String getSportLabelHeaderText(){
 		return SportLabelHeader.getText();
 	}
 
@@ -70,7 +70,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[2]/span")
 	protected WebElement LiveLabelHeader;
 
-	public String getLiveLabelHeader(){
+	public String getLiveLabelHeaderText(){
 		return LiveLabelHeader.getText();
 	}
 
@@ -84,7 +84,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[3]/span")
 	protected WebElement TotoLabelHeader;
 
-	public String getTotoLabelHeader(){
+	public String getTotoLabelHeaderText(){
 		return TotoLabelHeader.getText();
 	}
 
@@ -99,7 +99,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[4]/span")
 	protected WebElement CasinoLabelHeader;
 
-	public String getCasinoLabelHeader(){
+	public String getCasinoLabelHeaderText(){
 		return CasinoLabelHeader.getText();
 	}
 
@@ -113,7 +113,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[1]/span")
 	protected WebElement LiveCasinoLabelHeader;
 
-	public String getLiveCasinoLabelHeader(){
+	public String getLiveCasinoLabelHeaderText(){
 		return LiveCasinoLabelHeader.getText();
 	}
 
@@ -127,7 +127,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[2]/span")
 	protected WebElement ConstructorLabelHeader;
 
-	public String getConstructorLabelHeader(){
+	public String getConstructorLabelHeaderText(){
 		return ConstructorLabelHeader.getText();
 	}
 
@@ -141,7 +141,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[3]/span")
 	protected WebElement BingoLabelHeader;
 
-	public String getBingoLabelHeader(){
+	public String getBingoLabelHeaderText(){
 		return BingoLabelHeader.getText();
 	}
 
@@ -154,7 +154,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[4]/span")
 	protected WebElement FinancialsLabelHeader;
 
-	public String getFinancialsLabelHeader(){
+	public String getFinancialsLabelHeaderText(){
 		return FinancialsLabelHeader.getText();
 	}
 
@@ -169,7 +169,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"auth\"]/div[1]/a")
 	protected WebElement LostPassword;
 
-	public String getLostPassword(){
+	public String getLostPasswordText(){
 		return LostPassword.getText();
 	}
 
@@ -183,7 +183,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[2]/div[2]/div")
 	protected WebElement Help;
 
-	public String getHelp(){
+	public String getHelpText(){
 		return Help.getText();
 	}
 
@@ -197,7 +197,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"languageSelectField\"]/div[1]")
 	protected WebElement Language;
 
-	public String getLanguage(){
+	public String getLanguageText(){
 		return Language.getText();
 	}
 
@@ -211,7 +211,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[2]/div[4]/div")
 	protected WebElement Results;
 
-	public String getResults(){
+	public String getResultsText(){
 		return Results.getText();
 	}
 
@@ -224,7 +224,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"settingsDropdown\"]/div[1]/span")
 	protected WebElement Settings;
 
-	public String getSettings(){
+	public String getSettingsText(){
 		return Settings.getText();
 	}
 
@@ -258,7 +258,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[1]/span")
 	protected WebElement AboutUs;
 
-	public String getAboutUs(){
+	public String getAboutUsText(){
 		return AboutUs.getText();
 	}
 
@@ -272,7 +272,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[2]/span")
 	protected WebElement PrivacyPolicy ;
 
-	public String getPrivacyPolicy(){
+	public String getPrivacyPolicyText(){
 		return PrivacyPolicy.getText();
 	}
 
@@ -285,7 +285,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[3]/span")
 	protected WebElement ResponsibleGambling;
 
-	public String getResponsibleGambling(){
+	public String getResponsibleGamblingText(){
 		return ResponsibleGambling.getText();
 	}
 
@@ -299,7 +299,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[4]/span")
 	protected WebElement TermsAndConditions;
 
-	public String getTermsAndConditions(){
+	public String getTermsAndConditionsText(){
 		return TermsAndConditions.getText();
 	}
 
@@ -312,7 +312,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[5]/span")
 	protected WebElement ContactUs;
 
-	public String getContactUs(){
+	public String getContactUsText(){
 		return ContactUs.getText();
 	}
 
@@ -325,7 +325,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[6]/span")
 	protected WebElement Payments;
 
-	public String getPayments(){
+	public String getPaymentsText(){
 		return Payments.getText();
 	}
 
@@ -339,7 +339,7 @@ public  class MainPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[7]/a")
 	protected WebElement MobileSite;
 
-	public String getMobileSite(){
+	public String getMobileSiteText(){
 		return MobileSite.getText();
 	}
 

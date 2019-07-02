@@ -17,7 +17,7 @@ public class BaseTestForCasinoUnregistred {
 
     @BeforeClass
     @Parameters({"language","browser"})
-    public  void setUp(String language,String browser) throws MalformedURLException {
+    public  void setUp(String language,String browser) throws MalformedURLException, InterruptedException {
 
         locale = new Locale(language);
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);

@@ -29,7 +29,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
     // 0 for unregestred user
     public void favouritesNumberIs0() {
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"0");
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
 
     }
 
@@ -44,7 +44,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"1");
+        assertEquals(casinoPage.getNumberFavouritesText(),"1");
 
         casinoPage.clearSearchInCasino();
 
@@ -59,7 +59,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"2");
+        assertEquals(casinoPage.getNumberFavouritesText(),"2");
 
         casinoPage.clearSearchInCasino();
 
@@ -74,7 +74,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"3");
+        assertEquals(casinoPage.getNumberFavouritesText(),"3");
 
         casinoPage.clearSearchInCasino();
 
@@ -89,7 +89,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"4");
+        assertEquals(casinoPage.getNumberFavouritesText(),"4");
 
         casinoPage.clearSearchInCasino();
 
@@ -104,7 +104,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"5");
+        assertEquals(casinoPage.getNumberFavouritesText(),"5");
 
         casinoPage.clearSearchInCasino();
 
@@ -117,7 +117,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
-        assertEquals(casinoPage.getNumberFavourites().getText(),"6");
+        assertEquals(casinoPage.getNumberFavouritesText(),"6");
         casinoPage.clearSearchInCasino();
 
     }
@@ -126,9 +126,9 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
     //
     public void numberFavouritesAfterLogin() {
 
-        casinoPage.login("olegeng60","Password2");
+        casinoPage.login("olegautotest","Password1");
         casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
-        assertEquals(casinoPage.getNumberFavourites().getText(),"6");
+        assertEquals(casinoPage.getNumberFavouritesText(),"6");
 
     }
 
@@ -139,10 +139,10 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
         casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
 
         for (int i =1;i<7;i++){
-            casinoPage.getFavouriteForFirstElementSearchPage().click();
+            casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementSearchPage());
         }
 
-        assertEquals(casinoPage.getNumberFavourites().getText(),"0");
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
 
     }
 

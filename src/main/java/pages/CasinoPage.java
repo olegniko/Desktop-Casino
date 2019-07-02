@@ -46,15 +46,18 @@ public  class CasinoPage extends MainPage {
         return numberFavourites;
     }
 
+    public String getNumberFavouritesText(){return numberFavourites.getText();}
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button")
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button/svg-button[1]")
     protected WebElement FavouriteForFirstElementSearchPage;
 
     public WebElement getFavouriteForFirstElementSearchPage(){
         return FavouriteForFirstElementSearchPage;
     }
 
-
+//*[@id="casino_app"]/div/div/div/div[2]/section/lazy-load-block/casino-game/div/div/div[2]/button
+//*[@id="casino_app"]/div/div/div/div[2]/section/lazy-load-block/casino-game[1]/div/div/div[2]/button/svg-button[1]
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[1]/div/div/div[2]/button")
     protected WebElement FavouriteForFirstElementInCategory;
@@ -143,7 +146,7 @@ public  class CasinoPage extends MainPage {
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/div/h1")
     protected WebElement SearchResult;
 
-    public String getSearchResult(){
+    public String getSearchResultText(){
         return SearchResult.getText();
     }
 
@@ -184,12 +187,18 @@ public  class CasinoPage extends MainPage {
     }
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button")
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]")
     protected WebElement OtherDropDown;
 
     public WebElement getOtherDropDownElement(){
         return OtherDropDown;
     }
+
+    public String getOtherDropDownText(){
+        return OtherDropDown.getText();
+    }
+
+    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]
 
     //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
 

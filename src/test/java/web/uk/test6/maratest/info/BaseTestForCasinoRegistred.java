@@ -23,7 +23,7 @@ public class BaseTestForCasinoRegistred {
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
-        casinoPage.login("olegeng60","Password2");
+        casinoPage.login("olegautotest","Password1");
         casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
 
     }

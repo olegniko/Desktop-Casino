@@ -14,9 +14,9 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationSportInHeader() {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
-        Assert.assertNotNull(casinoPage.getSportLabelHeader());
+        Assert.assertNotNull(casinoPage.getSportLabelHeaderText());
         assertTrue(casinoPage.getSportLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getSportLabelHeader(),exampleBundle.getString("sport_label_header"));
+        assertEquals(casinoPage.getSportLabelHeaderText(),exampleBundle.getString("sport_label_header"));
 
     }
 
@@ -25,7 +25,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationLiveInHeader() {
 
         assertTrue(casinoPage.getLiveLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getLiveLabelHeader(),exampleBundle.getString("live_label_header"));
+        assertEquals(casinoPage.getLiveLabelHeaderText(),exampleBundle.getString("live_label_header"));
 
     }
 
@@ -34,7 +34,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationTotoInHeader() {
 
         assertTrue(casinoPage.getTotoLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getTotoLabelHeader(),exampleBundle.getString("toto_label_header"));
+        assertEquals(casinoPage.getTotoLabelHeaderText(),exampleBundle.getString("toto_label_header"));
 
     }
 
@@ -43,7 +43,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationCasinoInHeader() {
 
         assertTrue(casinoPage.getCasinoLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getCasinoLabelHeader(),exampleBundle.getString("casino_label_header"));
+        assertEquals(casinoPage.getCasinoLabelHeaderText(),exampleBundle.getString("casino_label_header"));
 
     }
 
@@ -52,7 +52,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationLiveCasinoInHeader() {
 
         assertTrue(casinoPage.getLiveCasinoLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getLiveCasinoLabelHeader(),exampleBundle.getString("live_casino_label_header"));
+        assertEquals(casinoPage.getLiveCasinoLabelHeaderText(),exampleBundle.getString("live_casino_label_header"));
 
     }
 
@@ -61,7 +61,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationConstructorCasinoInHeader() {
 
         assertTrue(casinoPage.getConstructorLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getConstructorLabelHeader(),exampleBundle.getString("constructor_label_header"));
+        assertEquals(casinoPage.getConstructorLabelHeaderText(),exampleBundle.getString("constructor_label_header"));
 
     }
 
@@ -70,7 +70,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationBingoInHeader() {
 
         assertTrue(casinoPage.getBingoLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getBingoLabelHeader(),exampleBundle.getString("bingo_label_header"));
+        assertEquals(casinoPage.getBingoLabelHeaderText(),exampleBundle.getString("bingo_label_header"));
 
     }
 
@@ -79,7 +79,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationFinancialInHeader() {
 
         assertTrue(casinoPage.getFinancialsLabelHeaderElement().isDisplayed());
-        assertEquals(casinoPage.getFinancialsLabelHeader(),exampleBundle.getString("financial_label_header"));
+        assertEquals(casinoPage.getFinancialsLabelHeaderText(),exampleBundle.getString("financial_label_header"));
 
     }
 
@@ -88,7 +88,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationLostPassword() {
 
         assertTrue(casinoPage.getLostPasswordElement().isDisplayed());
-        assertEquals(casinoPage.getLostPassword(),exampleBundle.getString("lost_password"));
+        assertEquals(casinoPage.getLostPasswordText(),exampleBundle.getString("lost_password"));
 
     }
 
@@ -97,7 +97,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationHelp() {
 
         assertTrue(casinoPage.getHelpElement().isDisplayed());
-        assertEquals(casinoPage.getHelp(),exampleBundle.getString("help"));
+        assertEquals(casinoPage.getHelpText(),exampleBundle.getString("help"));
 
     }
 
@@ -106,7 +106,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationLanguage() {
 
         assertTrue(casinoPage.getLanguageElement().isDisplayed());
-        assertEquals(casinoPage.getLanguage(),exampleBundle.getString("language"));
+        assertEquals(casinoPage.getLanguageText(),exampleBundle.getString("language"));
 
     }
 
@@ -115,7 +115,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationResults() {
 
         assertTrue(casinoPage.getResultsElement().isDisplayed());
-        assertEquals(casinoPage.getResults(),exampleBundle.getString("results"));
+        assertEquals(casinoPage.getResultsText(),exampleBundle.getString("results"));
 
     }
 
@@ -124,7 +124,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationSettings() {
 
         assertTrue(casinoPage.getSettingsElement().isDisplayed());
-        assertEquals(casinoPage.getSettings(),exampleBundle.getString("settings"));
+        assertEquals(casinoPage.getSettingsText(),exampleBundle.getString("settings"));
 
     }
 
@@ -150,7 +150,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationAboutUs() {
 
         assertTrue(casinoPage.getAboutUsElement().isDisplayed());
-        assertEquals(casinoPage.getAboutUs(), exampleBundle.getString("about_us"));
+        assertEquals(casinoPage.getAboutUsText(), exampleBundle.getString("about_us"));
 
     }
 
@@ -159,7 +159,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationPrivacyPolicy() {
 
         assertTrue(casinoPage.getPrivacyPolicyElement().isDisplayed());
-        assertEquals(casinoPage.getPrivacyPolicy(), exampleBundle.getString("privacy_policy"));
+        assertEquals(casinoPage.getPrivacyPolicyText(), exampleBundle.getString("privacy_policy"));
 
     }
 
@@ -168,7 +168,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationResponsibleGambling() {
 
         assertTrue(casinoPage.getResponsibleGamblingElement().isDisplayed());
-        assertEquals(casinoPage.getResponsibleGambling(), exampleBundle.getString("responsible_gambling"));
+        assertEquals(casinoPage.getResponsibleGamblingText(), exampleBundle.getString("responsible_gambling"));
 
     }
 
@@ -177,7 +177,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationTermsAndConditions() {
 
         assertTrue(casinoPage.getTermsAndConditionsElement().isDisplayed());
-        assertEquals(casinoPage.getTermsAndConditions(), exampleBundle.getString("terms_and_conditions"));
+        assertEquals(casinoPage.getTermsAndConditionsText(), exampleBundle.getString("terms_and_conditions"));
 
     }
 
@@ -186,7 +186,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationContactUs() {
 
         assertTrue(casinoPage.getContactUsElement().isDisplayed());
-        assertEquals(casinoPage.getContactUs(), exampleBundle.getString("contact_us"));
+        assertEquals(casinoPage.getContactUsText(), exampleBundle.getString("contact_us"));
 
     }
 
@@ -195,7 +195,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationPayments() {
 
         assertTrue(casinoPage.getPaymentsElement().isDisplayed());
-        assertEquals(casinoPage.getPayments(), exampleBundle.getString("payments"));
+        assertEquals(casinoPage.getPaymentsText(), exampleBundle.getString("payments"));
 
     }
 
@@ -204,7 +204,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     public void translationMobileSite() {
 
         assertTrue(casinoPage.getMobileSiteElement().isDisplayed());
-        assertEquals(casinoPage.getMobileSite(), exampleBundle.getString("mobile_site"));
+        assertEquals(casinoPage.getMobileSiteText(), exampleBundle.getString("mobile_site"));
 
     }
 
