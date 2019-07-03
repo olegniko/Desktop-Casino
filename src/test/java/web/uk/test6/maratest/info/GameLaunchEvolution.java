@@ -13,7 +13,7 @@ public class GameLaunchEvolution extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("olegEvolutionAutotest");
 
-        casinoPage.getFavouriteForFirstElementSearchPage().click();
+        casinoPage.getFavouriteForFirstElementOfSix().click();
 
     }
 }

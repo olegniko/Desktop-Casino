@@ -16,7 +16,7 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
         casinoPage.enterSymbolsToSearch("12");
 
-        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("request_too_short"));
+        assertEquals(casinoPage.getSearchResultText(),exampleBundle.getString("request_too_short"));
 
         casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
@@ -31,7 +31,7 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
         casinoPage.enterSymbolsToSearch("ddd");
 
-        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("no_result"));
+        assertEquals(casinoPage.getSearchResultText(),exampleBundle.getString("no_result"));
 
         casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 

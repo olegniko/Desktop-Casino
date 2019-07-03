@@ -49,65 +49,57 @@ public  class CasinoPage extends MainPage {
     public String getNumberFavouritesText(){return numberFavourites.getText();}
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game[1]/div/div/div[2]/button/svg-button[1]")
-    protected WebElement FavouriteForFirstElementSearchPage;
 
-    public WebElement getFavouriteForFirstElementSearchPage(){
-        return FavouriteForFirstElementSearchPage;
-    }
 
-//*[@id="casino_app"]/div/div/div/div[2]/section/lazy-load-block/casino-game/div/div/div[2]/button
-//*[@id="casino_app"]/div/div/div/div[2]/section/lazy-load-block/casino-game[1]/div/div/div[2]/button/svg-button[1]
+    @FindBy( css = "[index=\"0\"] button")
+    protected WebElement FavouriteForFirstElementOfSix;
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[1]/div/div/div[2]/button")
-    protected WebElement FavouriteForFirstElementInCategory;
-
-    public WebElement getFavouriteForFirstElementInCategory(){
-        return FavouriteForFirstElementInCategory;
+    public WebElement getFavouriteForFirstElementOfSix(){
+        return FavouriteForFirstElementOfSix;
     }
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[2]/div/div/div[2]/button")
-    protected WebElement FavouriteForSecondElementInCategory;
+    @FindBy( css = "[index=\"1\"] button")
+    protected WebElement FavouriteForSecondElementOfSix;
 
-    public WebElement getFavouriteForSecondElementInCategory(){
-        return FavouriteForSecondElementInCategory;
+    public WebElement getFavouriteForSecondElementOfSix(){
+        return FavouriteForSecondElementOfSix;
     }
 
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[3]/div/div/div[2]/button")
-    protected WebElement FavouriteForThirdElementInCategory;
+    @FindBy( css = "[index=\"2\"] button")
+    protected WebElement FavouriteForThirdElementOfSix;
 
-    public WebElement getFavouriteForThirdElementInCategory(){
-        return FavouriteForThirdElementInCategory;
+    public WebElement getFavouriteForThirdElementOfSix(){
+        return FavouriteForThirdElementOfSix;
     }
 
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[4]/div/div/div[2]/button")
-    protected WebElement FavouriteForForthElementInCategory;
+    @FindBy( css = "[index=\"3\"] button")
+    protected WebElement FavouriteForForthElementOfSix;
 
-    public WebElement getFavouriteForForthElementInCategory(){
-        return FavouriteForForthElementInCategory;
+    public WebElement getFavouriteForForthElementOfSix(){
+        return FavouriteForForthElementOfSix;
     }
 
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[5]/div/div/div[2]/button")
-    protected WebElement FavouriteForFifthElementInCategory;
+    @FindBy( css = "[index=\"4\"] button")
+    protected WebElement FavouriteForFifthElementOfSix;
 
-    public WebElement getFavouriteForFifthElementInCategory(){
-        return FavouriteForFifthElementInCategory;
+    public WebElement getFavouriteForFifthElementOfSix(){
+        return FavouriteForFifthElementOfSix;
     }
 
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/category-component/section[1]/lazy-load-block/casino-game[6]/div/div/div[2]/button")
-    protected WebElement FavouriteForSixthElementInCategory;
+    @FindBy( css = "[index=\"5\"] button")
+    protected WebElement FavouriteForSixthElementOfSix;
 
-    public WebElement getFavouriteForSixthElementInCategory(){
-        return FavouriteForSixthElementInCategory;
+    public WebElement getFavouriteForSixthElementOfSix(){
+        return FavouriteForSixthElementOfSix;
     }
 
 
@@ -149,6 +141,7 @@ public  class CasinoPage extends MainPage {
     public String getSearchResultText(){
         return SearchResult.getText();
     }
+
 
 
     @FindBy(xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/casino-search-page/section/lazy-load-block/casino-game/div/div/div[2]/div")
@@ -198,11 +191,7 @@ public  class CasinoPage extends MainPage {
         return OtherDropDown.getText();
     }
 
-    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]
 
-    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
-
-//*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button
 
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]")

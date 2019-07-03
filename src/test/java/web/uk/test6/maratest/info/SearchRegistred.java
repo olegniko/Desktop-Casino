@@ -16,7 +16,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("12");
 
-        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("request_too_short"));
+        assertEquals(casinoPage.getSearchResultText(),exampleBundle.getString("request_too_short"));
 
         casinoPage.clearSearchInCasino();
 
@@ -31,7 +31,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
         casinoPage.enterSymbolsToSearch("ddd");
 
-        assertEquals(casinoPage.getSearchResult(),exampleBundle.getString("no_result"));
+        assertEquals(casinoPage.getSearchResultText(),exampleBundle.getString("no_result"));
 
         casinoPage.clearSearchInCasinoByCross();
 

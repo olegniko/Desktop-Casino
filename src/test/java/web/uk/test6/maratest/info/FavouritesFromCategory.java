@@ -6,123 +6,83 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
-public class FavouritesFromCategory extends BaseTestForCasinoUnregistred {
-
-
-    @Test(priority=1)
-    //
-    public void favouritesIsPresent() {
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
+public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
 
 
-
-        assertTrue(casinoPage.getFavourites().isDisplayed());
-
-    }
-
-    @Test(priority=2)
-    //
-    public void favouritesNumberIsPresent() {
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        assertTrue(casinoPage.getNumberFavourites().isDisplayed());
-
-    }
-
-    @Test(priority=3)
-    // 0 for unregestred user
-    public void favouritesNumberIs0() {
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-
-    }
-
-
-
-    @Test (priority=4)
+    @Test (priority=1)
     //
     public void addIssoftInFavouritesFromCategory() {
 
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFirstElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementInCategory()) ;
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"1");
 
     }
 
-    @Test (priority=5)
+    @Test (priority=2)
     //
     public void addYggdrasilInFavouritesFromCategory() {
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSecondElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSecondElementInCategory()) ;
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"2");
 
     }
 
-    @Test (priority=6)
+    @Test (priority=3)
     //
     public void addMgInFavouritesFromCategory() {
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForThirdElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForThirdElementInCategory()) ;
+
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"3");
 
     }
 
-    @Test (priority=7)
+    @Test (priority=4)
     //
     public void addPlayngoInFavouritesFromCategory() {
 
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForForthElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForForthElementInCategory()) ;
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"4");
 
     }
 
-    @Test (priority=8)
+    @Test (priority=5)
     //
     public void addRelaxInFavouritesFromCategory() {
 
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFifthElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFifthElementInCategory()) ;
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"5");
 
     }
 
-    @Test (priority=9)
+    @Test (priority=6)
     //
     public void addEvolutionInFavouritesFromCategory() {
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSixthElementInCategory()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSixthElementInCategory()) ;
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
 
         assertEquals(casinoPage.getNumberFavouritesText(),"6");
 
     }
 
-    @Test (priority=10)
+    @Test (priority=7)
     //
     public void numberFavouritesAfterLogin() {
 
@@ -132,15 +92,19 @@ public class FavouritesFromCategory extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test (priority=11)
+    @Test (priority=8)
     //
     public void eraseFavouritesAfterLogin() {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
 
-        for (int i =1;i<7;i++){
-            casinoPage.getFavouriteForFirstElementInCategory().click();
-        }
+
+        casinoPage.getFavouriteForSixthElementOfSix().click();
+        casinoPage.getFavouriteForFifthElementOfSix().click();
+        casinoPage.getFavouriteForForthElementOfSix().click();
+        casinoPage.getFavouriteForThirdElementOfSix().click();
+        casinoPage.getFavouriteForSecondElementOfSix().click();
+        casinoPage.getFavouriteForFirstElementOfSix().click();
 
         assertEquals(casinoPage.getNumberFavouritesText(),"0");
 
