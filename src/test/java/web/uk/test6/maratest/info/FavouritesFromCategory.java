@@ -12,7 +12,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=1)
     //
-    public void addIssoftInFavouritesFromCategory() {
+    public void addIssoftInFavouritesFromCategory() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
@@ -26,7 +26,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=2)
     //
-    public void addYggdrasilInFavouritesFromCategory() {
+    public void addYggdrasilInFavouritesFromCategory() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
@@ -37,7 +37,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=3)
     //
-    public void addMgInFavouritesFromCategory() {
+    public void addMgInFavouritesFromCategory() throws InterruptedException {
 
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
@@ -49,7 +49,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=4)
     //
-    public void addPlayngoInFavouritesFromCategory() {
+    public void addPlayngoInFavouritesFromCategory() throws InterruptedException {
 
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
@@ -61,7 +61,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=5)
     //
-    public void addRelaxInFavouritesFromCategory() {
+    public void addRelaxInFavouritesFromCategory() throws InterruptedException {
 
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
@@ -73,7 +73,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
 
     @Test (priority=6)
     //
-    public void addEvolutionInFavouritesFromCategory() {
+    public void addEvolutionInFavouritesFromCategory() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;

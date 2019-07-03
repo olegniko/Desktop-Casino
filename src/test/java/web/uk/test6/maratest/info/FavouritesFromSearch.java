@@ -37,7 +37,7 @@ public class FavouritesFromSearch extends BaseTestForCasinoUnregistred {
 
     @Test (priority=4)
     //
-    public void addMgInFavourites() {
+    public void addMgInFavourites() throws InterruptedException {
 
 
         casinoPage.enterSymbolsToSearch("olegMGautotest");

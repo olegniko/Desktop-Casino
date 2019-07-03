@@ -11,7 +11,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     @Test(priority=20)
     //наличие и перевод Sport in Header
-    public void translationSportInHeader() {
+    public void translationSportInHeader() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         Assert.assertNotNull(casinoPage.getSportLabelHeaderText());

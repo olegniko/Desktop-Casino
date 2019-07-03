@@ -10,7 +10,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=50)
     //
-    public void enter_2_symbols_in_search() {
+    public void enter_2_symbols_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
@@ -24,7 +24,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=51)
     //
-    public void enter_3_incorrect_symbols_in_search()  {
+    public void enter_3_incorrect_symbols_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
@@ -39,7 +39,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=52)
     //
-    public void enter_correct_symbols_for_MG_in_search() {
+    public void enter_correct_symbols_for_MG_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.enterSymbolsToSearch("olegMGautotest");
@@ -52,7 +52,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=53)
     //
-    public void enter_correct_symbols_for_Evolution_in_search() {
+    public void enter_correct_symbols_for_Evolution_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
@@ -67,7 +67,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=54)
     //
-    public void enter_correct_symbols_for_Issoft_in_search() {
+    public void enter_correct_symbols_for_Issoft_in_search() throws InterruptedException {
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
         casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
@@ -80,7 +80,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=55)
     //
-    public void enter_correct_symbols_for_Relax_in_search() {
+    public void enter_correct_symbols_for_Relax_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.enterSymbolsToSearch("olegRelaxAutotest");
@@ -93,7 +93,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=56)
     //
-    public void enter_correct_symbols_for_Yggdrasil_in_search() {
+    public void enter_correct_symbols_for_Yggdrasil_in_search() throws InterruptedException {
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
         casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
@@ -106,7 +106,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=57)
     //
-    public void enter_correct_symbols_for_Playngo_in_search() {
+    public void enter_correct_symbols_for_Playngo_in_search() throws InterruptedException {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
@@ -119,7 +119,7 @@ public class SearchRegistred extends BaseTestForCasinoRegistred {
 
     @Test (priority=58)
     //
-    public void after_refresh_in_search() {
+    public void after_refresh_in_search() throws InterruptedException {
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
 
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
