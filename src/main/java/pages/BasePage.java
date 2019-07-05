@@ -58,17 +58,16 @@ public abstract  class BasePage {
 
 	public void clickIfElementIsClickable(WebElement element1 ){
 		WebDriverWait wait = new WebDriverWait(driver, 25);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(element1));
-		element.click();
 
+		wait.until(ExpectedConditions.elementToBeClickable(element1));
+		
+		element1.click();
 	}
 
-	public void waitIfElementIsClickable(WebElement element1 ) throws InterruptedException {
+	public void waitIfElementIsClickable(WebElement element1 ) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(element1));
 
-
-
+		wait.until(ExpectedConditions.elementToBeClickable(element1));
 	}
 
 

@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderAndFooterTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderAndFooterTranslation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTestForAutotestCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTestForAutotestCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Full Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Full Regression.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,10 +24,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Full Regression.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+            <state relative-caret-position="297">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,25 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="142" column="30" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="348" selection-start-line="348" selection-end-line="348" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -74,40 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderAndFooterTranslation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForAutotestCategory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -116,20 +74,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="119">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+            <state relative-caret-position="119">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/EdgeDriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -147,6 +135,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>mainPage</find>
+      <find>waitIfElementIsClickable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,18 +184,18 @@
         <option value="$PROJECT_DIR$/src/test/resources/Chrome-EN-AddFavouritesUnregistred.xml" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Chrome-EN-Favourites.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/Full Regression.xml" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderAndFooterTranslation.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchUnregistred.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromSearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java" />
-        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForAutotestCategory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Chrome-EN-Favourites.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/Full Regression.xml" />
       </list>
     </option>
   </component>
@@ -318,6 +307,32 @@
             <path>
               <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenium-support-3.141.59.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenium-support-3.141.59.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_from_git_to-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.seleniumhq.selenium:selenium-support:3.141.59" type="70bed36:NamedLibraryElementNode" />
+              <item name="selenium-support-3.141.59.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,6 +509,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FavouritesFromCategory.addIssoftInFavouritesFromCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_from_git_to-git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
+      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.FavouritesFromCategory" />
+      <option name="METHOD_NAME" value="addIssoftInFavouritesFromCategory" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FavouritesFromSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_from_git_to-git" />
       <extension name="coverage">
@@ -512,30 +545,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeaderAndFooterTranslation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_from_git_to-git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="web.uk.test6.maratest.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="web.uk.test6.maratest.info" />
-      <option name="MAIN_CLASS_NAME" value="web.uk.test6.maratest.info.HeaderAndFooterTranslation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Full Regression.xml" />
         <item itemvalue="TestNG.C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" />
+        <item itemvalue="TestNG.FavouritesFromCategory.addIssoftInFavouritesFromCategory" />
         <item itemvalue="TestNG.FavouritesFromSearch" />
         <item itemvalue="TestNG.FavouritesFromCategory" />
-        <item itemvalue="TestNG.HeaderAndFooterTranslation" />
       </list>
     </recent_temporary>
   </component>
@@ -739,38 +755,45 @@
       <option name="project" value="LOCAL" />
       <updated>1562159219236</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="commit add refactor code">
+      <created>1562161473756</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1562161473756</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.03 at 16h 05m 14s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 04m 07s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 05m 58s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 07m 31s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 09m 15s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 11m 09s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.03 at 17h 14m 52s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Full Regression.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.03 at 16h 13m 07s.xml">
+    <history-entry file="FavouritesFromCategory_addIssoftInFavouritesFromCategory - 2019.07.03 at 17h 24m 39s.xml">
+      <configuration name="FavouritesFromCategory.addIssoftInFavouritesFromCategory" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 17h 30m 03s.xml">
+      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.04 at 13h 26m 14s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Full Regression.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 15m 02s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 15m 57s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 21m 33s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 32m 57s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 33m 50s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 35m 42s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Chrome-EN-Favourites_xml - 2019.07.03 at 16h 37m 25s.xml">
-      <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Chrome-EN-Favourites.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.03 at 16h 42m 53s.xml">
+    <history-entry file="C__Users_nikulenko_o_Desktop_test_from_git_to-git_src_test_resources_Full_Regression_xml - 2019.07.05 at 13h 07m 45s.xml">
       <configuration name="C:/Users/nikulenko.o/Desktop/test_from_git_to-git/src/test/resources/Full Regression.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -856,7 +879,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit 24/04/2018" />
     <MESSAGE value="commit1 24/04/2018" />
     <MESSAGE value="commit 30/04/2018" />
     <MESSAGE value="commit 30/04/2018.2" />
@@ -881,9 +903,20 @@
     <MESSAGE value="commit Add Favorites from Category.2" />
     <MESSAGE value="commit change methods name to methods name+text" />
     <MESSAGE value="commit add css selectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit add css selectors" />
+    <MESSAGE value="commit add refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit add refactor code" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="((WebElement)driver.findElementsById(&quot;any_message&quot;).get(0)).findElements(By.tagName(&quot;p&quot;)).get(0)" language="JAVA" custom="org.openqa.selenium.WebElement" />
@@ -963,31 +996,25 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>casinoPage</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>casinoPage.getOtherDropDownElement()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/BaseTest.class" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Footer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/util/annotations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-Several-Tests.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties">
       <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
@@ -997,34 +1024,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/NoSuchElementException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0-sources.jar!/org/openqa/selenium/remote/ErrorHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="881">
           <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-717">
-          <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,44 +1190,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Full Regression.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Favourites.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1248,16 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/SearchRegistred.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1265,10 +1224,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoRegistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="413" column="8" lean-forward="true" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/FluentWait.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="101" column="44" lean-forward="true" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/BaseTestForCasinoUnregistred.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Chrome-EN-Favourites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/CasinoPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+        <state relative-caret-position="291">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1287,18 +1294,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="986">
+          <caret line="66" column="59" lean-forward="true" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/EdgeDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Full Regression.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,13 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FavouritesFromLobby.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

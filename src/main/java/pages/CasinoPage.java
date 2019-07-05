@@ -104,6 +104,32 @@ public  class CasinoPage extends MainPage {
 
 
 
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section[1]/div/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForTop;
+
+    public WebElement getFavouriteForTop(){
+        return FavouriteForTop;
+    }
+
+
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section[2]/div/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForNew;
+
+    public WebElement getFavouriteForNew(){
+        return FavouriteForNew;
+    }
+
+
+
+    @FindBy(  xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section[3]/div/casino-game[1]/div/div/div[2]/button")
+    protected WebElement FavouriteForFeatured;
+
+    public WebElement getFavouriteForFeatured(){
+        return FavouriteForFeatured;
+    }
+
+
+
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")
     protected WebElement CrossInSearch;
 

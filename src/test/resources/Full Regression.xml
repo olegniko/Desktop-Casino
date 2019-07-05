@@ -9,15 +9,7 @@
 
 
 
-    <test name="unregistred">
-        <classes>
 
-
-            <class name="web.uk.test6.maratest.info.FavouritesFromSearch"/>
-
-
-        </classes>
-    </test>
 
     <test name="unregistred1">
         <classes>
@@ -29,8 +21,18 @@
         </classes>
     </test>
 
-
     <test name="unregistred2">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.FavouritesFromSearch"/>
+
+
+        </classes>
+    </test>
+
+
+    <test name="unregistred3">
         <classes>
 
 
@@ -38,10 +40,19 @@
 
         </classes>
     </test>
-    <test name="unregistred3">
+    <test name="unregistred4">
         <classes>
 
             <class name="web.uk.test6.maratest.info.SearchUnregistred"/>
+
+
+        </classes>
+    </test>
+
+    <test name="unregistred5">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.FavouritesFromLobby"/>
 
 
         </classes>
