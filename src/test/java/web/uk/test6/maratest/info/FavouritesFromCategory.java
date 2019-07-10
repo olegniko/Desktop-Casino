@@ -14,8 +14,7 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
     //
     public void addIssoftInFavouritesFromCategory() throws InterruptedException {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
+
 
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
@@ -95,9 +94,6 @@ public class FavouritesFromCategory extends BaseTestForAutotestCategory {
     @Test (priority=8)
     //
     public void eraseFavouritesAfterLogin() {
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
-
 
         casinoPage.getFavouriteForSixthElementOfSix().click();
         casinoPage.getFavouriteForFifthElementOfSix().click();

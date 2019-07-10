@@ -27,11 +27,15 @@ public class BaseTestForAutotestCategory {
         casinoPage = new CasinoPage(browser);
         casinoPage.open(locale);
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
+
         casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
         casinoPage.waitIfElementIsClickable(casinoPage.getAutotestCategory());
         casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
+        casinoPage.waitIfElementIsClickable(casinoPage.getAutotestCategory());
+        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
 
     }
 

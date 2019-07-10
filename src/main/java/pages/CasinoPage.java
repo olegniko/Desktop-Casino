@@ -110,7 +110,9 @@ public  class CasinoPage extends MainPage {
     public WebElement getFavouriteForTop(){
         return FavouriteForTop;
     }
+//*[@id="casino_app"]/div/div/div/div[2]/section[1]/div/casino-game[1]/div/div/div[2]/button
 
+    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button/div
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section[2]/div/casino-game[1]/div/div/div[2]/button")
     protected WebElement FavouriteForNew;
@@ -206,7 +208,7 @@ public  class CasinoPage extends MainPage {
     }
 
 
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]")
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button/div")
     protected WebElement OtherDropDown;
 
     public WebElement getOtherDropDownElement(){
@@ -219,13 +221,22 @@ public  class CasinoPage extends MainPage {
 
 
 
-
-    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]")
+    @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/div[2]/div/div/div[4]/svg-button/div")
     protected WebElement AutotestCategory;
 
     public WebElement getAutotestCategory(){
         return AutotestCategory;
     }
+
+
+
+    @FindBy( xpath = "//*[@id=\"logoutLink\"]")
+    protected WebElement Logout;
+
+    public WebElement getLogoutElement(){
+        return Logout;
+    }
+
 
 
 

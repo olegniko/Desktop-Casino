@@ -25,7 +25,7 @@
         <classes>
 
 
-            <class name="web.uk.test6.maratest.info.FavouritesFromSearch"/>
+            <class name="web.uk.test6.maratest.info.FavouritesFromSearchAndLobby"/>
 
 
         </classes>
@@ -49,14 +49,6 @@
         </classes>
     </test>
 
-    <test name="unregistred5">
-        <classes>
-
-            <class name="web.uk.test6.maratest.info.FavouritesFromLobby"/>
-
-
-        </classes>
-    </test>
 
 
     <test name="registred">
