@@ -25,40 +25,23 @@
         <classes>
 
 
-            <class name="web.uk.test6.maratest.info.FavouritesFromSearchAndLobby"/>
+            <class name="web.uk.test6.maratest.info.Favourites"/>
 
 
         </classes>
     </test>
 
 
-    <test name="unregistred3">
-        <classes>
 
-
-            <class name="web.uk.test6.maratest.info.FavouritesFromCategory"/>
-
-        </classes>
-    </test>
     <test name="unregistred4">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.SearchUnregistred"/>
+            <class name="web.uk.test6.maratest.info.Search"/>
 
 
         </classes>
     </test>
 
-
-
-    <test name="registred">
-        <classes>
-
-            <class name="web.uk.test6.maratest.info.SearchRegistred"/>
-
-
-        </classes>
-    </test>
 
 </suite>
 

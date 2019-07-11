@@ -6,10 +6,10 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
-public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
+public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
 
-    @Test(priority=20)
+    @Test(priority=1)
     //наличие и перевод Sport in Header
     public void translationSportInHeader() throws InterruptedException {
 
@@ -20,7 +20,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=21)
+    @Test(priority=2)
     //наличие и перевод Live in Header
     public void translationLiveInHeader() {
 
@@ -29,7 +29,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=22)
+    @Test(priority=3)
     //наличие и перевод Toto in Header
     public void translationTotoInHeader() {
 
@@ -38,7 +38,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=23)
+    @Test(priority=4)
     //наличие и перевод Casino in Header
     public void translationCasinoInHeader() {
 
@@ -47,7 +47,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=24)
+    @Test(priority=5)
     //наличие и перевод Live Casino in Header
     public void translationLiveCasinoInHeader() {
 
@@ -56,7 +56,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=25)
+    @Test(priority=6)
     //наличие и перевод Constructor in Header
     public void translationConstructorCasinoInHeader() {
 
@@ -65,7 +65,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=26)
+    @Test(priority=7)
     //наличие и перевод Bingo in Header
     public void translationBingoInHeader() {
 
@@ -74,7 +74,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=27)
+    @Test(priority=8)
     //наличие и перевод Financials in Header
     public void translationFinancialInHeader() {
 
@@ -83,7 +83,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=28)
+    @Test(priority=9)
     //наличие и перевод Lost Password in Header
     public void translationLostPassword() {
 
@@ -92,7 +92,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=29)
+    @Test(priority=10)
     //наличие и перевод Help in Header
     public void translationHelp() {
 
@@ -101,7 +101,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=30)
+    @Test(priority=11)
     //наличие и перевод Language in Header
     public void translationLanguage() {
 
@@ -110,7 +110,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=31)
+    @Test(priority=12)
     //наличие и перевод Results&Statistic in Header
     public void translationResults() {
 
@@ -119,7 +119,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=32)
+    @Test(priority=13)
     //наличие и перевод Settings in Header
     public void translationSettings() {
 
@@ -128,7 +128,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=33)
+    @Test(priority=14)
     //наличие Mobile in HeaderAndFooterTranslation
     public void isMobilePresent() {
 
@@ -137,7 +137,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
     }
 
 
-    @Test(priority=34)
+    @Test(priority=15)
     //наличие Marathon in Header
     public void isMarathonPresent() {
 
@@ -145,7 +145,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=35)
+    @Test(priority=16)
     //наличие и перевод AboutUs in Footer
     public void translationAboutUs() {
 
@@ -154,7 +154,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=36)
+    @Test(priority=17)
     //наличие и перевод PrivacyPolicy in Footer
     public void translationPrivacyPolicy() {
 
@@ -163,7 +163,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=37)
+    @Test(priority=18)
     //наличие и перевод  Responsible Gaming in Footer
     public void translationResponsibleGambling() {
 
@@ -172,7 +172,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=38)
+    @Test(priority=19)
     //наличие  перевод Terms and Conditions in Footer
     public void translationTermsAndConditions() {
 
@@ -181,7 +181,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=39)
+    @Test(priority=20)
     //наличие и перевод Contact Us in Footer
     public void translationContactUs() {
 
@@ -190,7 +190,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=40)
+    @Test(priority=21)
     //наличие  и перевод Payments in Footer
     public void translationPayments() {
 
@@ -199,7 +199,7 @@ public class HeaderAndFooterTranslation extends BaseTestForCasinoUnregistred {
 
     }
 
-    @Test(priority=41)
+    @Test(priority=22)
     //наличие и перевод Mobile Site in Footer
     public void translationMobileSite() {
 

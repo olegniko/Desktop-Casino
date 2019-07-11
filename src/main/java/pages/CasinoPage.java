@@ -110,9 +110,7 @@ public  class CasinoPage extends MainPage {
     public WebElement getFavouriteForTop(){
         return FavouriteForTop;
     }
-//*[@id="casino_app"]/div/div/div/div[2]/section[1]/div/casino-game[1]/div/div/div[2]/button
 
-    //*[@id="casino_app"]/div/div/div/div[1]/nav/div[2]/casino-dropdown[1]/div/a/svg-button/div
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[2]/section[2]/div/casino-game[1]/div/div/div[2]/button")
     protected WebElement FavouriteForNew;
@@ -130,6 +128,14 @@ public  class CasinoPage extends MainPage {
         return FavouriteForFeatured;
     }
 
+
+    @FindBy( css = "#casino_app a.gi-casino-navbar__logo")
+    protected WebElement Lobby;
+
+    public WebElement getLobbyElement(){
+        return Lobby;
+    }
+//*[@id="casino_app"]/div/div/div/div[1]/nav/div[1]/a[1]
 
 
     @FindBy( xpath = "//*[@id=\"casino_app\"]/div/div/div/div[1]/nav/div[2]/casino-search-box/div/svg-button[2]/div")

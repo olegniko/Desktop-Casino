@@ -3,7 +3,7 @@ package web.uk.test6.maratest.info;
 import org.testng.annotations.Test;
 
 
-public class GameLaunchRelax extends BaseTestForCasinoRegistred {
+public class GameLaunchRelax extends BaseTestForCasino{
 
 
     @Test

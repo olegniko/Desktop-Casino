@@ -5,7 +5,7 @@ import static org.testng.Assert.assertEquals;
 
 
 
-public class SearchUnregistred extends BaseTestForCasinoUnregistred {
+public class Search extends BaseTestForCasino {
 
 
     @Test (priority=1)
@@ -101,7 +101,7 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=7)
     //
-    public void enter_correct_symbols_for_Yggdrasil_in_search() throws InterruptedException {
+    public void enterCorrectSymbolsForYggdrasilInSearch() throws InterruptedException {
 
 
         casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
@@ -116,7 +116,7 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=8)
     //
-    public void enter_correct_symbols_for_Playngo_in_search() throws InterruptedException {
+    public void enterCorrectSymbolsForPlayngoInSearch() throws InterruptedException {
 
 
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
@@ -131,7 +131,7 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
 
     @Test (priority=9)
     //
-    public void after_refresh_in_search() throws InterruptedException {
+    public void afterRefreshInSearch() throws InterruptedException {
 
 
         casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
@@ -143,6 +143,85 @@ public class SearchUnregistred extends BaseTestForCasinoUnregistred {
         casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
 
         casinoPage.clearSearchInCasino();
+
+    }
+    @Test (priority=10)
+    //
+    public void enter2SymbolsInSearchForLogined() throws InterruptedException {
+
+        casinoPage.login("olegautotest","Password1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
+        enter2SymbolsInSearch();
+    }
+
+    @Test (priority=11)
+    //
+    public void enter3IncorrectSymbolsInSearchforLogined() throws InterruptedException {
+
+        enter3IncorrectSymbolsInSearch();
+
+    }
+
+    @Test (priority=12)
+    //
+    public void enterCorrectSymbolsForMgInSearchForLogin() throws InterruptedException {
+
+        enterCorrectSymbolsForMgInSearch();
+
+
+    }
+
+    @Test (priority=13)
+    //
+    public void enterCorrectSymbolsForEvolutionInSearchForLogin() throws InterruptedException {
+
+
+        enterCorrectSymbolsForEvolutionInSearch();
+
+    }
+
+    @Test (priority=14)
+    //
+    public void enterCorrectSymbolsForIssoftInSearchForLogin() throws InterruptedException {
+
+
+        enterCorrectSymbolsForIssoftInSearch();
+
+    }
+
+    @Test (priority=15)
+    //
+    public void enterCorrectSymbolsForRelaxInSearchForLogin() throws InterruptedException {
+
+
+        enterCorrectSymbolsForRelaxInSearch();
+
+    }
+
+    @Test (priority=16)
+    //
+    public void enterCorrectSymbolsForYggdrasilInSearchForLogin() throws InterruptedException {
+
+
+        enterCorrectSymbolsForYggdrasilInSearch();
+
+    }
+
+    @Test (priority=17)
+    //
+    public void enterCorrectSymbolsForPlayngoInSearchForLogin() throws InterruptedException {
+
+
+        enterCorrectSymbolsForPlayngoInSearch();
+
+    }
+
+    @Test (priority=18)
+    //
+    public void afterRefreshInSearchForLogin() throws InterruptedException {
+
+
+        afterRefreshInSearch();
 
     }
 
