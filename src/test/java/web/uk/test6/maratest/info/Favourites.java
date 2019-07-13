@@ -37,294 +37,279 @@ public class Favourites extends BaseTestForCasino {
 
     @Test (priority=4)
     //
-    public void addMgInFavourites() throws InterruptedException {
+    public void addAndDeleteFromSearchForUnloggedFromFavourites() {
 
-
-        casinoPage.enterSymbolsToSearch("olegMGautotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"1");
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getCrossInSearch());
-
-        casinoPage.clearSearchInCasinoByCross();
+        addMgInFavouritesFromSearch("1");
+        addEvolutionInFavouritesFromSearch("2");
+        addIssoftInFavouritesFromSearch("3");
+        addRelaxInFavouritesFromSearch("4");
+        addYggdrasilInFavouritesFromSearch("5");
+        addPlayngoInFavouritesFromSearch("6");
+        eraseFavouritesFromFavourites("0");
 
     }
 
     @Test (priority=5)
     //
-    public void addEvolutionInFavourites() {
+    public void addAndDeleteFromsearchForUnlogged()  {
 
-
-        casinoPage.enterSymbolsToSearch("olegEvolutionAutotest");
-
+        addMgInFavouritesFromSearch("1");
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"2");
-
-        casinoPage.clearSearchInCasino();
-
+        addEvolutionInFavouritesFromSearch("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
+        addIssoftInFavouritesFromSearch("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
+        addRelaxInFavouritesFromSearch("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
+        addYggdrasilInFavouritesFromSearch("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
+        addPlayngoInFavouritesFromSearch("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
     }
 
     @Test (priority=6)
     //
-    public void addIssoftInFavourites() {
+    public void addAndDeleteFromCategoryForUnloggedFromFavourites() {
 
-
-        casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"3");
-
-        casinoPage.clearSearchInCasino();
+        openAutotestCategory();
+        addMgInFavouritesFromCategory("1");
+        addEvolutionInFavouritesFromCategory("2");
+        addIssoftInFavouritesFromCategory("3");
+        addRelaxInFavouritesFromCategory("4");
+        addYggdrasilInFavouritesFromCategory("5");
+        addPlayngoInFavouritesFromCategory("6");
+        eraseFavouritesFromFavourites("0");
 
     }
 
-    @Test (priority=7)
+   @Test (priority=7)
     //
-    public void addRelaxInFavourites() {
-
-
-        casinoPage.enterSymbolsToSearch("olegRelaxAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"4");
-
-        casinoPage.clearSearchInCasino();
-
+    public void addAndDeleteFromCategoryForUnlogged()  {
+        openAutotestCategory();
+        addMgInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
+        addEvolutionInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
+        addIssoftInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
+        addRelaxInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
+        addYggdrasilInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
+        addPlayngoInFavouritesFromCategory("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
     }
 
     @Test (priority=8)
     //
-    public void addYggdrasilInFavourites() {
+    public void addAndDeleteFromLobbyForUnloggedFromFavourites() {
 
-
-        casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"5");
-
-        casinoPage.clearSearchInCasino();
+        openLobby();
+        addTopInFavouritesFromLobby("1");
+        addNewInFavouritesFromLobby("2");
+        addFeaturedInFavouritesFromLobby("3");
+        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
+        casinoPage.getFavouriteForThirdElementOfSix().click();
+        casinoPage.getFavouriteForSecondElementOfSix().click();
+        casinoPage.getFavouriteForFirstElementOfSix().click();
 
     }
 
     @Test (priority=9)
     //
-    public void addPlayngoInFavourites() {
+    public void addAndDeleteFromLobbyForUnlogged()  {
 
-
-        casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
-        assertEquals(casinoPage.getNumberFavouritesText(),"6");
-        casinoPage.clearSearchInCasino();
-
+        openLobby();
+        addTopInFavouritesFromLobby("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForTop()) ;
+        addNewInFavouritesFromLobby("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForNew()) ;
+        addFeaturedInFavouritesFromLobby("1");
+        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFeatured()) ;
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
     }
 
     @Test (priority=10)
-    //
-    public void numberFavouritesAfterLogin() {
 
-        casinoPage.login("olegautotest","Password1");
-        casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
-        assertEquals(casinoPage.getNumberFavouritesText(),"6");
+    public void addMgInFavouritesFromSearch()  {
 
+        addMgInFavouritesFromSearch("1");
     }
 
     @Test (priority=11)
-    //
-    public void eraseFavouritesAfterLogin() {
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
+    public void addEvolutionInFavouritesFromSearch()  {
 
-
-        casinoPage.getFavouriteForSixthElementOfSix().click();
-        casinoPage.getFavouriteForFifthElementOfSix().click();
-        casinoPage.getFavouriteForForthElementOfSix().click();
-        casinoPage.getFavouriteForThirdElementOfSix().click();
-        casinoPage.getFavouriteForSecondElementOfSix().click();
-        casinoPage.getFavouriteForFirstElementOfSix().click();
-
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.waitIfElementIsClickable(casinoPage.getAutotestCategory());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
-
+        addEvolutionInFavouritesFromSearch("2");
     }
 
     @Test (priority=12)
-    //
-    public void addIssoftInFavouritesFromCategory() throws InterruptedException {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
-        casinoPage.waitIfElementIsClickable(casinoPage.getAutotestCategory());
-        casinoPage.clickIfElementIsClickable(casinoPage.getAutotestCategory());
+    public void addIssoftInFavouritesFromSearch()  {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"1");
-
+        addIssoftInFavouritesFromSearch("3");
     }
 
     @Test (priority=13)
-    //
-    public void addYggdrasilInFavouritesFromCategory() throws InterruptedException {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSecondElementOfSix()) ;
+    public void addRelaxInFavouritesFromSearch()  {
 
-        assertEquals(casinoPage.getNumberFavouritesText(),"2");
-
+        addRelaxInFavouritesFromSearch("4");
     }
 
     @Test (priority=14)
-    //
-    public void addMgInFavouritesFromCategory() throws InterruptedException {
 
+    public void addYggdrasilInFavouritesFromSearch()  {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForThirdElementOfSix()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"3");
-
+        addYggdrasilInFavouritesFromSearch("5");
     }
 
     @Test (priority=15)
-    //
-    public void addPlayngoInFavouritesFromCategory() throws InterruptedException {
 
+    public void addPlayngoInFavouritesFromSearch()  {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForForthElementOfSix()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"4");
-
+        addPlayngoInFavouritesFromSearch("6");
     }
+
 
     @Test (priority=16)
     //
-    public void addRelaxInFavouritesFromCategory() throws InterruptedException {
+    public void numberFavouritesAfterLoginTest()  {
 
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFifthElementOfSix()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"5");
-
+        numberFavouritesAfterLogin("6");
     }
+
+
 
     @Test (priority=17)
     //
-    public void addEvolutionInFavouritesFromCategory() throws InterruptedException {
+    public void eraseFavouritesFromFavouritesTest() {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForSixthElementOfSix()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"6");
-
+        eraseFavouritesFromFavourites("0");
+        openAutotestCategory();
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
     }
+
+
+
+
 
     @Test (priority=18)
     //
-    public void numberFavouritesAfterLogin2() {
+    public void addIssoftInFavouritesFromCategoryTest() {
 
-        casinoPage.login("olegautotest","Password1");
-        if (casinoPage.getOkInSuccessfullMessage()!=null){
-            casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
-        }
-        assertEquals(casinoPage.getNumberFavouritesText(),"6");
+        assertEquals(casinoPage.getNumberFavouritesText(),"0");
+        openAutotestCategory();
+        addIssoftInFavouritesFromCategory("1");
 
     }
 
     @Test (priority=19)
     //
-    public void eraseFavouritesAfterLogin2() {
+    public void addYggdrasilInFavouritesFromCategoryTest()  {
 
-        casinoPage.getFavouriteForSixthElementOfSix().click();
-        casinoPage.getFavouriteForFifthElementOfSix().click();
-        casinoPage.getFavouriteForForthElementOfSix().click();
-        casinoPage.getFavouriteForThirdElementOfSix().click();
-        casinoPage.getFavouriteForSecondElementOfSix().click();
-        casinoPage.getFavouriteForFirstElementOfSix().click();
+        addYggdrasilInFavouritesFromCategory("2");
 
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-        casinoPage.getLogoutElement().click();
     }
 
-
-    @Test(priority=20)
+    @Test (priority=20)
     //
-    public void addTopInFavouritesFromLobby() throws InterruptedException {
+    public void addMgInFavouritesFromCategoryTest()  {
 
-
-        casinoPage.getLobbyElement().click();
-        casinoPage.clickIfElementIsClickable(casinoPage.getLobbyElement());
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForTop()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForTop()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"1");
+        addMgInFavouritesFromCategory("3");
 
     }
 
     @Test (priority=21)
     //
-    public void addNewInFavouritesFromLobby() throws InterruptedException {
+    public void addPlayngoInFavouritesFromCategoryTest() {
 
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForNew()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForNew()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"2");
+        addPlayngoInFavouritesFromCategory("4");
 
     }
 
     @Test (priority=22)
     //
-    public void addFeaturedInFavouritesFromLobby() throws InterruptedException {
+    public void addRelaxInFavouritesFromCategoryTest()  {
 
-
-        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForFeatured()) ;
-        casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFeatured()) ;
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"3");
+        addRelaxInFavouritesFromCategory("5");
 
     }
 
-
     @Test (priority=23)
     //
-    public void numberFavouritesAfterLogin1() {
+    public void addEvolutionInFavouritesFromCategoryTest()  {
 
-        casinoPage.login("olegautotest","Password1");
-        if (casinoPage.getOkInSuccessfullMessage()!=null){
-            casinoPage.clickIfElementIsClickable(casinoPage.getOkInSuccessfullMessage());
-        }
-        assertEquals(casinoPage.getNumberFavouritesText(),"3");
+        addEvolutionInFavouritesFromCategory("6");
 
     }
 
     @Test (priority=24)
     //
-    public void eraseFavouritesAfterLogin1() {
+    public void numberFavouritesAfterLoginTest1()  {
+
+        numberFavouritesAfterLogin("6");
+    }
+
+    @Test (priority=25)
+    //
+    public void eraseFavouritesFromFavouritesTest2() {
+
+        eraseFavouritesFromFavourites("0");
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
+    }
+
+
+
+
+
+    @Test(priority=26)
+    //
+    public void addTopInFavouritesFromLobbyTest() {
+
+        openLobby();
+        addTopInFavouritesFromLobby("1");
+
+    }
+
+    @Test (priority=27)
+    //
+    public void addNewInFavouritesFromLobbyTest()  {
+
+        addNewInFavouritesFromLobby("2");
+
+    }
+
+    @Test (priority=28)
+    //
+    public void addFeaturedInFavouritesFromLobbyTest()  {
+
+        addFeaturedInFavouritesFromLobby("3");
+
+    }
+
+
+    @Test (priority=29)
+    //
+    public void numberFavouritesAfterLogin2() {
+
+        numberFavouritesAfterLogin("3");
+
+
+    }
+
+    @Test (priority=30)
+    //
+    public void eraseFavouritesAfterLogin2() {
 
         casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
         casinoPage.getFavouriteForThirdElementOfSix().click();
         casinoPage.getFavouriteForSecondElementOfSix().click();
         casinoPage.getFavouriteForFirstElementOfSix().click();
-
         assertEquals(casinoPage.getNumberFavouritesText(),"0");
-
-
-
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
     }
 
 
