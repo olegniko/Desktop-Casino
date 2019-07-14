@@ -68,7 +68,7 @@ public class BaseTestForCasino {
 
     public void addIssoftInFavouritesFromSearch(String number) {
 
-
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
 
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForFirstElementOfSix());
@@ -143,6 +143,8 @@ public class BaseTestForCasino {
 
     public void openAutotestCategory(){
 
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
+
         casinoPage.waitIfElementIsClickable(casinoPage.getOtherDropDownElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getOtherDropDownElement());
         casinoPage.waitIfElementIsClickable(casinoPage.getAutotestCategory());
@@ -212,6 +214,7 @@ public class BaseTestForCasino {
 
     public void addTopInFavouritesFromLobby(String number) {
 
+        casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForTop()) ;
         casinoPage.clickIfElementIsClickable(casinoPage.getFavouriteForTop()) ;
         assertEquals(casinoPage.getNumberFavouritesText(),number);

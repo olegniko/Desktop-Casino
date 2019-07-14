@@ -5,7 +5,15 @@
     <parameter name="language"  value="en" />
     <parameter name="browser"  value="chrome" />
 
-    <test name="TestCase4">
+    <!--<test name="TestCase4">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.Favourites">
+            </class>
+
+        </classes>
+    </test>-->
+    <test name="TestCase5">
         <classes>
 
             <class name="web.uk.test6.maratest.info.Favourites">

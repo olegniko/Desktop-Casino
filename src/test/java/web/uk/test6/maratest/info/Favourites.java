@@ -1,5 +1,6 @@
 package web.uk.test6.maratest.info;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -131,186 +132,93 @@ public class Favourites extends BaseTestForCasino {
         assertEquals(casinoPage.getNumberFavouritesText(),"0");
     }
 
-    @Test (priority=10)
 
-    public void addMgInFavouritesFromSearch()  {
+
+    @Test (priority=10)
+    //
+    public void addFavouritesFromSearch() {
 
         addMgInFavouritesFromSearch("1");
-    }
-
-    @Test (priority=11)
-
-    public void addEvolutionInFavouritesFromSearch()  {
-
         addEvolutionInFavouritesFromSearch("2");
-    }
-
-    @Test (priority=12)
-
-    public void addIssoftInFavouritesFromSearch()  {
 
         addIssoftInFavouritesFromSearch("3");
+        addRelaxInFavouritesFromSearch("4");
+
+        addYggdrasilInFavouritesFromSearch("5");
+        addPlayngoInFavouritesFromSearch("6");
+        numberFavouritesAfterLogin("6");
+
+        eraseFavouritesFromFavourites("0");
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
+    }
+
+
+
+
+    @Test (priority=11)
+    //
+    public void addFromCategoryTest()  {
+
+
+        openAutotestCategory();
+        addIssoftInFavouritesFromCategory("1");
+        addYggdrasilInFavouritesFromCategory("2");
+
+        addMgInFavouritesFromCategory("3");
+        addPlayngoInFavouritesFromCategory("4");
+
+        addRelaxInFavouritesFromCategory("5");
+        addEvolutionInFavouritesFromCategory("6");
+
+        numberFavouritesAfterLogin("6");
+        eraseFavouritesFromFavourites("0");
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
+    }
+
+
+
+
+    @Test(priority=12)
+    //
+    public void addInFavouritesFromLobbyTest() {
+
+        openLobby();
+        casinoPage.waitIfElementIsClickable(casinoPage.getFavouriteForTop());
+        addTopInFavouritesFromLobby("1");
+        addNewInFavouritesFromLobby("2");
+        addFeaturedInFavouritesFromLobby("3");
+        numberFavouritesAfterLogin("3");
+
     }
 
     @Test (priority=13)
-
-    public void addRelaxInFavouritesFromSearch()  {
-
-        addRelaxInFavouritesFromSearch("4");
-    }
-
-    @Test (priority=14)
-
-    public void addYggdrasilInFavouritesFromSearch()  {
-
-        addYggdrasilInFavouritesFromSearch("5");
-    }
-
-    @Test (priority=15)
-
-    public void addPlayngoInFavouritesFromSearch()  {
-
-        addPlayngoInFavouritesFromSearch("6");
-    }
-
-
-    @Test (priority=16)
     //
-    public void numberFavouritesAfterLoginTest()  {
+    public void AllFunctionalityTest() {
 
-        numberFavouritesAfterLogin("6");
-    }
-
-
-
-    @Test (priority=17)
-    //
-    public void eraseFavouritesFromFavouritesTest() {
-
-        eraseFavouritesFromFavourites("0");
+        addIssoftInFavouritesFromSearch("1");
+        addTopInFavouritesFromLobby("2");
         openAutotestCategory();
-        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
-    }
-
-
-
-
-
-    @Test (priority=18)
-    //
-    public void addIssoftInFavouritesFromCategoryTest() {
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-        openAutotestCategory();
-        addIssoftInFavouritesFromCategory("1");
-
-    }
-
-    @Test (priority=19)
-    //
-    public void addYggdrasilInFavouritesFromCategoryTest()  {
-
-        addYggdrasilInFavouritesFromCategory("2");
-
-    }
-
-    @Test (priority=20)
-    //
-    public void addMgInFavouritesFromCategoryTest()  {
-
         addMgInFavouritesFromCategory("3");
-
-    }
-
-    @Test (priority=21)
-    //
-    public void addPlayngoInFavouritesFromCategoryTest() {
-
-        addPlayngoInFavouritesFromCategory("4");
-
-    }
-
-    @Test (priority=22)
-    //
-    public void addRelaxInFavouritesFromCategoryTest()  {
-
-        addRelaxInFavouritesFromCategory("5");
-
-    }
-
-    @Test (priority=23)
-    //
-    public void addEvolutionInFavouritesFromCategoryTest()  {
-
-        addEvolutionInFavouritesFromCategory("6");
-
-    }
-
-    @Test (priority=24)
-    //
-    public void numberFavouritesAfterLoginTest1()  {
-
-        numberFavouritesAfterLogin("6");
-    }
-
-    @Test (priority=25)
-    //
-    public void eraseFavouritesFromFavouritesTest2() {
-
-        eraseFavouritesFromFavourites("0");
+        numberFavouritesAfterLogin("3");
         casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
-    }
 
-
-
-
-
-    @Test(priority=26)
-    //
-    public void addTopInFavouritesFromLobbyTest() {
+        addMgInFavouritesFromCategory("1");
+        addPlayngoInFavouritesFromCategory("2");
+        addIssoftInFavouritesFromSearch("3");
+        addYggdrasilInFavouritesFromSearch("4");
 
         openLobby();
-        addTopInFavouritesFromLobby("1");
+        addFeaturedInFavouritesFromLobby("5");
+        addTopInFavouritesFromLobby("6");
+
+        openAutotestCategory();
+
+
+        numberFavouritesAfterLogin("6");
+        eraseFavouritesFromFavourites("0");
 
     }
 
-    @Test (priority=27)
-    //
-    public void addNewInFavouritesFromLobbyTest()  {
-
-        addNewInFavouritesFromLobby("2");
-
-    }
-
-    @Test (priority=28)
-    //
-    public void addFeaturedInFavouritesFromLobbyTest()  {
-
-        addFeaturedInFavouritesFromLobby("3");
-
-    }
-
-
-    @Test (priority=29)
-    //
-    public void numberFavouritesAfterLogin2() {
-
-        numberFavouritesAfterLogin("3");
-
-
-    }
-
-    @Test (priority=30)
-    //
-    public void eraseFavouritesAfterLogin2() {
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
-        casinoPage.getFavouriteForThirdElementOfSix().click();
-        casinoPage.getFavouriteForSecondElementOfSix().click();
-        casinoPage.getFavouriteForFirstElementOfSix().click();
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
-    }
 
 
 
