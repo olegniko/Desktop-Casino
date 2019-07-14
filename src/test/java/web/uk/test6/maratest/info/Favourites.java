@@ -26,7 +26,7 @@ public class Favourites extends BaseTestForCasino {
     }
 
     @Test(priority=3)
-    // 0 for unregestred user
+    // 0 for unregestred user1
     public void favouritesNumberIs0() {
 
         assertEquals(casinoPage.getNumberFavouritesText(),"0");
