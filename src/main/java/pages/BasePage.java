@@ -20,7 +20,7 @@ public abstract  class BasePage {
 
 	public BasePage(String browser) throws MalformedURLException {
 
-		driver = WebDriverSingleton.init(browser);
+		driver = WebDriverSingleton.init();
 		PageFactory.initElements(driver, this);
 	}
 

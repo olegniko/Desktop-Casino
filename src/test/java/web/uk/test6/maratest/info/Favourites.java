@@ -1,6 +1,5 @@
 package web.uk.test6.maratest.info;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -188,6 +187,11 @@ public class Favourites extends BaseTestForCasino {
         addNewInFavouritesFromLobby("2");
         addFeaturedInFavouritesFromLobby("3");
         numberFavouritesAfterLogin("3");
+        casinoPage.clickIfElementIsClickable(casinoPage.getNumberFavourites());
+        casinoPage.getFavouriteForThirdElementOfSix().click();
+        casinoPage.getFavouriteForSecondElementOfSix().click();
+        casinoPage.getFavouriteForFirstElementOfSix().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutElement());
 
     }
 
@@ -196,6 +200,7 @@ public class Favourites extends BaseTestForCasino {
     public void AllFunctionalityTest() {
 
         addIssoftInFavouritesFromSearch("1");
+        openLobby();
         addTopInFavouritesFromLobby("2");
         openAutotestCategory();
         addMgInFavouritesFromCategory("3");

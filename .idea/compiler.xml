@@ -9,6 +9,7 @@
         <module name="learning" />
         <module name="current_project" />
         <module name="test_from_git_to-git" />
+        <module name="DesktopCasino" />
       </profile>
     </annotationProcessing>
   </component>
