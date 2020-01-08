@@ -3,14 +3,10 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-import java.net.MalformedURLException;
+
 
 
 public  class CasinoPage extends MainPage {
-
-    public CasinoPage()  {
-        super();
-    }
 
 
 

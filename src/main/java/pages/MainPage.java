@@ -3,15 +3,10 @@ package pages;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import java.net.MalformedURLException;
 
 
 
 public  class MainPage extends BasePage {
-
-	public MainPage()  {
-		super();
-	}
 
 
 	@FindBy(id = "auth_login")
