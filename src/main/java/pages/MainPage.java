@@ -9,8 +9,8 @@ import java.net.MalformedURLException;
 
 public  class MainPage extends BasePage {
 
-	public MainPage(String browser) throws MalformedURLException {
-		super(browser);
+	public MainPage()  {
+		super();
 	}
 
 

@@ -1,20 +1,29 @@
 package web.uk.test6.maratest.info;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.CasinoPage;
 
 
-public class GameLaunchYggdrasil extends BaseTestForCasino {
+public class GameLaunchYggdrasil  {
 
+    CasinoPage casinoPage;
+    @BeforeClass
 
-    @Test
-    //
-    public void launch_Yggdrasil_in_search() {
+    public  void setUp()  {
 
+        casinoPage = new CasinoPage();
 
-        casinoPage.enterSymbolsToSearch("olegYggdrasilAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
 
     }
+
+
+    @AfterClass
+    public void tearDown()  {
+        casinoPage.close();
+    }
+
+
 }
 

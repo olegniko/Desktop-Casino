@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-    <suite name = "chrome">
-    <parameter name="language"  value="de" />
-    <parameter name="browser"  value="chrome" />
+    <suite name = "chrome Regress">
 
-    <test name="TestCase4">
+    <test name="Search">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.GameLaunchEvolution">
+            <class name="web.uk.test6.maratest.info.Search">
             </class>
 
         </classes>
     </test>
+    <test name="Favourites">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.Favourites">
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="Header and Footer">
+        <classes>
+
+            <class name="web.uk.test6.maratest.info.HeaderAndFooter">
+            </class>
+
+        </classes>
+    </test>
+
 
 
 

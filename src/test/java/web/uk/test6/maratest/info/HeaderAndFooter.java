@@ -1,17 +1,37 @@
 package web.uk.test6.maratest.info;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
+import pages.CasinoPage;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import static pages.BasePage.exampleBundle;
+
+public class HeaderAndFooter {
+
+    CasinoPage casinoPage;
+    @BeforeClass
+
+    public  void setUp()  {
 
 
-public class HeaderAndFooterTranslation extends BaseTestForCasino {
+        casinoPage = new CasinoPage();
 
 
-    @Test(priority=1)
-    //наличие и перевод Sport in Header
-    public void translationSportInHeader() throws InterruptedException {
+    }
+
+
+    @AfterClass
+    public void tearDown()  {
+        casinoPage.close();
+    }
+
+    @Test
+
+    public void translationSportInHeader()  {
 
         casinoPage.waitIfElementIsClickable(casinoPage.getSearchCasino());
         Assert.assertNotNull(casinoPage.getSportLabelHeaderText());
@@ -20,8 +40,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=2)
-    //наличие и перевод Live in Header
+    @Test
+
     public void translationLiveInHeader() {
 
         assertTrue(casinoPage.getLiveLabelHeaderElement().isDisplayed());
@@ -29,8 +49,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=3)
-    //наличие и перевод Toto in Header
+    @Test
+
     public void translationTotoInHeader() {
 
         assertTrue(casinoPage.getTotoLabelHeaderElement().isDisplayed());
@@ -38,8 +58,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=4)
-    //наличие и перевод Casino in Header
+    @Test
+
     public void translationCasinoInHeader() {
 
         assertTrue(casinoPage.getCasinoLabelHeaderElement().isDisplayed());
@@ -47,8 +67,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=5)
-    //наличие и перевод Live Casino in Header
+    @Test
+
     public void translationLiveCasinoInHeader() {
 
         assertTrue(casinoPage.getLiveCasinoLabelHeaderElement().isDisplayed());
@@ -56,8 +76,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=6)
-    //наличие и перевод Constructor in Header
+    @Test
+
     public void translationConstructorCasinoInHeader() {
 
         assertTrue(casinoPage.getConstructorLabelHeaderElement().isDisplayed());
@@ -65,8 +85,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=7)
-    //наличие и перевод Bingo in Header
+    @Test
+
     public void translationBingoInHeader() {
 
         assertTrue(casinoPage.getBingoLabelHeaderElement().isDisplayed());
@@ -74,8 +94,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=8)
-    //наличие и перевод Financials in Header
+    @Test
+
     public void translationFinancialInHeader() {
 
         assertTrue(casinoPage.getFinancialsLabelHeaderElement().isDisplayed());
@@ -83,8 +103,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=9)
-    //наличие и перевод Lost Password in Header
+    @Test
+
     public void translationLostPassword() {
 
         assertTrue(casinoPage.getLostPasswordElement().isDisplayed());
@@ -92,8 +112,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=10)
-    //наличие и перевод Help in Header
+    @Test
+
     public void translationHelp() {
 
         assertTrue(casinoPage.getHelpElement().isDisplayed());
@@ -101,8 +121,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=11)
-    //наличие и перевод Language in Header
+    @Test
+
     public void translationLanguage() {
 
         assertTrue(casinoPage.getLanguageElement().isDisplayed());
@@ -110,8 +130,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=12)
-    //наличие и перевод Results&Statistic in Header
+    @Test
+
     public void translationResults() {
 
         assertTrue(casinoPage.getResultsElement().isDisplayed());
@@ -119,8 +139,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=13)
-    //наличие и перевод Settings in Header
+    @Test
+
     public void translationSettings() {
 
         assertTrue(casinoPage.getSettingsElement().isDisplayed());
@@ -128,8 +148,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=14)
-    //наличие Mobile in HeaderAndFooterTranslation
+    @Test
+
     public void isMobilePresent() {
 
         assertTrue(casinoPage.isMobileIconPresent());
@@ -137,16 +157,16 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
     }
 
 
-    @Test(priority=15)
-    //наличие Marathon in Header
+    @Test
+
     public void isMarathonPresent() {
 
         assertTrue(casinoPage.isMarathonIconPresent());
 
     }
 
-    @Test(priority=16)
-    //наличие и перевод AboutUs in Footer
+    @Test
+
     public void translationAboutUs() {
 
         assertTrue(casinoPage.getAboutUsElement().isDisplayed());
@@ -154,8 +174,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=17)
-    //наличие и перевод PrivacyPolicy in Footer
+    @Test
+
     public void translationPrivacyPolicy() {
 
         assertTrue(casinoPage.getPrivacyPolicyElement().isDisplayed());
@@ -163,8 +183,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=18)
-    //наличие и перевод  Responsible Gaming in Footer
+    @Test
+
     public void translationResponsibleGambling() {
 
         assertTrue(casinoPage.getResponsibleGamblingElement().isDisplayed());
@@ -172,8 +192,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=19)
-    //наличие  перевод Terms and Conditions in Footer
+    @Test
+
     public void translationTermsAndConditions() {
 
         assertTrue(casinoPage.getTermsAndConditionsElement().isDisplayed());
@@ -181,8 +201,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=20)
-    //наличие и перевод Contact Us in Footer
+    @Test
+
     public void translationContactUs() {
 
         assertTrue(casinoPage.getContactUsElement().isDisplayed());
@@ -190,8 +210,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=21)
-    //наличие  и перевод Payments in Footer
+    @Test
+
     public void translationPayments() {
 
         assertTrue(casinoPage.getPaymentsElement().isDisplayed());
@@ -199,8 +219,8 @@ public class HeaderAndFooterTranslation extends BaseTestForCasino {
 
     }
 
-    @Test(priority=22)
-    //наличие и перевод Mobile Site in Footer
+    @Test
+
     public void translationMobileSite() {
 
         assertTrue(casinoPage.getMobileSiteElement().isDisplayed());

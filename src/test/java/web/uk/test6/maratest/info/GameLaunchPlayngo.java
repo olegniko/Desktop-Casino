@@ -1,20 +1,31 @@
 package web.uk.test6.maratest.info;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
+import pages.CasinoPage;
 
 
-public class GameLaunchPlayngo extends BaseTestForCasino {
+public class GameLaunchPlayngo {
+
+    CasinoPage casinoPage;
+    @BeforeClass
+
+    public  void setUp()  {
 
 
-    @Test
-    //
-    public void launch_Playngo_in_search() {
+        casinoPage = new CasinoPage();
 
-
-        casinoPage.enterSymbolsToSearch("olegPlayngoAutotest");
-
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
 
     }
+
+
+    @AfterClass
+    public void tearDown()  {
+        casinoPage.close();
+    }
+
+
 }
 

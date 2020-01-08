@@ -8,8 +8,8 @@ import java.net.MalformedURLException;
 
 public  class CasinoPage extends MainPage {
 
-    public CasinoPage(String browser) throws MalformedURLException {
-        super(browser);
+    public CasinoPage()  {
+        super();
     }
 
 

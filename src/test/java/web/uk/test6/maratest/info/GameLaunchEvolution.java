@@ -1,20 +1,31 @@
 package web.uk.test6.maratest.info;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import pages.CasinoPage;
 
 
-public class GameLaunchEvolution extends BaseTestForCasino {
+public class GameLaunchEvolution  {
 
 
-    @Test
-    //
-    public void launch_Evolution_in_search() {
+    CasinoPage casinoPage;
+
+    @BeforeClass
+
+    public  void setUp() {
 
 
-        casinoPage.enterSymbolsToSearch("olegEvolutionAutotest");
+        casinoPage = new CasinoPage();
 
-        casinoPage.getFavouriteForFirstElementOfSix().click();
 
     }
+
+
+    @AfterClass
+    public void tearDown()  {
+        casinoPage.close();
+    }
+
+
 }
 

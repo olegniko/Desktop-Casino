@@ -1,20 +1,32 @@
 package web.uk.test6.maratest.info;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
+import pages.CasinoPage;
 
 
-public class GameLaunchIssoft extends BaseTestForCasino {
+public class GameLaunchIssoft  {
+
+    CasinoPage casinoPage;
+    @BeforeClass
 
 
-    @Test
-    //
-    public void launch_Issoft_in_search() {
+    public  void setUp() {
 
 
-        casinoPage.enterSymbolsToSearch("olegIssoftAutotest");
 
-        casinoPage.clickIfElementIsClickable(casinoPage.getGameTitleElement());
+        casinoPage = new CasinoPage();
+
 
     }
+
+
+    @AfterClass
+    public void tearDown()  {
+        casinoPage.close();
+    }
+
 }
 
