@@ -6,7 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.ResourceBundle;
@@ -42,8 +46,9 @@ public abstract  class BasePage {
 		driver = null;
 	}
 
-	public void driverWait(){
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	public void driverWait(int time){
+
+		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
 
 
@@ -52,20 +57,84 @@ public abstract  class BasePage {
 		driver.navigate().refresh();
 	}
 
-	public void clickIfElementIsClickable(WebElement element1 ){
-		WebDriverWait wait = new WebDriverWait(driver, 30);
 
-		wait.until(ExpectedConditions.elementToBeClickable(element1));
-		
-		element1.click();
+
+	public void waitIfElementIsClickable(WebElement element,int time ) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
-	public void waitIfElementIsClickable(WebElement element1 ) {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+	public void waitIfElementIsClickable(WebElement element) {
 
-		wait.until(ExpectedConditions.elementToBeClickable(element1));
+		waitIfElementIsClickable(element, 20);
+
 	}
 
+	public void waitIfElementIsEnabled(WebElement element, int time) {
+
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.visibilityOf(element));
+
+	}
+
+	public void waitIfElementIsEnabled(WebElement element) {
+
+		waitIfElementIsEnabled(element, 20);
+
+	}
+
+	public void waitIfElementIsClickableFluent(WebElement element, int Timeout, int Polling) {
+
+		Wait wait = new FluentWait(driver)
+				.withTimeout(Duration.ofSeconds(Timeout))
+				.pollingEvery(Duration.ofSeconds(Polling))
+				.ignoring(Exception.class);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	public void waitIfElementIsClickableFluent(WebElement element) {
+
+		waitIfElementIsClickableFluent(element, 20, 5);
+
+	}
+
+	public WebElement getClickableElement(WebElement element) {
+
+		waitIfElementIsClickableFluent(element);
+		return element;
+	}
+
+	public WebElement getEnabledElement(WebElement element) {
+
+		waitIfElementIsEnabled(element);
+		return element;
+	}
+
+	public WebElement getClickableFluentElement(WebElement element) {
+
+		waitIfElementIsClickableFluent(element);
+		return element;
+	}
+
+
+	public void clickIfElementIsClickable(WebElement element) {
+
+		waitIfElementIsClickable(element);
+		element.click();
+	}
+
+	public void clickIfElementIsClickableFluent(WebElement element) {
+
+		waitIfElementIsClickableFluent(element);
+		element.click();
+	}
+
+	public void clickIfElementIsEnabled(WebElement element) {
+
+		waitIfElementIsEnabled(element);
+		element.click();
+	}
 
 
 }

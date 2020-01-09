@@ -8,15 +8,80 @@ import org.openqa.selenium.support.FindBy;
 
 public  class MainPage extends BasePage {
 
+	@FindBy(css = "input[data-id='auth_login']")
+	protected WebElement loginFieldHeaderElement;
 
-	@FindBy(id = "auth_login")
-	protected WebElement loginFieldElement;
+	public WebElement getLoginFieldHeaderElement() {
 
-	@FindBy(id = "auth_login_password")
-	protected WebElement passwordFieldElement;
+		return getClickableElement(loginFieldHeaderElement);
 
-	@FindBy(xpath="//*[@id=\"auth\"]/div[1]/div[3]/button")
-	protected WebElement loginButtonElement;
+	}
+
+	public String getTextLoginFieldHeaderElement(){
+
+		return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder");
+	}
+
+
+	@FindBy(css = "input[data-id='auth_login_password']")
+	protected WebElement passwordFieldHeaderElement;
+
+	public WebElement getPasswordFieldHeaderElement() {
+
+		return getClickableElement(passwordFieldHeaderElement);
+
+	}
+
+	public String getTextPasswordFieldHeaderElement(){
+
+		return getClickableElement(passwordFieldHeaderElement).getAttribute("placeholder");
+	}
+
+
+
+	@FindBy(css = "button[class='button btn-login']")
+	protected WebElement loginButtonHeaderElement;
+
+	public WebElement getLoginButtonHeaderElement() {
+
+		return getClickableElement(passwordFieldHeaderElement);
+
+	}
+
+	public String getTextLoginButtonHeaderElement(){
+
+		return getClickableElement(passwordFieldHeaderElement).getText();
+	}
+
+
+
+	public void fillLoginInHeader(String login) {
+
+		getLoginFieldHeaderElement().sendKeys(login);
+	}
+
+
+	public void fillPasswordInHeader(String password) {
+
+		getPasswordFieldHeaderElement().sendKeys(password);
+	}
+
+	public void clickLoginButtonInHeader() {
+
+		getLoginButtonHeaderElement().click();
+	}
+
+	public void login(String login, String password) {
+		fillLoginInHeader(login);
+		loginFieldHeaderElement.sendKeys(Keys.TAB);
+		fillPasswordInHeader(password);
+		loginFieldHeaderElement.sendKeys(Keys.TAB);
+		clickLoginButtonInHeader();;
+
+	}
+
+
+
 
 	@FindBy(className = "field-search")
 	protected WebElement searchFieldElement;
@@ -361,26 +426,7 @@ public  class MainPage extends BasePage {
 		searchFieldElement.sendKeys(phrase + Keys.ENTER);
 	}
 
-	public void fillLogin(String login) {
-		loginFieldElement.sendKeys(login);
-	}
 
-	public void fillPassword(String password) {
-		passwordFieldElement.sendKeys(password);
-	}
-
-	public void clickLoginButton() {
-		loginButtonElement.click();
-	}
-
-	public void login(String login, String password) {
-		fillLogin(login);
-		loginFieldElement.sendKeys(Keys.TAB);
-		fillPassword(password);
-		passwordFieldElement.sendKeys(Keys.ENTER);
-
-
-	}
 
 
 

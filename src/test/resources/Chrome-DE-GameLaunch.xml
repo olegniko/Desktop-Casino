@@ -14,7 +14,7 @@
     <test name="Favourites">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.Favourites">
+            <class name="web.uk.test6.maratest.info.Login">
             </class>
 
         </classes>
