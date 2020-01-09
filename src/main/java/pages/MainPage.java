@@ -44,13 +44,13 @@ public  class MainPage extends BasePage {
 
 	public WebElement getLoginButtonHeaderElement() {
 
-		return getClickableElement(passwordFieldHeaderElement);
+		return getClickableElement(loginButtonHeaderElement);
 
 	}
 
 	public String getTextLoginButtonHeaderElement(){
 
-		return getClickableElement(passwordFieldHeaderElement).getText();
+		return getClickableElement(loginButtonHeaderElement).getText();
 	}
 
 
@@ -82,351 +82,91 @@ public  class MainPage extends BasePage {
 
 
 
+	@FindBy(css = "a[class='button btn-join']")
+	protected WebElement joinNowButtonHeaderElement;
 
-	@FindBy(className = "field-search")
-	protected WebElement searchFieldElement;
+	public WebElement getJoinNowButtonHeaderElement() {
 
-	@FindBy(className = "languageSelectField")
-	protected WebElement languageSwitcherElement;
+		return getClickableElement(joinNowButtonHeaderElement);
 
-	@FindBy(css = "#languageSelectField .menu-link")
-	protected WebElement languageLabelElement;
-
-	@FindBy(id = "headerBalance")
-	protected WebElement headerBalance;
-
-
-	@FindBy(className = "captcha")
-	protected WebElement captcha;
-
-	public WebElement getCaptcha() {
-		return captcha;
 	}
 
+	public String getTextJoinNowButtonHeaderElement(){
 
-
-	@FindBy(xpath = "//*[@id=\"auth\"]/div[2]")
-	protected WebElement CaptchaProverochnyiCod;
-
-	public boolean isCaptchaProverochnyiCod(){
-
-		return CaptchaProverochnyiCod.isDisplayed();
-	}
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[1]")
-	protected WebElement SportLabelHeader;
-
-	public  String getSportLabelHeaderText(){
-		return SportLabelHeader.getText();
-	}
-
-	public  WebElement getSportLabelHeaderElement(){
-		return SportLabelHeader;
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[2]/span")
-	protected WebElement LiveLabelHeader;
-
-	public String getLiveLabelHeaderText(){
-		return LiveLabelHeader.getText();
-	}
-
-	public  WebElement getLiveLabelHeaderElement(){
-		return LiveLabelHeader;
+		return getClickableElement(joinNowButtonHeaderElement).getText();
 	}
 
 
 
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[3]/span")
-	protected WebElement TotoLabelHeader;
+	@FindBy(css = "a[class='lostpass']")
+	protected WebElement lostPasswordHeaderElement;
 
-	public String getTotoLabelHeaderText(){
-		return TotoLabelHeader.getText();
+	public String getTextLostPasswordHeaderElement(){
+		return getClickableElement(lostPasswordHeaderElement).getText();
 	}
 
-	public  WebElement getTotoLabelHeaderElement(){
-
-		return TotoLabelHeader;
+	public  WebElement getLostPasswordHeaderElement(){
+		return getClickableElement(lostPasswordHeaderElement);
 	}
 
 
 
+	@FindBy(css = "div[id='loginMessage']")
+	protected WebElement loginMessageElement;
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[1]/a[4]/span")
-	protected WebElement CasinoLabelHeader;
-
-	public String getCasinoLabelHeaderText(){
-		return CasinoLabelHeader.getText();
-	}
-
-	public  WebElement getCasinoLabelHeaderElement(){
-		return CasinoLabelHeader;
+	public  WebElement getLoginMessageElement(){
+		return getClickableElement(loginMessageElement);
 	}
 
 
 
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[1]/span")
-	protected WebElement LiveCasinoLabelHeader;
+	@FindBy(css = "img[alt='Marathonbet Logo']")
+	protected WebElement marathonbetIconHeaderElement;
 
-	public String getLiveCasinoLabelHeaderText(){
-		return LiveCasinoLabelHeader.getText();
-	}
-
-	public  WebElement getLiveCasinoLabelHeaderElement(){
-		return LiveCasinoLabelHeader;
+	public  WebElement getMarathonbetIconHeaderElement(){
+		return getClickableElement(marathonbetIconHeaderElement);
 	}
 
 
 
+	@FindBy(css = "a[id='logoutLink']")
+	protected WebElement logoutButtonHeaderElement;
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[2]/span")
-	protected WebElement ConstructorLabelHeader;
-
-	public String getConstructorLabelHeaderText(){
-		return ConstructorLabelHeader.getText();
+	public String getTextLogoutButtonHeaderElement(){
+		return getClickableElement(logoutButtonHeaderElement).getText();
 	}
 
-	public  WebElement getConstructorLabelHeaderElement(){
-		return ConstructorLabelHeader;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[3]/span")
-	protected WebElement BingoLabelHeader;
-
-	public String getBingoLabelHeaderText(){
-		return BingoLabelHeader.getText();
-	}
-
-	public  WebElement getBingoLabelHeaderElement(){
-		return BingoLabelHeader;
+	public  WebElement getLogoutButtonHeaderElement(){
+		return getClickableElement(logoutButtonHeaderElement);
 	}
 
 
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[1]/div[2]/div[2]/span[2]/a[4]/span")
-	protected WebElement FinancialsLabelHeader;
+	@FindBy(css = "a[class='button btn-deposit']")
+	protected WebElement depositButtonHeaderElement;
 
-	public String getFinancialsLabelHeaderText(){
-		return FinancialsLabelHeader.getText();
+	public String getTextDepositButtonHeaderElement(){
+		return getClickableElement(depositButtonHeaderElement).getText();
 	}
 
-	public  WebElement getFinancialsLabelHeaderElement(){
-
-		return FinancialsLabelHeader;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"auth\"]/div[1]/a")
-	protected WebElement LostPassword;
-
-	public String getLostPasswordText(){
-		return LostPassword.getText();
-	}
-
-	public  WebElement getLostPasswordElement(){
-		return LostPassword;
+	public  WebElement getDepositButtonHeaderElement(){
+		return getClickableElement(depositButtonHeaderElement);
 	}
 
 
 
+	@FindBy(css = "a[class='button btn-deposit']")
+	protected WebElement myAccountButtonHeaderElement;
 
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[2]/div[2]/div")
-	protected WebElement Help;
-
-	public String getHelpText(){
-		return Help.getText();
+	public String getTextMyAccountButtonHeaderElement(){
+		return getClickableElement(myAccountButtonHeaderElement).getText();
 	}
 
-	public  WebElement getHelpElement(){
-		return Help;
+	public  WebElement getMyAccountButtonHeaderElement(){
+		return getClickableElement(myAccountButtonHeaderElement);
 	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"languageSelectField\"]/div[1]")
-	protected WebElement Language;
-
-	public String getLanguageText(){
-		return Language.getText();
-	}
-
-	public  WebElement getLanguageElement(){
-		return Language;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div/div[2]/div[4]/div")
-	protected WebElement Results;
-
-	public String getResultsText(){
-		return Results.getText();
-	}
-
-	public  WebElement getResultsElement(){
-		return Results;
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"settingsDropdown\"]/div[1]/span")
-	protected WebElement Settings;
-
-	public String getSettingsText(){
-		return Settings.getText();
-	}
-
-	public  WebElement getSettingsElement(){
-		return Settings;
-	}
-
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div[1]/div[2]/div[6]/a/i")
-	protected WebElement MobileIcon;
-
-	public boolean isMobileIconPresent(){
-		return MobileIcon.isDisplayed();
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"header_container\"]/div/div[1]/div[1]/div[2]/div[1]/a/img")
-	protected WebElement MarathonIcon;
-
-	public boolean isMarathonIconPresent(){
-		return MarathonIcon.isDisplayed();
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[1]/span")
-	protected WebElement AboutUs;
-
-	public String getAboutUsText(){
-		return AboutUs.getText();
-	}
-
-	public  WebElement getAboutUsElement(){
-		return AboutUs;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[2]/span")
-	protected WebElement PrivacyPolicy ;
-
-	public String getPrivacyPolicyText(){
-		return PrivacyPolicy.getText();
-	}
-
-	public WebElement getPrivacyPolicyElement(){
-		return PrivacyPolicy;
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[3]/span")
-	protected WebElement ResponsibleGambling;
-
-	public String getResponsibleGamblingText(){
-		return ResponsibleGambling.getText();
-	}
-
-	public WebElement getResponsibleGamblingElement(){
-		return ResponsibleGambling;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[4]/span")
-	protected WebElement TermsAndConditions;
-
-	public String getTermsAndConditionsText(){
-		return TermsAndConditions.getText();
-	}
-
-	public WebElement getTermsAndConditionsElement(){
-		return TermsAndConditions;
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[5]/span")
-	protected WebElement ContactUs;
-
-	public String getContactUsText(){
-		return ContactUs.getText();
-	}
-
-	public WebElement getContactUsElement(){
-		return ContactUs;
-	}
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[6]/span")
-	protected WebElement Payments;
-
-	public String getPaymentsText(){
-		return Payments.getText();
-	}
-
-	public  WebElement getPaymentsElement(){
-		return Payments;
-	}
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[7]/a")
-	protected WebElement MobileSite;
-
-	public String getMobileSiteText(){
-		return MobileSite.getText();
-	}
-
-	public  WebElement getMobileSiteElement(){
-		return MobileSite;
-	}
-
-
-
-
-
-	public boolean isPresentBalanceInHeader(){
-
-		return (headerBalance!=null);
-
-	}
-	public boolean isPresentCaptcha(){
-
-		return (captcha!=null);
-
-	}
-
-	public void search(String phrase) {
-		searchFieldElement.sendKeys(phrase + Keys.ENTER);
-	}
-
-
 
 
 

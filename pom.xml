@@ -22,10 +22,18 @@
     <profiles>
 
         <profile>
-            <id>regress EN</id>
+            <id>regress chrome EN</id>
             <properties>
-                <browser>chrome Regress</browser>
-                <suite>chrome</suite>
+                <browser>chrome</browser>
+                <suite>Regress</suite>
+                <locale>en</locale>
+            </properties>
+        </profile>
+        <profile>
+            <id>regress firefox EN</id>
+            <properties>
+                <browser>firefox</browser>
+                <suite>Regress</suite>
                 <locale>en</locale>
             </properties>
         </profile>

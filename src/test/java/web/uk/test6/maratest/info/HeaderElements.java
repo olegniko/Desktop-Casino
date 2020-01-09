@@ -1,12 +1,12 @@
 package web.uk.test6.maratest.info;
 
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-public class Search {
-
+public class HeaderElements {
 
     CasinoPage casinoPage;
     @BeforeClass
@@ -26,5 +26,6 @@ public class Search {
     }
 
 
-
 }
+
+

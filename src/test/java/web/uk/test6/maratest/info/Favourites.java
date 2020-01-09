@@ -2,10 +2,7 @@ package web.uk.test6.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import pages.CasinoPage;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 
 public class Favourites  {
@@ -28,30 +25,6 @@ public class Favourites  {
         casinoPage.close();
     }
 
-
-    @Test
-    //
-    public void favouritesIsPresent() {
-
-        assertTrue(casinoPage.getFavourites().isDisplayed());
-
-    }
-
-    @Test
-    //
-    public void favouritesNumberIsPresent() {
-
-        assertTrue(casinoPage.getNumberFavourites().isDisplayed());
-
-    }
-
-    @Test
-    // 0 for unregestred user1
-    public void favouritesNumberIs0() {
-
-        assertEquals(casinoPage.getNumberFavouritesText(),"0");
-
-    }
 
 
 
