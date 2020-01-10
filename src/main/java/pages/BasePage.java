@@ -1,25 +1,44 @@
 package pages;
 
-import helper.factory.Browser;
+
+import helper.factory.MyLogger;
 import helper.factory.WebDriverSingleton;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
+import java.util.Locale;
+import java.util.Objects;
+import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
-public class BasePage {
+public abstract class BasePage {
 
-WebDriver driver;
 
-    BasePage(){
+    protected static WebDriver driver;
+    public static Locale locale;
+    public static ResourceBundle exampleBundle;
+    static String url = "https://web.uk.test6.maratest.info/en/casino/lobby";
 
-        Browser browser=new Browser();
-        driver= browser.open();
+    public BasePage(){
+
+        if (Objects.isNull(driver)) {
+            driver = WebDriverSingleton.init();
+        }
+
+        PageFactory.initElements(driver,this);
+
+        driver.manage().window().maximize();
+        driver.get(url);
+        driverWait(10);
+        locale =new Locale(System.getProperty("locale"));
+        MyLogger.info(locale+" selected");
+        exampleBundle =ResourceBundle.getBundle("ResourceBundle",locale);
 
     }
     public void close()  {
@@ -28,6 +47,18 @@ WebDriver driver;
         WebDriverSingleton.kill(driver);
         driver = null;
     }
+
+    public void driverWait(int time){
+
+        driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+    }
+
+
+    public void refreshPage(){
+
+        driver.navigate().refresh();
+    }
+
 
     public void waitIfElementIsClickable(WebElement element, int time ) {
         WebDriverWait wait = new WebDriverWait(driver, time);

@@ -1,6 +1,6 @@
 package pages;
 
-import helper.factory.Browser;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +9,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends BasePage {
 
-
+public MainPage(){
+	super();
+}
 
 
 	@FindBy(css = "input[data-id='auth_login']")

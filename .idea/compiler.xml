@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="learning" />
+        <module name="Desktop-Casino" />
         <module name="current_project" />
         <module name="test_from_git_to-git" />
         <module name="DesktopCasino" />
