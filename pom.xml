@@ -37,6 +37,14 @@
                 <locale>en</locale>
             </properties>
         </profile>
+        <profile>
+            <id>regress opera EN</id>
+            <properties>
+                <browser>opera</browser>
+                <suite>Regress</suite>
+                <locale>en</locale>
+            </properties>
+        </profile>
 
     </profiles>
 

@@ -6,10 +6,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.CasinoPage;
 
-import java.net.MalformedURLException;
-import java.util.Locale;
-import java.util.ResourceBundle;
-
 
 public class GameLaunchRelax {
 

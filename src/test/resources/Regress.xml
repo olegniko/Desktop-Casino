@@ -7,7 +7,7 @@
     <test name="LoginHeader">
         <classes>
 
-            <class name="web.uk.test6.maratest.info.LoginHeader">
+            <class name="web.uk.test6.maratest.info.LoginHeaderUnlogged">
             </class>
 
         </classes>

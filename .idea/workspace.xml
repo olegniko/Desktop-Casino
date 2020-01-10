@@ -2,32 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FooterElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Chrome-Regress.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helper/factory/Browser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle_fr.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Favourites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Favourites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderAndFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Chrome-DE-GameLaunch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FooterElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FooterElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Regress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Regress.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/CasinoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CasinoPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/factory/OperaDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/factory/OperaDriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Chrome-DE-GameLaunch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Regress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Regress.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Favourites.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Favourites.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/HeaderAndFooter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/Search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/FooterElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/FooterElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchEvolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchEvolution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchIssoft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchIssoft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchMG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchMG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchPlayngo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchPlayngo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchRelax.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchRelax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchYggdrasil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/GameLaunchYggdrasil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/HeaderElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/HeaderElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/LoginHeader.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="XSLT Stylesheet" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +74,12 @@
     </option>
     <option name="enabledProfiles">
       <list>
-        <option value="regress EN" />
+        <option value="regress chrome EN" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="regress firefox EN" />
       </list>
     </option>
   </component>
@@ -456,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578569186904</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="commit create Framework for Desktop Casino.5 + login fields">
+      <created>1578582190719</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1578582190720</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit 01/06/2019 2nd" />
     <MESSAGE value="commit 05/06/2019" />
     <MESSAGE value="commit 05/06/2019.2" />
     <MESSAGE value="commit 05/06/2019.3" />
@@ -521,37 +539,50 @@
     <MESSAGE value="commit create Framework for Desktop Casino.2" />
     <MESSAGE value="commit create Framework for Desktop Casino.3" />
     <MESSAGE value="commit create Framework for Desktop Casino.4 + login fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit create Framework for Desktop Casino.4 + login fields" />
+    <MESSAGE value="commit create Framework for Desktop Casino.5 + login fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit create Framework for Desktop Casino.5 + login fields" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2520" y="115" key="CommitChangelistDialog2" timestamp="1578569180790">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578672994933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578672994933" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578673224779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578673224779" />
+    <state x="2520" y="115" key="CommitChangelistDialog2" timestamp="1578582188079">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2520" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578569180790" />
+    <state x="2520" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582188079" />
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1578565111022">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578565111022" />
-    <state width="1877" height="376" key="GridCell.Tab.0.bottom" timestamp="1578582105622">
+    <state width="1877" height="376" key="GridCell.Tab.0.bottom" timestamp="1578675589044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589044" />
+    <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
+    <state width="1877" height="376" key="GridCell.Tab.0.center" timestamp="1578675589043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
+    <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
+    <state width="1877" height="376" key="GridCell.Tab.0.left" timestamp="1578675589043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
+    <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007987" />
+    <state width="1877" height="376" key="GridCell.Tab.0.right" timestamp="1578675589043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
+    <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
+    <state x="2472" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578582193055">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582105622" />
-    <state width="1877" height="376" key="GridCell.Tab.0.center" timestamp="1578582105621">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582105621" />
-    <state width="1877" height="376" key="GridCell.Tab.0.left" timestamp="1578582105621">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582105621" />
-    <state width="1877" height="376" key="GridCell.Tab.0.right" timestamp="1578582105621">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582105621" />
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578569229779">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578569229779" />
+    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582193055" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

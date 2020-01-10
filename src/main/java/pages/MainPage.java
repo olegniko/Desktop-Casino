@@ -1,12 +1,16 @@
 package pages;
 
+import helper.factory.Browser;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
 
-public  class MainPage extends BasePage {
+public class MainPage extends BasePage {
+
+
+
 
 	@FindBy(css = "input[data-id='auth_login']")
 	protected WebElement loginFieldHeaderElement;
@@ -112,12 +116,42 @@ public  class MainPage extends BasePage {
 
 
 
+	@FindBy(css = "div[id='any_message']")
+	protected WebElement incorrectLoginMessageElement;
+
+	public  WebElement getIncorrectLoginMessageElement(){
+		return getClickableElement(incorrectLoginMessageElement);
+	}
+
+
+
+
+	@FindBy(css = "div[id='any_message'] button")
+	protected WebElement incorrectLoginMessageOkButtonElement;
+
+	public  WebElement getIncorrectLoginMessageOkButtonElement(){
+		return getClickableElement(incorrectLoginMessageOkButtonElement);
+	}
+
+
+
 	@FindBy(css = "div[id='loginMessage']")
 	protected WebElement loginMessageElement;
 
 	public  WebElement getLoginMessageElement(){
 		return getClickableElement(loginMessageElement);
 	}
+
+
+
+
+	@FindBy(css = "div[id='loginMessage'] button")
+	protected WebElement loginMessageOkButtonElement;
+
+	public  WebElement getLoginMessageOkButtonElement(){
+		return getClickableElement(loginMessageOkButtonElement);
+	}
+
 
 
 
