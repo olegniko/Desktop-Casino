@@ -5,9 +5,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.CasinoPage;
 
+import static helper.factory.Browser.exampleBundle;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static pages.BasePage.exampleBundle;
+
 
 
 public class LoginHeaderUnlogged {
@@ -25,7 +26,7 @@ public class LoginHeaderUnlogged {
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown()  {
         casinoPage.close();
     }
