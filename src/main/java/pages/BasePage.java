@@ -2,8 +2,6 @@ package pages;
 
 
 import helper.factory.Browser;
-import helper.factory.MyLogger;
-import helper.factory.WebDriverSingleton;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,32 +10,32 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 
 public abstract class BasePage {
 
     public Browser browser;
-    public  WebDriver driver;
+    public WebDriver driver;
 
 
-    public BasePage(){
+    public BasePage() {
 
-        browser=new Browser();
-        driver=browser.init();
+        browser = new Browser();
+        driver = browser.init();
         browser.open();
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
 
 
     }
-    public void close()  {
-         browser.close();
+
+    public void close() {
+        browser.close();
     }
 
 
-
-
-    public void waitIfElementIsClickable(WebElement element, int time ) {
+    public void waitIfElementIsClickable(WebElement element, int time) {
         WebDriverWait wait = new WebDriverWait(driver, time);
 
         wait.until(ExpectedConditions.elementToBeClickable(element));

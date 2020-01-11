@@ -2,18 +2,16 @@ package web.uk.test6.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 
-
 public class GameLaunchMG {
+
     CasinoPage casinoPage;
 
     @BeforeClass
 
-    public  void setUp()  {
+    public void setUp() {
 
 
         casinoPage = new CasinoPage();
@@ -23,7 +21,7 @@ public class GameLaunchMG {
 
 
     @AfterClass
-    public void tearDown()  {
+    public void tearDown() {
         casinoPage.close();
     }
 

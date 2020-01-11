@@ -6,205 +6,186 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-
 public class MainPage extends BasePage {
 
-public MainPage(){
-	super();
-}
+    public MainPage() {
+        super();
+    }
 
 
-	@FindBy(css = "input[data-id='auth_login']")
-	protected WebElement loginFieldHeaderElement;
+    @FindBy(css = "input[data-id='auth_login']")
+    protected WebElement loginFieldHeaderElement;
 
-	public WebElement getLoginFieldHeaderElement() {
+    public WebElement getLoginFieldHeaderElement() {
 
-		return getClickableElement(loginFieldHeaderElement);
+        return getClickableElement(loginFieldHeaderElement);
 
-	}
+    }
 
-	public String getTextLoginFieldHeaderElement(){
+    public String getTextLoginFieldHeaderElement() {
 
-		return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder");
-	}
+        return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder");
+    }
 
 
-	@FindBy(css = "input[data-id='auth_login_password']")
-	protected WebElement passwordFieldHeaderElement;
+    @FindBy(css = "input[data-id='auth_login_password']")
+    protected WebElement passwordFieldHeaderElement;
 
-	public WebElement getPasswordFieldHeaderElement() {
+    public WebElement getPasswordFieldHeaderElement() {
 
-		return getClickableElement(passwordFieldHeaderElement);
+        return getClickableElement(passwordFieldHeaderElement);
 
-	}
+    }
 
-	public String getTextPasswordFieldHeaderElement(){
+    public String getTextPasswordFieldHeaderElement() {
 
-		return getClickableElement(passwordFieldHeaderElement).getAttribute("placeholder");
-	}
+        return getClickableElement(passwordFieldHeaderElement).getAttribute("placeholder");
+    }
 
 
+    @FindBy(css = "button[class='button btn-login']")
+    protected WebElement loginButtonHeaderElement;
 
-	@FindBy(css = "button[class='button btn-login']")
-	protected WebElement loginButtonHeaderElement;
+    public WebElement getLoginButtonHeaderElement() {
 
-	public WebElement getLoginButtonHeaderElement() {
+        return getClickableElement(loginButtonHeaderElement);
 
-		return getClickableElement(loginButtonHeaderElement);
+    }
 
-	}
+    public String getTextLoginButtonHeaderElement() {
 
-	public String getTextLoginButtonHeaderElement(){
+        return getClickableElement(loginButtonHeaderElement).getText();
+    }
 
-		return getClickableElement(loginButtonHeaderElement).getText();
-	}
 
+    public void fillLoginInHeader(String login) {
 
+        getLoginFieldHeaderElement().sendKeys(login);
+    }
 
-	public void fillLoginInHeader(String login) {
 
-		getLoginFieldHeaderElement().sendKeys(login);
-	}
+    public void fillPasswordInHeader(String password) {
 
+        getPasswordFieldHeaderElement().sendKeys(password);
+    }
 
-	public void fillPasswordInHeader(String password) {
+    public void clickLoginButtonInHeader() {
 
-		getPasswordFieldHeaderElement().sendKeys(password);
-	}
+        getLoginButtonHeaderElement().click();
+    }
 
-	public void clickLoginButtonInHeader() {
+    public void login(String login, String password) {
+        fillLoginInHeader(login);
+        loginFieldHeaderElement.sendKeys(Keys.TAB);
+        fillPasswordInHeader(password);
+        loginFieldHeaderElement.sendKeys(Keys.TAB);
+        clickLoginButtonInHeader();
+        ;
 
-		getLoginButtonHeaderElement().click();
-	}
+    }
 
-	public void login(String login, String password) {
-		fillLoginInHeader(login);
-		loginFieldHeaderElement.sendKeys(Keys.TAB);
-		fillPasswordInHeader(password);
-		loginFieldHeaderElement.sendKeys(Keys.TAB);
-		clickLoginButtonInHeader();;
 
-	}
+    @FindBy(css = "a[class='button btn-join']")
+    protected WebElement joinNowButtonHeaderElement;
 
+    public WebElement getJoinNowButtonHeaderElement() {
 
+        return getClickableElement(joinNowButtonHeaderElement);
 
-	@FindBy(css = "a[class='button btn-join']")
-	protected WebElement joinNowButtonHeaderElement;
+    }
 
-	public WebElement getJoinNowButtonHeaderElement() {
+    public String getTextJoinNowButtonHeaderElement() {
 
-		return getClickableElement(joinNowButtonHeaderElement);
+        return getClickableElement(joinNowButtonHeaderElement).getText();
+    }
 
-	}
 
-	public String getTextJoinNowButtonHeaderElement(){
+    @FindBy(css = "a[class='lostpass']")
+    protected WebElement lostPasswordHeaderElement;
 
-		return getClickableElement(joinNowButtonHeaderElement).getText();
-	}
+    public String getTextLostPasswordHeaderElement() {
+        return getClickableElement(lostPasswordHeaderElement).getText();
+    }
 
+    public WebElement getLostPasswordHeaderElement() {
+        return getClickableElement(lostPasswordHeaderElement);
+    }
 
 
+    @FindBy(css = "div[id='any_message']")
+    protected WebElement incorrectLoginMessageElement;
 
-	@FindBy(css = "a[class='lostpass']")
-	protected WebElement lostPasswordHeaderElement;
+    public WebElement getIncorrectLoginMessageElement() {
+        return getClickableElement(incorrectLoginMessageElement);
+    }
 
-	public String getTextLostPasswordHeaderElement(){
-		return getClickableElement(lostPasswordHeaderElement).getText();
-	}
 
-	public  WebElement getLostPasswordHeaderElement(){
-		return getClickableElement(lostPasswordHeaderElement);
-	}
+    @FindBy(css = "div[id='any_message'] button")
+    protected WebElement incorrectLoginMessageOkButtonElement;
 
+    public WebElement getIncorrectLoginMessageOkButtonElement() {
+        return getClickableElement(incorrectLoginMessageOkButtonElement);
+    }
 
 
-	@FindBy(css = "div[id='any_message']")
-	protected WebElement incorrectLoginMessageElement;
+    @FindBy(css = "div[id='loginMessage']")
+    protected WebElement loginMessageElement;
 
-	public  WebElement getIncorrectLoginMessageElement(){
-		return getClickableElement(incorrectLoginMessageElement);
-	}
+    public WebElement getLoginMessageElement() {
+        return getClickableElement(loginMessageElement);
+    }
 
 
+    @FindBy(css = "div[id='loginMessage'] button")
+    protected WebElement loginMessageOkButtonElement;
 
+    public WebElement getLoginMessageOkButtonElement() {
+        return getClickableElement(loginMessageOkButtonElement);
+    }
 
-	@FindBy(css = "div[id='any_message'] button")
-	protected WebElement incorrectLoginMessageOkButtonElement;
 
-	public  WebElement getIncorrectLoginMessageOkButtonElement(){
-		return getClickableElement(incorrectLoginMessageOkButtonElement);
-	}
+    @FindBy(css = "img[alt='Marathonbet Logo']")
+    protected WebElement marathonbetIconHeaderElement;
 
+    public WebElement getMarathonbetIconHeaderElement() {
+        return getClickableElement(marathonbetIconHeaderElement);
+    }
 
 
-	@FindBy(css = "div[id='loginMessage']")
-	protected WebElement loginMessageElement;
+    @FindBy(css = "a[id='logoutLink']")
+    protected WebElement logoutButtonHeaderElement;
 
-	public  WebElement getLoginMessageElement(){
-		return getClickableElement(loginMessageElement);
-	}
+    public String getTextLogoutButtonHeaderElement() {
+        return getClickableElement(logoutButtonHeaderElement).getText();
+    }
 
+    public WebElement getLogoutButtonHeaderElement() {
+        return getClickableElement(logoutButtonHeaderElement);
+    }
 
 
+    @FindBy(css = "a[class='button btn-deposit']")
+    protected WebElement depositButtonHeaderElement;
 
-	@FindBy(css = "div[id='loginMessage'] button")
-	protected WebElement loginMessageOkButtonElement;
+    public String getTextDepositButtonHeaderElement() {
+        return getClickableElement(depositButtonHeaderElement).getText();
+    }
 
-	public  WebElement getLoginMessageOkButtonElement(){
-		return getClickableElement(loginMessageOkButtonElement);
-	}
+    public WebElement getDepositButtonHeaderElement() {
+        return getClickableElement(depositButtonHeaderElement);
+    }
 
 
+    @FindBy(css = "a[class='button btn-deposit']")
+    protected WebElement myAccountButtonHeaderElement;
 
+    public String getTextMyAccountButtonHeaderElement() {
+        return getClickableElement(myAccountButtonHeaderElement).getText();
+    }
 
-
-	@FindBy(css = "img[alt='Marathonbet Logo']")
-	protected WebElement marathonbetIconHeaderElement;
-
-	public  WebElement getMarathonbetIconHeaderElement(){
-		return getClickableElement(marathonbetIconHeaderElement);
-	}
-
-
-
-	@FindBy(css = "a[id='logoutLink']")
-	protected WebElement logoutButtonHeaderElement;
-
-	public String getTextLogoutButtonHeaderElement(){
-		return getClickableElement(logoutButtonHeaderElement).getText();
-	}
-
-	public  WebElement getLogoutButtonHeaderElement(){
-		return getClickableElement(logoutButtonHeaderElement);
-	}
-
-
-
-	@FindBy(css = "a[class='button btn-deposit']")
-	protected WebElement depositButtonHeaderElement;
-
-	public String getTextDepositButtonHeaderElement(){
-		return getClickableElement(depositButtonHeaderElement).getText();
-	}
-
-	public  WebElement getDepositButtonHeaderElement(){
-		return getClickableElement(depositButtonHeaderElement);
-	}
-
-
-
-	@FindBy(css = "a[class='button btn-deposit']")
-	protected WebElement myAccountButtonHeaderElement;
-
-	public String getTextMyAccountButtonHeaderElement(){
-		return getClickableElement(myAccountButtonHeaderElement).getText();
-	}
-
-	public  WebElement getMyAccountButtonHeaderElement(){
-		return getClickableElement(myAccountButtonHeaderElement);
-	}
-
-
+    public WebElement getMyAccountButtonHeaderElement() {
+        return getClickableElement(myAccountButtonHeaderElement);
+    }
 
 
 }

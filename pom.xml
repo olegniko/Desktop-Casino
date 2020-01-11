@@ -40,12 +40,21 @@
             </properties>
         </profile>
         <profile>
-            <id>regress opera EN</id>
+            <id>regress chrome EN es1</id>
             <properties>
-                <browser>opera</browser>
+                <browser>chrome</browser>
                 <suite>Regress</suite>
                 <locale>en</locale>
-                <server>ald2</server>
+                <server>es1</server>
+            </properties>
+        </profile>
+        <profile>
+            <id>regress chrome EN dk1</id>
+            <properties>
+                <browser>chrome</browser>
+                <suite>Regress</suite>
+                <locale>en</locale>
+                <server>dk1</server>
             </properties>
         </profile>
 

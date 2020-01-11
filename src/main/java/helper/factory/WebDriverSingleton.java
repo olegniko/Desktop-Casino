@@ -1,6 +1,7 @@
 package helper.factory;
 
 import org.openqa.selenium.WebDriver;
+
 import java.net.MalformedURLException;
 
 public class WebDriverSingleton {
@@ -12,35 +13,37 @@ public class WebDriverSingleton {
         WebDriverFactory factory;
 
 
-        if ("chrome".equalsIgnoreCase(browser)){
+        switch (browser) {
+            case ("chrome"): {
 
-            factory = new ChromeDriverFactory();
-            MyLogger.info("Chrome selected");
+                factory = new ChromeDriverFactory();
+                MyLogger.info("Chrome selected");
+                break;
 
-       }
-        else if("firefox".equalsIgnoreCase(browser)) {
+            }
+            case ("firefox"): {
 
-            factory = new FirefoxDriverFactory();
-            MyLogger.info("Firefox selected");
+                factory = new FirefoxDriverFactory();
+                MyLogger.info("Firefox selected");
+                break;
+            }
+            case ("opera"): {
 
-       }
-        else if("opera".equalsIgnoreCase(browser)) {
+                factory = new OperaDriverFactory();
+                MyLogger.info("Opera selected");
+                break;
+            }
+            case ("edge"): {
 
-            factory = new OperaDriverFactory();
-            MyLogger.info("Opera selected");
+                factory = new EdgeDriverFactory();
+                MyLogger.info("Edge selected");
+                break;
+            }
+            default:
 
-        }
-        else if("edge".equalsIgnoreCase(browser)) {
-
-            factory = new EdgeDriverFactory();
-            MyLogger.info("Edge selected");
-
-        }
-        else{
-
-            factory = new ChromeDriverFactory();
-            MyLogger.info("Chrome selected");
-
+                factory = new ChromeDriverFactory();
+                MyLogger.info("Chrome selected");
+                break;
         }
 
         try {
@@ -52,7 +55,6 @@ public class WebDriverSingleton {
             throw new RuntimeException("Failed to init browser", e);
 
         }
-
 
 
     }

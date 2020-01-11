@@ -10,27 +10,25 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
-
 public class LoginHeaderUnlogged {
 
     CasinoPage casinoPage;
 
     @BeforeClass
 
-    public  void setUp() {
+    public void setUp() {
 
 
-        casinoPage=new CasinoPage();
+        casinoPage = new CasinoPage();
 
 
     }
 
 
     @AfterClass(alwaysRun = true)
-    public void tearDown()  {
+    public void tearDown() {
         casinoPage.close();
     }
-
 
 
     @Test
@@ -83,7 +81,7 @@ public class LoginHeaderUnlogged {
     //
     public void incorectLoginTest() {
 
-        casinoPage.login(exampleBundle.getString("incorrect_login"),exampleBundle.getString("correct_password"));
+        casinoPage.login(exampleBundle.getString("incorrect_login"), exampleBundle.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
@@ -95,7 +93,7 @@ public class LoginHeaderUnlogged {
     //
     public void incorectPasswordTest() {
 
-        casinoPage.login(exampleBundle.getString("correct_login"),exampleBundle.getString("incorrect_password"));
+        casinoPage.login(exampleBundle.getString("correct_login"), exampleBundle.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
@@ -106,7 +104,7 @@ public class LoginHeaderUnlogged {
     //
     public void incorectLoginAndPasswordTest() {
 
-        casinoPage.login(exampleBundle.getString("incorrect_login"),exampleBundle.getString("incorrect_password"));
+        casinoPage.login(exampleBundle.getString("incorrect_login"), exampleBundle.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
@@ -117,7 +115,7 @@ public class LoginHeaderUnlogged {
     //
     public void blankLoginAndPasswordTest() {
 
-        casinoPage.login("","");
+        casinoPage.login("", "");
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
@@ -128,7 +126,7 @@ public class LoginHeaderUnlogged {
     //
     public void blankLoginTest() {
 
-        casinoPage.login("",exampleBundle.getString("correct_password"));
+        casinoPage.login("", exampleBundle.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
@@ -139,7 +137,7 @@ public class LoginHeaderUnlogged {
     //
     public void blankPasswordTest() {
 
-        casinoPage.login(exampleBundle.getString("correct_login"),"");
+        casinoPage.login(exampleBundle.getString("correct_login"), "");
         assertTrue(casinoPage.getIncorrectLoginMessageElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonElement());
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());

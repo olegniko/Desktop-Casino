@@ -10,7 +10,7 @@ import org.openqa.selenium.opera.OperaOptions;
 public class OperaDriverFactory extends WebDriverFactory {
     @Override
 
-        public WebDriver create() {
+    public WebDriver create() {
 
         System.setProperty("webdriver.opera.driver", "./src/main/resources/operadriver.exe");
 

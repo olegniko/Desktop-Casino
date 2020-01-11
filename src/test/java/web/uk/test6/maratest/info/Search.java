@@ -9,9 +9,10 @@ public class Search {
 
 
     CasinoPage casinoPage;
+
     @BeforeClass
 
-    public  void setUp()  {
+    public void setUp() {
 
 
         casinoPage = new CasinoPage();
@@ -21,10 +22,9 @@ public class Search {
 
 
     @AfterClass
-    public void tearDown()  {
+    public void tearDown() {
         casinoPage.close();
     }
-
 
 
 }

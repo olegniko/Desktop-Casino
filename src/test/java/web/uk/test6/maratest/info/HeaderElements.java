@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-
 public class HeaderElements {
 
     CasinoPage casinoPage;
+
     @BeforeClass
 
-    public  void setUp()  {
+    public void setUp() {
 
 
         casinoPage = new CasinoPage();
@@ -22,7 +22,7 @@ public class HeaderElements {
 
 
     @AfterClass
-    public void tearDown()  {
+    public void tearDown() {
         casinoPage.close();
     }
 

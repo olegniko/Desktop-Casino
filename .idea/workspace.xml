@@ -5,17 +5,31 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/ChromeDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/EdgeDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/EdgeDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/FirefoxDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/MyLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/OperaDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/WebDriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/WebDriverSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle_de.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Favourites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Favourites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FooterElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/FooterElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchEvolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchIssoft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchMG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchPlayngo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchRelax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/GameLaunchYggdrasil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/HeaderElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_de.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle_fr.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/factory/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/factory/Browser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/LoginHeaderUnlogged.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/uk/test6/maratest/info/LoginHeaderUnlogged.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/factory/WebDriverSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/factory/WebDriverSingleton.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +69,7 @@
     </option>
     <option name="enabledProfiles">
       <list>
-        <option value="regress chrome EN cur2" />
+        <option value="regress chrome EN ald2" />
       </list>
     </option>
   </component>
@@ -459,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578696905599</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="commit create Framework for Desktop Casino.8">
+      <created>1578749794161</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1578749794161</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit 05/06/2019.2" />
     <MESSAGE value="commit 05/06/2019.3" />
     <MESSAGE value="commit 07/06/2019" />
     <MESSAGE value="commit 07/06/2019.2" />
@@ -515,9 +535,14 @@
     <MESSAGE value="commit create Framework for Desktop Casino.4 + login fields" />
     <MESSAGE value="commit create Framework for Desktop Casino.5 + login fields" />
     <MESSAGE value="commit create Framework for Desktop Casino.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit create Framework for Desktop Casino.7" />
+    <MESSAGE value="commit create Framework for Desktop Casino.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit create Framework for Desktop Casino.8" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" width="816" height="729" key="#Intentions" timestamp="1578750940811">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1578750940811" />
     <state x="552" y="179" key="#Project_Structure" timestamp="1578690002534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -530,40 +555,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578673224779" />
-    <state x="600" y="115" key="CommitChangelistDialog2" timestamp="1578696904820">
+    <state x="600" y="115" key="CommitChangelistDialog2" timestamp="1578749793338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2520" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582188079" />
-    <state x="600" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578696904820" />
+    <state x="600" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578749793338" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1578690719887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578565111022" />
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578690719887" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578749689527">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578750971097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589044" />
     <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689527" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578749689527">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578750971097" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578750971097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689527" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578749689526">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578750971097" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578750971097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007987" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689526" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578749689527">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578750971097" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578750971097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578749689527" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578750971097" />
     <state width="1877" height="368" key="GridCell.Tab.1.bottom" timestamp="1578749468265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -580,11 +605,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="368" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578749468265" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578696916275">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578749802308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582193055" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578696916275" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578749802308" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578690263905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -595,27 +620,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java</url>
-          <line>39</line>
+          <line>37</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java</url>
-          <line>48</line>
+          <line>46</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java</url>
-          <line>40</line>
+          <line>38</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java</url>
-          <line>49</line>
+          <line>47</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/web/uk/test6/maratest/info/LoginHeaderUnlogged.java</url>
-          <line>108</line>
+          <line>106</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

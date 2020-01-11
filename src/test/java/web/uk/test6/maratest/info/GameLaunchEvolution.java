@@ -5,15 +5,14 @@ import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-
-public class GameLaunchEvolution  {
+public class GameLaunchEvolution {
 
 
     CasinoPage casinoPage;
 
     @BeforeClass
 
-    public  void setUp() {
+    public void setUp() {
 
 
         casinoPage = new CasinoPage();
@@ -23,7 +22,7 @@ public class GameLaunchEvolution  {
 
 
     @AfterClass
-    public void tearDown()  {
+    public void tearDown() {
         casinoPage.close();
     }
 
