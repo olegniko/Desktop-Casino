@@ -1,16 +1,16 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
+
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-public class GameLaunchIssoft {
+public class HeaderElements {
 
     CasinoPage casinoPage;
 
     @BeforeClass
-
 
     public void setUp() {
 
@@ -26,5 +26,7 @@ public class GameLaunchIssoft {
         casinoPage.close();
     }
 
+
 }
+
 

@@ -1,15 +1,16 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-public class Favourites {
+public class GameLaunchIssoft {
 
     CasinoPage casinoPage;
 
     @BeforeClass
+
 
     public void setUp() {
 
@@ -25,7 +26,5 @@ public class Favourites {
         casinoPage.close();
     }
 
-
 }
-
 

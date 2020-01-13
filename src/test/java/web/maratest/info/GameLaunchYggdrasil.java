@@ -1,19 +1,17 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-public class Search {
-
+public class GameLaunchYggdrasil {
 
     CasinoPage casinoPage;
 
     @BeforeClass
 
     public void setUp() {
-
 
         casinoPage = new CasinoPage();
 
@@ -28,3 +26,4 @@ public class Search {
 
 
 }
+

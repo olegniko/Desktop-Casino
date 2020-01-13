@@ -48,7 +48,7 @@ public class MainPage extends BasePage {
 
     public WebElement getLoginButtonHeaderElement() {
 
-        return getClickableElement(loginButtonHeaderElement);
+        return getEnabledElement(loginButtonHeaderElement);
 
     }
 
@@ -75,12 +75,13 @@ public class MainPage extends BasePage {
     }
 
     public void login(String login, String password) {
+
         fillLoginInHeader(login);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         fillPasswordInHeader(password);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
-        ;
+
 
     }
 

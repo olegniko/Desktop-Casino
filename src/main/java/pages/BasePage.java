@@ -71,7 +71,7 @@ public abstract class BasePage {
 
     public void waitIfElementIsClickableFluent(WebElement element) {
 
-        waitIfElementIsClickableFluent(element, 20, 5);
+        waitIfElementIsClickableFluent(element, 30, 5);
 
     }
 

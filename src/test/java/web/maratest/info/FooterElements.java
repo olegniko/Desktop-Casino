@@ -1,4 +1,4 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
 
 
 import org.testng.annotations.AfterClass;

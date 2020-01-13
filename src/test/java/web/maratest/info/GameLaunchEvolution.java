@@ -1,11 +1,12 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CasinoPage;
 
 
-public class GameLaunchPlayngo {
+public class GameLaunchEvolution {
+
 
     CasinoPage casinoPage;
 

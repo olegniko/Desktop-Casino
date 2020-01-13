@@ -1,4 +1,4 @@
-package web.uk.test6.maratest.info;
+package web.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -143,6 +143,7 @@ public class LoginHeaderUnlogged {
         casinoPage.clearField(casinoPage.getLoginFieldHeaderElement());
         casinoPage.clearField(casinoPage.getPasswordFieldHeaderElement());
     }
+
 
 
 }

@@ -49,7 +49,7 @@ public class Browser {
         MyLogger.info(url + " is opening");
         driver.manage().window().maximize();
         driver.get(url);
-        driverWait(10);
+        sleep(5);
 
     }
 
@@ -58,6 +58,16 @@ public class Browser {
         driver = null;
     }
 
+
+    public static void sleep(int seconds) {
+        try {
+
+            TimeUnit.SECONDS.sleep(seconds);
+        } catch (InterruptedException e) {
+
+            Thread.currentThread().interrupt();
+        }
+    }
 
     public void driverWait(int time) {
 
