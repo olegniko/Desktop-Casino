@@ -12,7 +12,9 @@ public class Browser {
 
     public static WebDriver driver;
     public static Locale locale;
+    public static Locale localeServer;
     public static ResourceBundle exampleBundle;
+    public static ResourceBundle exampleBundleServer;
     String url;
 
 
@@ -28,25 +30,15 @@ public class Browser {
         locale = new Locale(System.getProperty("locale"));
         MyLogger.info(locale + " selected");
         exampleBundle = ResourceBundle.getBundle("ResourceBundle", locale);
-        String server = System.getProperty("server");
-        MyLogger.info(server + " selected");
 
-        switch (server) {
-            case ("cur2"):
-                url = exampleBundle.getString("url_cur2");
-                break;
-            case ("ald2"):
-                url = exampleBundle.getString("url_ald2");
-                break;
-            case ("es1"):
-                url = exampleBundle.getString("url_es1");
-                break;
-            case ("dk1"):
-                url = exampleBundle.getString("url_dk1");
-                break;
+        localeServer = new Locale(System.getProperty("localeServer"));
+        MyLogger.info(localeServer + " selected");
+        exampleBundleServer = ResourceBundle.getBundle("ResourceBundle_server", localeServer);
 
-        }
+        url = exampleBundleServer.getString("url");
+
         MyLogger.info(url + " is opening");
+
         driver.manage().window().maximize();
         driver.get(url);
         sleep(5);

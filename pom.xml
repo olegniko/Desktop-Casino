@@ -27,7 +27,7 @@
                 <browser>chrome</browser>
                 <suite>Regress</suite>
                 <locale>en</locale>
-                <server>cur2</server>
+                <localeServer>cur</localeServer>
             </properties>
         </profile>
         <profile>
@@ -36,7 +36,7 @@
                 <browser>chrome</browser>
                 <suite>Regress</suite>
                 <locale>en</locale>
-                <server>ald2</server>
+                <localeServer>ald</localeServer>
             </properties>
         </profile>
         <profile>
@@ -45,7 +45,7 @@
                 <browser>chrome</browser>
                 <suite>Regress</suite>
                 <locale>en</locale>
-                <server>es1</server>
+                <localeServer>es</localeServer>
             </properties>
         </profile>
         <profile>
@@ -54,7 +54,7 @@
                 <browser>chrome</browser>
                 <suite>Regress</suite>
                 <locale>en</locale>
-                <server>dk1</server>
+                <localeServer>dk</localeServer>
             </properties>
         </profile>
 
@@ -94,7 +94,7 @@
                     <systemPropertyVariables>
                         <browser>${browser}</browser>
                         <locale>${locale}</locale>
-                        <server>${server}</server>
+                        <localeServer>${localeServer}</localeServer>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
