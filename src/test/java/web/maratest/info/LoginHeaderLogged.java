@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
+import static helper.factory.Browser.exampleBundleServer;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -20,7 +21,7 @@ public class LoginHeaderLogged {
 
 
         casinoPage = new CasinoPage();
-        casinoPage.login(exampleBundle.getString("correct_login"), exampleBundle.getString("correct_password"));
+        casinoPage.login(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
 
     }
