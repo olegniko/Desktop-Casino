@@ -81,9 +81,22 @@ public class MainPage extends BasePage {
         fillPasswordInHeader(password);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
-
-
     }
+
+
+    public void correctLogin(String login, String password) {
+
+        fillLoginInHeader(login);
+        loginFieldHeaderElement.sendKeys(Keys.TAB);
+        fillPasswordInHeader(password);
+        loginFieldHeaderElement.sendKeys(Keys.TAB);
+        clickLoginButtonInHeader();
+        if(getDepositButtonHeaderElement().isEnabled()){
+        }
+        else
+            waitIfElementIsClickable(getLoginMessageOkButtonElement());
+            clickIfElementIsClickable(getLoginMessageOkButtonElement());
+        }
 
 
     @FindBy(css = "a[class='button btn-join']")

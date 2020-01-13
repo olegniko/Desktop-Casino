@@ -21,8 +21,7 @@ public class LoginHeaderLogged {
 
 
         casinoPage = new CasinoPage();
-        casinoPage.login(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
 
     }
 
