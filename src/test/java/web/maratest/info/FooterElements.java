@@ -12,7 +12,7 @@ public class FooterElements {
 
     @BeforeClass
 
-    public void setUp() {
+    public void setUp() throws Exception {
 
 
         casinoPage = new CasinoPage();

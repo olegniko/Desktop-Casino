@@ -7,6 +7,15 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+import org.openqa.selenium.OutputType;
+
+import org.openqa.selenium.TakesScreenshot;
+
+
 public class Browser {
 
 
@@ -26,7 +35,7 @@ public class Browser {
     }
 
 
-    public void open() {
+    public void open() throws Exception {
         locale = new Locale(System.getProperty("locale"));
         MyLogger.info(locale + " selected");
         exampleBundle = ResourceBundle.getBundle("ResourceBundle", locale);
@@ -42,7 +51,7 @@ public class Browser {
         driver.manage().window().maximize();
         driver.get(url);
         sleep(5);
-
+        takeSnapShot(driver,"C:\\TMP\\screens_file.png");
     }
 
     public void close() {
@@ -71,6 +80,28 @@ public class Browser {
     public void refreshPage() {
 
         driver.navigate().refresh();
+    }
+
+
+
+    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+
+        //Convert web driver object to TakeScreenshot
+
+        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+
+        //Call getScreenshotAs method to create image file
+
+        File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+        //Move image file to new destination
+
+        File DestFile=new File(fileWithPath);
+
+        //Copy file at destination
+
+        FileUtils.copyFile(SrcFile, DestFile);
+
     }
 
 }

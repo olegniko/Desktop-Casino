@@ -3,7 +3,7 @@ package pages;
 
 public class CasinoPage extends MainPage {
 
-    public CasinoPage() {
+    public CasinoPage() throws Exception {
         super();
     }
 

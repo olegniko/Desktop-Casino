@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends BasePage {
 
-    public MainPage() {
+    public MainPage() throws Exception {
         super();
     }
 

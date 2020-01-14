@@ -20,7 +20,7 @@ public abstract class BasePage {
     public WebDriver driver;
 
 
-    public BasePage() {
+    public BasePage() throws Exception {
 
         browser = new Browser();
         driver = browser.init();
