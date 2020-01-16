@@ -2,45 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c21e6061-ad24-4702-bdc3-113c47ad0521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_server.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_server_ald.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_server_cur.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_server_dk.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResourceBundle_server_es.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/Browser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/ChromeDriverFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/EdgeDriverFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/FirefoxDriverFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/MyLogger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/OperaDriverFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/WebDriverFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/helper/factory/WebDriverSingleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/msedgedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/operadriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pages/CasinoPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pages/MainPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Regress.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/Favourites.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/FooterElements.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchEvolution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchIssoft.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchMG.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchPlayngo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchRelax.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/GameLaunchYggdrasil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/HeaderElements.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/LoginHeaderLogged.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/LoginHeaderUnlogged.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/Search.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/factory/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/factory/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CasinoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/web/maratest/info/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/web/maratest/info/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Regress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Regress.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ResourceBundle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/factory/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/factory/Browser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/CasinoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CasinoPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Regress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Regress.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/web/maratest/info/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/web/maratest/info/Search.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -514,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578751486062</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="commit replace elements definition">
+      <created>1579204579792</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1579204579792</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit 07/06/2019" />
     <MESSAGE value="commit 07/06/2019.2" />
     <MESSAGE value="commit 10/06/2019" />
     <MESSAGE value="commit 10/06/2019.2" />
@@ -570,7 +549,8 @@
     <MESSAGE value="commit create Framework for Desktop Casino.7" />
     <MESSAGE value="commit create Framework for Desktop Casino.8" />
     <MESSAGE value="commit create Framework for Desktop Casino.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit create Framework for Desktop Casino.9" />
+    <MESSAGE value="commit replace elements definition" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit replace elements definition" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" width="816" height="729" key="#Intentions" timestamp="1578750940811">
@@ -593,40 +573,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578673224779" />
-    <state x="600" y="115" key="CommitChangelistDialog2" timestamp="1578751485429">
+    <state x="600" y="115" key="CommitChangelistDialog2" timestamp="1579204578908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2520" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582188079" />
-    <state x="600" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578751485429" />
+    <state x="600" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579204578908" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1578690719887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578565111022" />
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578690719887" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1579203216006">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1579207936344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589044" />
     <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579203216006" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1579203216006">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579207936344" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1579207936343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579203216006" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1579203216005">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579207936343" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1579207936342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007987" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579203216005" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1579203216006">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579207936342" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1579207936343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578675589043" />
     <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651007988" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579203216006" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579207936343" />
     <state width="1877" height="368" key="GridCell.Tab.1.bottom" timestamp="1578749468265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -647,11 +627,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579202946290" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578751495023">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579204587783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578582193055" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578751495023" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579204587783" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579203138086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

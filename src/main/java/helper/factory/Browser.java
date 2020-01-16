@@ -50,7 +50,7 @@ public class Browser {
 
         driver.manage().window().maximize();
         driver.get(url);
-        sleep(5);
+        sleep(10);
         takeSnapShot(driver,"C:\\TMP\\screens_file.png");
     }
 

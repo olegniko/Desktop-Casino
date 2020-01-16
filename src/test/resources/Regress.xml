@@ -20,6 +20,14 @@
 
         </classes>
     </test>
+    <test name="Search">
+        <classes>
+
+            <class name="web.maratest.info.Search">
+            </class>
+
+        </classes>
+    </test>
 
 
 </suite>
