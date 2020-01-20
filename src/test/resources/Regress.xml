@@ -4,14 +4,7 @@
     <suite name = "chrome Regress">
 
 
-   <test name="LoginHeaderUnlogged">
-        <classes>
 
-            <class name="web.maratest.info.LoginHeaderUnlogged">
-            </class>
-
-        </classes>
-    </test>
     <test name="LoginHeaderLogged">
         <classes>
 

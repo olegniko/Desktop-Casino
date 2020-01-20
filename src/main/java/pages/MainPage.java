@@ -45,7 +45,7 @@ public class MainPage extends BasePage {
 
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
 
-    public WebElement getLoginButtonHeaderElement() { return getEnabledElement(loginButtonHeaderElement); }
+    public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
 
     public WebElement getJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement); }
 
