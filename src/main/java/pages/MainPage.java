@@ -109,7 +109,7 @@ public class MainPage extends BasePage {
 
     public void fillPasswordInHeader(String password) { getPasswordFieldHeaderElement().sendKeys(password); }
 
-    public void clickLoginButtonInHeader() { getLoginButtonHeaderElement().click(); }
+    public void clickLoginButtonInHeader() { clickIfElementIsClickable(getLoginButtonHeaderElement()); }
 
     public void login(String login, String password) {
         fillLoginInHeader(login);

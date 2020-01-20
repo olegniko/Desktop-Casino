@@ -5,14 +5,7 @@
 
 
 
-    <test name="LoginHeaderLogged">
-        <classes>
 
-            <class name="web.maratest.info.LoginHeaderLogged">
-            </class>
-
-        </classes>
-    </test>
     <test name="Search">
         <classes>
 
