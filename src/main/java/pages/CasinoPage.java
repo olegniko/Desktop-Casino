@@ -21,31 +21,41 @@ public class CasinoPage extends MainPage {
     protected WebElement searchResultHeaderElement;
     @FindBy(css = "p[class='gi-casino-empty-section__text ng-scope']")
     protected WebElement searchResultBodyElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegMgAutotest']")
-    protected WebElement mgTitleElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegRelaxAutotest']")
-    protected WebElement relaxTitleElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegPlayngoAutotest']")
-    protected WebElement playngoTitleElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegIssoftAutotest']")
-    protected WebElement issoftTitleElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegEvolutionAutotest']")
-    protected WebElement evolutionTitleElement;
-    @FindBy(xpath = "//*[normalize-space(text()) = 'olegYggdrasilAutotest']")
-    protected WebElement yggdrasilTitleElement;
-
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement mgGameElement;
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegRelaxAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement relaxGameElement;
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegPlayngoAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement playngoGameElement;
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegIssoftAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement issoftGameElement;
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegEvolutionAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement evolutionGameElement;
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement yggdrasilGameElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__play ng-scope']")
+    protected WebElement mgGamePlayElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
+    protected WebElement mgGameDemoElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    protected WebElement mgGameFavouriteElement;
 
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
     public WebElement getCrossIconSearchFieldElement() { return getClickableElement(crossIconSearchFieldElement); }
     public WebElement getSearchIconSearchFieldElement() { return getClickableElement(searchIconSearchFieldElement); }
     public WebElement getSearchResultHeaderElement() { return searchResultHeaderElement; }
     public WebElement getSearchResultBodyElement() { return searchResultBodyElement; }
-    public WebElement getMgTitleElement() { return mgTitleElement; }
-    public WebElement getRelaxTitleElement() { return relaxTitleElement; }
-    public WebElement getPlayngoTitleElement() { return playngoTitleElement; }
-    public WebElement getIssoftTitleElement() { return issoftTitleElement; }
-    public WebElement getEvolutionTitleElement() { return evolutionTitleElement; }
-    public WebElement getYggdrasilTitleElement() { return yggdrasilTitleElement; }
+
+    public WebElement getMgGameElement() { return mgGameElement; }
+    public WebElement getMgGamePlayElement() { return mgGamePlayElement; }
+    public WebElement getMgGameDemoElement() { return mgGameDemoElement; }
+    public WebElement getMgGameFavouriteElement() { return mgGameFavouriteElement; }
+
+    public WebElement getRelaxGameElement() { return relaxGameElement; }
+    public WebElement getPlayngoGameElement() { return playngoGameElement; }
+    public WebElement getIssoftGameElement() { return issoftGameElement; }
+    public WebElement getEvolutionGameElement() { return evolutionGameElement; }
+    public WebElement getYggdrasilGameElement() { return yggdrasilGameElement; }
 
 
 

@@ -127,7 +127,7 @@ public class Search {
     public void mgSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("mg_game"));
-        assertTrue(casinoPage.getMgTitleElement().isDisplayed());
+        assertTrue(casinoPage.getMgGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
@@ -135,14 +135,14 @@ public class Search {
     public void relaxSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("relax_game"));
-        assertTrue(casinoPage.getRelaxTitleElement().isDisplayed());
+        assertTrue(casinoPage.getRelaxGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
     @Test
     public void playngoSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("playngo_game"));
-        assertTrue(casinoPage.getPlayngoTitleElement().isDisplayed());
+        assertTrue(casinoPage.getPlayngoGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
@@ -150,14 +150,14 @@ public class Search {
     public void issoftSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("issoft_game"));
-        assertTrue(casinoPage.getIssoftTitleElement().isDisplayed());
+        assertTrue(casinoPage.getIssoftGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
     @Test
     public void evolutionSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("evolution_game"));
-        assertTrue(casinoPage.getEvolutionTitleElement().isDisplayed());
+        assertTrue(casinoPage.getEvolutionGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
@@ -165,7 +165,7 @@ public class Search {
     public void yggdrasilSearchBodyMessageTest() {
 
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
-        assertTrue(casinoPage.getYggdrasilTitleElement().isDisplayed());
+        assertTrue(casinoPage.getYggdrasilGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
