@@ -38,7 +38,7 @@ public class GameYggdrasil {
     //
     public void playButtonEnabledTest() {
 
-        assertFalse(casinoPage.getYggdrasilGameElement().isDisplayed());
+        assertFalse(casinoPage.getYggdrasilGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getYggdrasilGamePlayElement().isEnabled());
 
     }

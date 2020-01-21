@@ -125,4 +125,13 @@ public class CasinoPage extends MainPage {
         waitIfElementIsClickable(getSearchFieldElement());
         getSearchFieldElement().sendKeys(data);
     }
+
+    public void addToFavourites(WebElement element){
+        waitIfElementIsClickable(element);
+        clickIfElementIsClickable(element);
+    }
+    public void removeFromFavourites(WebElement element){
+        waitIfElementIsClickable(element);
+        clickIfElementIsClickable(element);
+    }
 }

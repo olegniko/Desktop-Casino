@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "chrome Regress">
+
+    <test name="MGGame">
+        <classes>
+
+            <class name="web.maratest.info.GameMG">
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="RelaxGame">
+        <classes>
+
+            <class name="web.maratest.info.GameRelax">
+            </class>
+
+        </classes>
+    </test>
+    <test name="PlayngoGame">
+        <classes>
+
+            <class name="web.maratest.info.GamePlayngo">
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="YggdrasilGame">
+        <classes>
+
+            <class name="web.maratest.info.GameYggdrasil">
+            </class>
+
+        </classes>
+    </test>
+    <test name="EvolutionGame">
+        <classes>
+
+            <class name="web.maratest.info.GameEvolution">
+            </class>
+
+        </classes>
+    </test>
+    <test name="IssoftGame">
+        <classes>
+
+            <class name="web.maratest.info.GameIssoft">
+            </class>
+
+        </classes>
+    </test>
+    <test name="Favourites">
+        <classes>
+
+            <class name="web.maratest.info.Favourites">
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
+
+
+
+

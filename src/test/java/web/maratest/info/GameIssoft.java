@@ -38,7 +38,7 @@ public class GameIssoft {
     //
     public void playButtonEnabledTest() {
 
-        assertFalse(casinoPage.getIssoftGameElement().isDisplayed());
+        assertFalse(casinoPage.getIssoftGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getIssoftGamePlayElement().isEnabled());
 
     }

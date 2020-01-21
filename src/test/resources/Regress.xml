@@ -53,6 +53,14 @@
 
         </classes>
     </test>
+    <test name="Favourites">
+        <classes>
+
+            <class name="web.maratest.info.Favourites">
+            </class>
+
+        </classes>
+    </test>
 
 </suite>
 
