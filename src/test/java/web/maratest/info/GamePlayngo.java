@@ -6,10 +6,11 @@ import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 
-public class GameMG {
+public class GamePlayngo {
 
     CasinoPage casinoPage;
 
@@ -17,8 +18,11 @@ public class GameMG {
 
     public void setUp() throws Exception {
 
+
         casinoPage = new CasinoPage();
-        casinoPage.search(exampleBundle.getString("mg_game"));
+        casinoPage.search(exampleBundle.getString("playngo_game"));
+
+
     }
 
 
@@ -28,28 +32,31 @@ public class GameMG {
     }
 
 
+
+
     @Test
     //
     public void playButtonEnabledTest() {
 
-        assertFalse(casinoPage.getMgGamePlayElement().isDisplayed());
-        assertTrue(casinoPage.getMgGamePlayElement().isEnabled());
+        assertFalse(casinoPage.getPlayngoGamePlayElement().isDisplayed());
+        assertTrue(casinoPage.getPlayngoGamePlayElement().isEnabled());
 
     }
     @Test
     //
     public void demoButtonEnabledTest() {
 
-        assertFalse(casinoPage.getMgGameDemoElement().isDisplayed());
-        assertTrue(casinoPage.getMgGameDemoElement().isEnabled());
+        assertFalse(casinoPage.getPlayngoGameDemoElement().isDisplayed());
+        assertTrue(casinoPage.getPlayngoGameDemoElement().isEnabled());
 
     }
     @Test
     //
     public void favouritesEnabledTest() {
 
-        assertTrue(casinoPage.getMgGameFavouriteElement().isDisplayed());
-        assertTrue(casinoPage.getMgGameFavouriteElement().isEnabled());
+        assertTrue(casinoPage.getPlayngoGameFavouriteElement().isDisplayed());
+        assertTrue(casinoPage.getPlayngoGameFavouriteElement().isEnabled());
 
     }
 }
+
