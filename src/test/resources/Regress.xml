@@ -3,6 +3,30 @@
 
     <suite name = "chrome Regress">
 
+    <test name="Search">
+        <classes>
+
+            <class name="web.maratest.info.Search">
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginHeaderUnlogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginHeaderUnlogged">
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginHeaderLogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginHeaderLogged">
+            </class>
+
+        </classes>
+    </test>
     <test name="MGGame">
         <classes>
 

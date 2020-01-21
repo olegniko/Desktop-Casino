@@ -21,6 +21,10 @@ public class CasinoPage extends MainPage {
     protected WebElement searchResultHeaderElement;
     @FindBy(css = "p[class='gi-casino-empty-section__text ng-scope']")
     protected WebElement searchResultBodyElement;
+    @FindBy(css = "a[title='Favourites']")
+    protected WebElement favoriteIconElement;
+    @FindBy(xpath = "//div[contains(@class,'favorites-counter')]")
+    protected WebElement favoriteNumberElement;
 
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']")
     protected WebElement mgGameElement;
@@ -28,7 +32,7 @@ public class CasinoPage extends MainPage {
     protected WebElement mgGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement mgGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegMgAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement mgGameFavouriteElement;
 
     @FindBy(xpath = "//*[normalize-space(text()) = 'olegRelaxAutotest']//ancestor::casino-game[@game='game']")
@@ -37,7 +41,7 @@ public class CasinoPage extends MainPage {
     protected WebElement relaxGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegRelaxAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement relaxGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegRelaxAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegRelaxAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement relaxGameFavouriteElement;
 
     @FindBy(xpath = "//*[normalize-space(text()) = 'olegPlayngoAutotest']//ancestor::casino-game[@game='game']")
@@ -46,7 +50,7 @@ public class CasinoPage extends MainPage {
     protected WebElement playngoGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegPlayngoAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement playngoGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegPlayngoAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegPlayngoAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement playngoGameFavouriteElement;
 
     @FindBy(xpath = "//*[normalize-space(text()) = 'olegIssoftAutotest']//ancestor::casino-game[@game='game']")
@@ -55,7 +59,7 @@ public class CasinoPage extends MainPage {
     protected WebElement issoftGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegIssoftAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement issoftGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegIssoftAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegIssoftAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement issoftGameFavouriteElement;
 
     @FindBy(xpath = "//*[normalize-space(text()) = 'olegEvolutionAutotest']//ancestor::casino-game[@game='game']")
@@ -64,7 +68,7 @@ public class CasinoPage extends MainPage {
     protected WebElement evolutionGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegEvolutionAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement evolutionGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegEvolutionAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegEvolutionAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement evolutionGameFavouriteElement;
 
     @FindBy(xpath = "//*[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']")
@@ -73,7 +77,7 @@ public class CasinoPage extends MainPage {
     protected WebElement yggdrasilGamePlayElement;
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
     protected WebElement yggdrasilGameDemoElement;
-    @FindBy(xpath = "//div[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']//descendant::button[@class = 'gi-casino-game__favorite']")
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement yggdrasilGameFavouriteElement;
 
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
@@ -81,6 +85,8 @@ public class CasinoPage extends MainPage {
     public WebElement getSearchIconSearchFieldElement() { return getClickableElement(searchIconSearchFieldElement); }
     public WebElement getSearchResultHeaderElement() { return searchResultHeaderElement; }
     public WebElement getSearchResultBodyElement() { return searchResultBodyElement; }
+    public WebElement getFavoriteIconElement() { return favoriteIconElement; }
+    public WebElement getFavoriteNumberElement() { return favoriteNumberElement; }
 
     public WebElement getMgGameElement() { return mgGameElement; }
     public WebElement getMgGamePlayElement() { return mgGamePlayElement; }
@@ -118,7 +124,7 @@ public class CasinoPage extends MainPage {
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
     public String getTextSearchResultHeaderElement() { return searchResultHeaderElement.getText(); }
     public String getTextSearchResultBodyElement() { return searchResultBodyElement.getText(); }
-
+    public String getTextFavoriteNumberElement() { return favoriteNumberElement.getText(); }
 
 
     public void search(String data){
@@ -127,11 +133,11 @@ public class CasinoPage extends MainPage {
     }
 
     public void addToFavourites(WebElement element){
-        waitIfElementIsClickable(element);
+        waitIfElementIsEnabled(element);
         clickIfElementIsClickable(element);
     }
     public void removeFromFavourites(WebElement element){
-        waitIfElementIsClickable(element);
+        waitIfElementIsEnabled(element);
         clickIfElementIsClickable(element);
     }
 }
