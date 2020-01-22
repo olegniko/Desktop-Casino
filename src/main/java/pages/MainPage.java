@@ -42,43 +42,31 @@ public class MainPage extends BasePage {
 
 
     public WebElement getLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement); }
-
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
-
     public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
-
     public WebElement getJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement); }
-
     public WebElement getLostPasswordHeaderElement() {
         return getClickableElement(lostPasswordHeaderElement);
     }
-
     public WebElement getIncorrectLoginMessageElement() {
         return getClickableElement(incorrectLoginMessageElement);
     }
-
     public WebElement getLoginMessageElement() {
         return getClickableElement(loginMessageElement);
     }
-
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-
     public WebElement getLoginMessageOkButtonElement() {
         return getClickableElement(loginMessageOkButtonElement);
     }
-
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }
-
     public WebElement getLogoutButtonHeaderElement() {
         return getClickableElement(logoutButtonHeaderElement);
     }
-
     public WebElement getDepositButtonHeaderElement() {
         return getClickableElement(depositButtonHeaderElement);
     }
-
     public WebElement getMyAccountButtonHeaderElement() {
         return getClickableElement(myAccountButtonHeaderElement);
     }
@@ -130,6 +118,14 @@ public class MainPage extends BasePage {
         else
             waitIfElementIsClickable(getLoginMessageOkButtonElement());
             clickIfElementIsClickable(getLoginMessageOkButtonElement());
+        waitIfElementIsEnabled(getDepositButtonHeaderElement());
+    }
+
+
+    public void logout(){
+
+        clickIfElementIsClickableFluent(getLogoutButtonHeaderElement());
+        waitIfElementIsClickableFluent(loginButtonHeaderElement);
     }
 
 }

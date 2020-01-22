@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
+import static helper.factory.Browser.exampleBundleServer;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -102,7 +103,7 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
+       @Test
     public void yggdrasilAddRemoveFavoritesTest() {
 
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
@@ -114,6 +115,7 @@ public class Favourites {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
+
 
 
 }

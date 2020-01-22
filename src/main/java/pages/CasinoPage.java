@@ -91,40 +91,40 @@ public class CasinoPage extends MainPage {
     public WebElement getMgGameElement() { return mgGameElement; }
     public WebElement getMgGamePlayElement() { return mgGamePlayElement; }
     public WebElement getMgGameDemoElement() { return mgGameDemoElement; }
-    public WebElement getMgGameFavouriteElement() { return mgGameFavouriteElement; }
+    public WebElement getMgGameFavouriteElement() { return getEnabledElement(mgGameFavouriteElement); }
 
     public WebElement getRelaxGameElement() { return relaxGameElement; }
     public WebElement getRelaxGamePlayElement() { return relaxGamePlayElement; }
     public WebElement getRelaxGameDemoElement() { return relaxGameDemoElement; }
-    public WebElement getRelaxGameFavouriteElement() { return relaxGameFavouriteElement; }
+    public WebElement getRelaxGameFavouriteElement() { return getEnabledElement(relaxGameFavouriteElement); }
 
     public WebElement getPlayngoGameElement() { return playngoGameElement; }
     public WebElement getPlayngoGamePlayElement() { return playngoGamePlayElement; }
     public WebElement getPlayngoGameDemoElement() { return playngoGameDemoElement; }
-    public WebElement getPlayngoGameFavouriteElement() { return playngoGameFavouriteElement; }
+    public WebElement getPlayngoGameFavouriteElement() { return getEnabledElement(playngoGameFavouriteElement); }
 
 
     public WebElement getIssoftGameElement() { return issoftGameElement; }
     public WebElement getIssoftGamePlayElement() { return issoftGamePlayElement; }
     public WebElement getIssoftGameDemoElement() { return issoftGameDemoElement; }
-    public WebElement getIssoftGameFavouriteElement() { return issoftGameFavouriteElement; }
+    public WebElement getIssoftGameFavouriteElement() { return getEnabledElement(issoftGameFavouriteElement); }
 
 
     public WebElement getEvolutionGameElement() { return evolutionGameElement; }
     public WebElement getEvolutionGamePlayElement() { return evolutionGamePlayElement; }
     public WebElement getEvolutionGameDemoElement() { return evolutionGameDemoElement; }
-    public WebElement getEvolutionGameFavouriteElement() { return evolutionGameFavouriteElement; }
+    public WebElement getEvolutionGameFavouriteElement() { return getEnabledElement(evolutionGameFavouriteElement); }
 
     public WebElement getYggdrasilGameElement() { return yggdrasilGameElement; }
     public WebElement getYggdrasilGamePlayElement() { return yggdrasilGamePlayElement; }
     public WebElement getYggdrasilGameDemoElement() { return yggdrasilGameDemoElement; }
-    public WebElement getYggdrasilGameFavouriteElement() { return yggdrasilGameFavouriteElement; }
+    public WebElement getYggdrasilGameFavouriteElement() { return getEnabledElement(yggdrasilGameFavouriteElement); }
 
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
-    public String getTextSearchResultHeaderElement() { return searchResultHeaderElement.getText(); }
-    public String getTextSearchResultBodyElement() { return searchResultBodyElement.getText(); }
-    public String getTextFavoriteNumberElement() { return favoriteNumberElement.getText(); }
+    public String getTextSearchResultHeaderElement() { return getEnabledElement(searchResultHeaderElement).getText(); }
+    public String getTextSearchResultBodyElement() { return getEnabledElement(searchResultBodyElement).getText(); }
+    public String getTextFavoriteNumberElement() { return getEnabledElement(favoriteNumberElement).getText(); }
 
 
     public void search(String data){
