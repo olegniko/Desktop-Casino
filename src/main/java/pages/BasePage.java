@@ -5,6 +5,7 @@ import helper.factory.Browser;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -12,7 +13,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
+import org.openqa.selenium.interactions.Actions;
 
 public abstract class BasePage {
 
@@ -113,9 +114,20 @@ public abstract class BasePage {
     }
 
     public void clearField(WebElement element) {
-
+        waitIfElementIsClickable(element);
         element.sendKeys(Keys.CONTROL + "a");
         element.sendKeys(Keys.DELETE);
+    }
+
+    public void moveToElement(WebElement element){
+
+
+        new Actions(driver).moveToElement(element).build().perform();
+    }
+    public void moveToElement2(WebElement element){
+
+            new TouchActions(driver).moveToElement(element).build().perform();
+
     }
 
 

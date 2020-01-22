@@ -1,6 +1,7 @@
 package pages;
 
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -80,6 +81,30 @@ public class CasinoPage extends MainPage {
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement yggdrasilGameFavouriteElement;
 
+
+
+    @FindBy (css = "div[id='login-popup']")
+    protected WebElement loginPopupElement;
+    @FindBy (xpath = "//svg-button[contains(@class,'gi-modal-header__close')]")
+    protected WebElement loginPopupCrossElement;
+    @FindBy (xpath = "//h2[contains(@class,'gi-login-form__title')]")
+    protected WebElement loginPopupTitleElement;
+    @FindBy (css = "input[name='login']")
+    protected WebElement loginFieldLoginPopupElement;
+    @FindBy (css = "input[type='password']")
+    protected WebElement passwordFieldLoginPopupElement;
+    @FindBy (xpath = "//a[contains(@class,'lostpass')]")
+    protected WebElement lostPasswordLoginPopupElement;
+    @FindBy (xpath = "//button[contains(@class,'gi-but-login')]")
+    protected WebElement loginButtonPopupElement;
+    @FindBy (xpath = "//a[contains(@class,'but-join')]")
+    protected WebElement joinNowButtonPopupElement;
+    @FindBy(css = "div[id='errorMessage']")
+    protected WebElement incorrectLoginMessagePopupElement;
+    @FindBy(css = "div[class='buttons messenger-but']")
+    protected WebElement incorrectLoginMessageOkButtonPopupElement;
+
+
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
     public WebElement getCrossIconSearchFieldElement() { return getClickableElement(crossIconSearchFieldElement); }
     public WebElement getSearchIconSearchFieldElement() { return getClickableElement(searchIconSearchFieldElement); }
@@ -120,11 +145,24 @@ public class CasinoPage extends MainPage {
     public WebElement getYggdrasilGameDemoElement() { return yggdrasilGameDemoElement; }
     public WebElement getYggdrasilGameFavouriteElement() { return getEnabledElement(yggdrasilGameFavouriteElement); }
 
+    public WebElement getLoginPopupElement() { return loginPopupElement; }
+    public WebElement getLoginPopupCrossElement() { return loginPopupCrossElement; }
+    public WebElement getLoginPopupTitleElement() { return loginPopupTitleElement; }
+    public WebElement getLoginFieldLoginPopupElement() { return getClickableElement(loginFieldLoginPopupElement); }
+    public WebElement getPasswordFieldLoginPopupElement() { return passwordFieldLoginPopupElement; }
+    public WebElement getLostPasswordLoginPopupElement() { return lostPasswordLoginPopupElement; }
+    public WebElement getLoginButtonPopupElement() { return loginButtonPopupElement; }
+    public WebElement getJoinNowButtonPopupElement() { return joinNowButtonPopupElement; }
+    public WebElement getIncorrectLoginMessagePopupElement() { return incorrectLoginMessagePopupElement; }
+    public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getEnabledElement(incorrectLoginMessageOkButtonPopupElement); }
+
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
     public String getTextSearchResultHeaderElement() { return getEnabledElement(searchResultHeaderElement).getText(); }
     public String getTextSearchResultBodyElement() { return getEnabledElement(searchResultBodyElement).getText(); }
     public String getTextFavoriteNumberElement() { return getEnabledElement(favoriteNumberElement).getText(); }
+
+
 
 
     public void search(String data){
@@ -140,4 +178,19 @@ public class CasinoPage extends MainPage {
         waitIfElementIsEnabled(element);
         clickIfElementIsClickable(element);
     }
+
+    public void fillLoginInPopup(String login) { getLoginFieldLoginPopupElement().sendKeys(login); }
+
+    public void fillPasswordInPopup(String password) { getPasswordFieldLoginPopupElement().sendKeys(password); }
+
+    public void clickLoginButtonInPopup() { clickIfElementIsClickable(getLoginButtonPopupElement()); }
+
+    public void loginByPopup(String login, String password) {
+        fillLoginInPopup(login);
+        loginFieldLoginPopupElement.sendKeys(Keys.TAB);
+        fillPasswordInPopup(password);
+        passwordFieldLoginPopupElement.sendKeys(Keys.TAB);
+        clickLoginButtonInPopup();
+    }
+
 }

@@ -48,9 +48,7 @@ public class MainPage extends BasePage {
     public WebElement getLostPasswordHeaderElement() {
         return getClickableElement(lostPasswordHeaderElement);
     }
-    public WebElement getIncorrectLoginMessageElement() {
-        return getClickableElement(incorrectLoginMessageElement);
-    }
+    public WebElement getIncorrectLoginMessageElement() { return getClickableElement(incorrectLoginMessageElement); }
     public WebElement getLoginMessageElement() {
         return getClickableElement(loginMessageElement);
     }
@@ -103,7 +101,7 @@ public class MainPage extends BasePage {
         fillLoginInHeader(login);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         fillPasswordInHeader(password);
-        loginFieldHeaderElement.sendKeys(Keys.TAB);
+        passwordFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
     }
 
