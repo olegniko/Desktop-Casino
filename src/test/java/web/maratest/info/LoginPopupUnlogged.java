@@ -32,7 +32,7 @@ public class LoginPopupUnlogged {
     }
 
 
-    @Test
+   @Test
     //
     public void loginPopupAppearenceEvolutionTest() {
 
@@ -192,13 +192,14 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
-
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
+   @Test
     //
     public void incorectPasswordTest() {
 
@@ -207,9 +208,12 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
+       casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+       casinoPage.clearField(casinoPage.getSearchFieldElement());
+
     }
 
     @Test
@@ -221,9 +225,11 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
     @Test
@@ -235,9 +241,11 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup("", "");
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
     @Test
@@ -249,9 +257,11 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup("", exampleBundleServer.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
     @Test
@@ -263,9 +273,11 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), "");
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
-        casinoPage.getIncorrectLoginMessageOkButtonPopupElement().click();
+        casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
 

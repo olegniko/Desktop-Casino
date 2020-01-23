@@ -79,7 +79,7 @@ public class FavouritesEndToEndTests {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
 
-  /*  @Test
+    @Test
     public void addTwiceUnloggedToLoggedFavoritesTest() {
 
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
@@ -147,7 +147,7 @@ public class FavouritesEndToEndTests {
         casinoPage.logout();
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
-*/
+
 }
 
 

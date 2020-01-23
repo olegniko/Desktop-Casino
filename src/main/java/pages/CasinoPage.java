@@ -5,6 +5,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
+
 public class CasinoPage extends MainPage {
 
     public CasinoPage() throws Exception {
@@ -91,7 +95,7 @@ public class CasinoPage extends MainPage {
     protected WebElement loginPopupTitleElement;
     @FindBy (css = "input[name='login']")
     protected WebElement loginFieldLoginPopupElement;
-    @FindBy (css = "input[type='password']")
+    @FindBy (css = "input[name='login_password']")
     protected WebElement passwordFieldLoginPopupElement;
     @FindBy (xpath = "//a[contains(@class,'lostpass')]")
     protected WebElement lostPasswordLoginPopupElement;
@@ -101,8 +105,22 @@ public class CasinoPage extends MainPage {
     protected WebElement joinNowButtonPopupElement;
     @FindBy(css = "div[id='errorMessage']")
     protected WebElement incorrectLoginMessagePopupElement;
-    @FindBy(css = "div[class='buttons messenger-but']")
+    @FindBy(css = "div[id='errorMessage'] button")
     protected WebElement incorrectLoginMessageOkButtonPopupElement;
+
+    public WebElement getLoginPopupFrame() {
+        return loginPopupFrame;
+    }
+
+    @FindBy(css = "div[id='login-popup']")
+    protected WebElement loginPopupFrame;
+
+    public WebElement getIncorrectMessagePopupFrame() {
+        return incorrectMessagePopupFrame;
+    }
+
+    @FindBy(css = "div[id='errorMessage']")
+    protected WebElement incorrectMessagePopupFrame;
 
 
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
@@ -149,12 +167,12 @@ public class CasinoPage extends MainPage {
     public WebElement getLoginPopupCrossElement() { return loginPopupCrossElement; }
     public WebElement getLoginPopupTitleElement() { return loginPopupTitleElement; }
     public WebElement getLoginFieldLoginPopupElement() { return getClickableElement(loginFieldLoginPopupElement); }
-    public WebElement getPasswordFieldLoginPopupElement() { return passwordFieldLoginPopupElement; }
-    public WebElement getLostPasswordLoginPopupElement() { return lostPasswordLoginPopupElement; }
-    public WebElement getLoginButtonPopupElement() { return loginButtonPopupElement; }
-    public WebElement getJoinNowButtonPopupElement() { return joinNowButtonPopupElement; }
-    public WebElement getIncorrectLoginMessagePopupElement() { return incorrectLoginMessagePopupElement; }
-    public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getEnabledElement(incorrectLoginMessageOkButtonPopupElement); }
+    public WebElement getPasswordFieldLoginPopupElement() { return getClickableElement(passwordFieldLoginPopupElement); }
+    public WebElement getLostPasswordLoginPopupElement() { return getEnabledElement(lostPasswordLoginPopupElement); }
+    public WebElement getLoginButtonPopupElement() { return getEnabledElement(loginButtonPopupElement); }
+    public WebElement getJoinNowButtonPopupElement() { return getEnabledElement(joinNowButtonPopupElement); }
+    public WebElement getIncorrectLoginMessagePopupElement() { return getClickableElement(incorrectLoginMessagePopupElement); }
+    public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getClickableElement(incorrectLoginMessageOkButtonPopupElement); }
 
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
@@ -187,10 +205,32 @@ public class CasinoPage extends MainPage {
 
     public void loginByPopup(String login, String password) {
         fillLoginInPopup(login);
-        loginFieldLoginPopupElement.sendKeys(Keys.TAB);
+       loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
-        passwordFieldLoginPopupElement.sendKeys(Keys.TAB);
+      //  passwordFieldLoginPopupElement.sendKeys(Keys.TAB);
         clickLoginButtonInPopup();
     }
 
+    public void switchToWindow(){
+
+        String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
+        String subWindowHandler = null;
+        Set<String> handles = driver.getWindowHandles(); // get all window handles
+        Iterator<String> iterator = handles.iterator();
+        while (iterator.hasNext()){
+            subWindowHandler = iterator.next();
+        }
+        driver.switchTo().window(subWindowHandler); // switch to popup window
+
+        // Now you are in the popup window, perform necessary actions here
+
+
+    }
+
+
+     public void switchBackToWindow(){
+     //    driver.switchTo().window(parentWindowHandler);  // switch back to parent window
+    }
 }
+
+
