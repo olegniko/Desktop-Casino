@@ -101,7 +101,22 @@
 
         </classes>
     </test>
+    <test name="LoginPopupLogged">
+        <classes>
 
+            <class name="web.maratest.info.LoginPopupLogged">
+            </class>
+
+        </classes>
+    </test>
+    <test name="Footer">
+        <classes>
+
+            <class name="web.maratest.info.FooterElements">
+            </class>
+
+        </classes>
+    </test>
 </suite>
 
 

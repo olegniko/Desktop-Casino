@@ -108,20 +108,8 @@ public class CasinoPage extends MainPage {
     @FindBy(css = "div[id='errorMessage'] button")
     protected WebElement incorrectLoginMessageOkButtonPopupElement;
 
-    public WebElement getLoginPopupFrame() {
-        return loginPopupFrame;
-    }
-
-    @FindBy(css = "div[id='login-popup']")
-    protected WebElement loginPopupFrame;
-
-    public WebElement getIncorrectMessagePopupFrame() {
-        return incorrectMessagePopupFrame;
-    }
-
-    @FindBy(css = "div[id='errorMessage']")
-    protected WebElement incorrectMessagePopupFrame;
-
+    @FindBy(css = "svg-button[id='gi-modal-header__close gi-svg-button ng-isolate-scope']")
+    protected WebElement crossInGameElement;
 
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
     public WebElement getCrossIconSearchFieldElement() { return getClickableElement(crossIconSearchFieldElement); }
@@ -174,6 +162,8 @@ public class CasinoPage extends MainPage {
     public WebElement getIncorrectLoginMessagePopupElement() { return getClickableElement(incorrectLoginMessagePopupElement); }
     public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getClickableElement(incorrectLoginMessageOkButtonPopupElement); }
 
+    public WebElement getCrossInGameElement() { return crossInGameElement; }
+
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
     public String getTextSearchResultHeaderElement() { return getEnabledElement(searchResultHeaderElement).getText(); }
@@ -205,31 +195,21 @@ public class CasinoPage extends MainPage {
 
     public void loginByPopup(String login, String password) {
         fillLoginInPopup(login);
-       loginFieldLoginPopupElement.sendKeys(Keys.TAB);
+        loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
-      //  passwordFieldLoginPopupElement.sendKeys(Keys.TAB);
         clickLoginButtonInPopup();
     }
 
-    public void switchToWindow(){
+    public void correctLoginByPopup(String login, String password) {
+        fillLoginInPopup(login);
+        loginFieldLoginPopupElement.sendKeys(Keys.TAB);
+        fillPasswordInPopup(password);
+        clickLoginButtonInPopup();
+        if(getDepositButtonHeaderElement().isEnabled()){ }
+        else
+            waitIfElementIsClickable(getLoginMessageOkButtonElement());
+            clickIfElementIsClickable(getLoginMessageOkButtonElement());
 
-        String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
-        String subWindowHandler = null;
-        Set<String> handles = driver.getWindowHandles(); // get all window handles
-        Iterator<String> iterator = handles.iterator();
-        while (iterator.hasNext()){
-            subWindowHandler = iterator.next();
-        }
-        driver.switchTo().window(subWindowHandler); // switch to popup window
-
-        // Now you are in the popup window, perform necessary actions here
-
-
-    }
-
-
-     public void switchBackToWindow(){
-     //    driver.switchTo().window(parentWindowHandler);  // switch back to parent window
     }
 }
 

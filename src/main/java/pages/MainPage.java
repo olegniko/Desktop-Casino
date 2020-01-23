@@ -29,7 +29,7 @@ public class MainPage extends BasePage {
     protected WebElement incorrectLoginMessageOkButtonElement;
     @FindBy(css = "div[id='loginMessage']")
     protected WebElement loginMessageElement;
-    @FindBy(css = "div[id='loginMessage'] button")
+    @FindBy(css = "div[id='simplemodal-container'] button")
     protected WebElement loginMessageOkButtonElement;
     @FindBy(css = "img[alt='Marathonbet Logo']")
     protected WebElement marathonbetIconHeaderElement;
@@ -40,6 +40,29 @@ public class MainPage extends BasePage {
     @FindBy(css = "a[class='button btn-deposit']")
     protected WebElement myAccountButtonHeaderElement;
 
+
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'help')]")
+    protected WebElement aboutUsFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'privacy_policy')]")
+    protected WebElement privacyPolicyFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'responsible_gambling')]")
+    protected WebElement responsibleGamingFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'terms_and_conditions')]")
+    protected WebElement termsAndConditionsFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'contact_us')]")
+    protected WebElement contactUsFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'payments')]")
+    protected WebElement paymentsFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'mobile.marathonbet')]")
+    protected WebElement mobileSiteFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'blog.marathonbet')]")
+    protected WebElement blogFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.marathonbet')]")
+    protected WebElement affiliatesFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.htm')]")
+    protected WebElement ourParntersFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partnerName=manchester')]")
+    protected WebElement partnreshipHistoryFooterElement;
 
     public WebElement getLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement); }
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
@@ -53,9 +76,7 @@ public class MainPage extends BasePage {
         return getClickableElement(loginMessageElement);
     }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() {
-        return getClickableElement(loginMessageOkButtonElement);
-    }
+    public WebElement getLoginMessageOkButtonElement() { return getClickableElement(loginMessageOkButtonElement); }
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }
@@ -69,8 +90,17 @@ public class MainPage extends BasePage {
         return getClickableElement(myAccountButtonHeaderElement);
     }
 
-
-
+    public WebElement getAboutUsFooterElement() { return getClickableFluentElement(aboutUsFooterElement); }
+    public WebElement getPrivacyPolicyFooterElement() { return getEnabledElement(privacyPolicyFooterElement); }
+    public WebElement getResponsibleGamingFooterElement() { return getEnabledElement(responsibleGamingFooterElement); }
+    public WebElement getTermsAndConditionsFooterElement() { return getClickableElement(termsAndConditionsFooterElement); }
+    public WebElement getContactUsFooterElement() { return getEnabledElement(contactUsFooterElement); }
+    public WebElement getPaymentsFooterElement() { return getEnabledElement(paymentsFooterElement); }
+    public WebElement getMobileSiteFooterElement() { return getEnabledElement(mobileSiteFooterElement); }
+    public WebElement getBlogFooterElement() { return getEnabledElement(blogFooterElement); }
+    public WebElement getAffiliatesFooterElement() { return getEnabledElement(affiliatesFooterElement); }
+    public WebElement getOurParntersFooterElement() { return ourParntersFooterElement; }
+    public WebElement getPartnreshipHistoryFooterElement() { return partnreshipHistoryFooterElement; }
 
     public String getTextLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder"); }
 
