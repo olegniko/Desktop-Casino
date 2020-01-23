@@ -3,7 +3,7 @@
 
     <suite name = "chrome Regress">
 
-  <test name="Search">
+<!--  <test name="Search">
         <classes>
 
             <class name="web.maratest.info.Search">
@@ -100,7 +100,7 @@
             </class>
 
         </classes>
-    </test>
+    </test>-->
     <test name="LoginPopupLogged">
         <classes>
 
@@ -109,7 +109,7 @@
 
         </classes>
     </test>
-    <test name="Footer">
+    <!--<test name="Footer">
         <classes>
 
             <class name="web.maratest.info.FooterElements">
@@ -117,6 +117,14 @@
 
         </classes>
     </test>
+    <test name="FooterLinks">
+        <classes>
+
+            <class name="web.maratest.info.FooterElementLinks">
+            </class>
+
+        </classes>
+    </test>-->
 </suite>
 
 

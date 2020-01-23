@@ -121,6 +121,57 @@ public class FooterElements {
         assertTrue(casinoPage.getPartnreshipHistoryFooterElement().isEnabled());
 
     }
+    @Test
+    //
+    public void manCityEnabledTest() {
+
+        assertTrue(casinoPage.getManCityElement().isDisplayed());
+        assertTrue(casinoPage.getManCityElement().isEnabled());
+
+    }
+    @Test
+    //
+    public void sevillaEnabledTest() {
+
+        assertTrue(casinoPage.getSevillaElement().isDisplayed());
+        assertTrue(casinoPage.getSevillaElement().isEnabled());
+
+    }
+    @Test
+    //
+    public void gironaEnabledTest() {
+
+        assertTrue(casinoPage.getGironaElement().isDisplayed());
+        assertTrue(casinoPage.getGironaElement().isEnabled());
+
+    }
+    @Test
+    //
+    public void dinamoEnabledTest() {
+
+        assertTrue(casinoPage.getDinamoElement().isDisplayed());
+        assertTrue(casinoPage.getDinamoElement().isEnabled());
+
+    }
+
+    @Test
+    //
+    public void karpatyEnabledTest() {
+
+        assertTrue(casinoPage.getKarpatyElement().isDisplayed());
+        assertTrue(casinoPage.getKarpatyElement().isEnabled());
+
+    }
+    @Test
+    //
+    public void zaragozaEnabledTest() {
+
+        assertTrue(casinoPage.getZaragozaElement().isDisplayed());
+        assertTrue(casinoPage.getZaragozaElement().isEnabled());
+
+    }
+
+
 }
 
 

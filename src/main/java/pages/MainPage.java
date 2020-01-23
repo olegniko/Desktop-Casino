@@ -29,7 +29,7 @@ public class MainPage extends BasePage {
     protected WebElement incorrectLoginMessageOkButtonElement;
     @FindBy(css = "div[id='loginMessage']")
     protected WebElement loginMessageElement;
-    @FindBy(css = "div[id='simplemodal-container'] button")
+    @FindBy(xpath="//div[@id='simplemodal-container']//descendant::button[@class='button yes simplemodal-close']")
     protected WebElement loginMessageOkButtonElement;
     @FindBy(css = "img[alt='Marathonbet Logo']")
     protected WebElement marathonbetIconHeaderElement;
@@ -64,6 +64,19 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partnerName=manchester')]")
     protected WebElement partnreshipHistoryFooterElement;
 
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-mancity']")
+    protected WebElement manCityElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-sevilla']")
+    protected WebElement sevillaElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-girona']")
+    protected WebElement gironaElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-dinamo_moscow']")
+    protected WebElement dinamoElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-karpaty']")
+    protected WebElement karpatyElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-zaragoza']")
+    protected WebElement zaragozaElement;
+
     public WebElement getLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement); }
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
     public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
@@ -76,7 +89,7 @@ public class MainPage extends BasePage {
         return getClickableElement(loginMessageElement);
     }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() { return getClickableElement(loginMessageOkButtonElement); }
+    public WebElement getLoginMessageOkButtonElement() { return getClickableFluentElement(loginMessageOkButtonElement); }
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }
@@ -101,6 +114,14 @@ public class MainPage extends BasePage {
     public WebElement getAffiliatesFooterElement() { return getEnabledElement(affiliatesFooterElement); }
     public WebElement getOurParntersFooterElement() { return ourParntersFooterElement; }
     public WebElement getPartnreshipHistoryFooterElement() { return partnreshipHistoryFooterElement; }
+
+    public WebElement getManCityElement() { return manCityElement; }
+    public WebElement getSevillaElement() { return sevillaElement; }
+    public WebElement getGironaElement() { return gironaElement; }
+    public WebElement getDinamoElement() { return dinamoElement; }
+    public WebElement getKarpatyElement() { return karpatyElement; }
+    public WebElement getZaragozaElement() { return zaragozaElement; }
+
 
     public String getTextLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder"); }
 
@@ -157,3 +178,4 @@ public class MainPage extends BasePage {
     }
 
 }
+

@@ -108,7 +108,7 @@ public class CasinoPage extends MainPage {
     @FindBy(css = "div[id='errorMessage'] button")
     protected WebElement incorrectLoginMessageOkButtonPopupElement;
 
-    @FindBy(css = "svg-button[id='gi-modal-header__close gi-svg-button ng-isolate-scope']")
+    @FindBy(css = "svg-button[class='gi-modal-header__close gi-svg-button ng-isolate-scope']")
     protected WebElement crossInGameElement;
 
     public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
@@ -205,10 +205,9 @@ public class CasinoPage extends MainPage {
         loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
         clickLoginButtonInPopup();
-        if(getDepositButtonHeaderElement().isEnabled()){ }
-        else
-            waitIfElementIsClickable(getLoginMessageOkButtonElement());
+        if(getLoginMessageOkButtonElement().isEnabled()){
             clickIfElementIsClickable(getLoginMessageOkButtonElement());
+        }
 
     }
 }

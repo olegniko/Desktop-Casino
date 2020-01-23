@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+
 import org.openqa.selenium.interactions.Actions;
 
 public abstract class BasePage {
@@ -130,5 +132,17 @@ public abstract class BasePage {
 
     }
 
+
+    public String getNextTabUrlPage() throws InterruptedException {
+
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+   //     driver.wait(20);
+        String url = driver.getCurrentUrl();
+        driver.close();
+        driver.switchTo().window(tabs2.get(0));
+        return url;
+
+    }
 
 }
