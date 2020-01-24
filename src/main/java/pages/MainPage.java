@@ -77,6 +77,56 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-zaragoza']")
     protected WebElement zaragozaElement;
 
+
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-visa']")
+    protected WebElement visaIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-mastercard']")
+    protected WebElement mastercardIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-maestro']")
+    protected WebElement maestroIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-bank_transfer']")
+    protected WebElement bankTransferIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-moneybookers']")
+    protected WebElement skrillIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-neteller']")
+    protected WebElement netellerIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-paysafecard']")
+    protected WebElement paySafeCardIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-trustly']")
+    protected WebElement trustlyIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-ecopayz']")
+    protected WebElement ecoPayzIconElement;
+
+
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-rgt-donor']")
+    protected WebElement rgtDonorIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-gamstop']")
+    protected WebElement gamstopIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-gamcare']")
+    protected WebElement gamecareIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-alderney']")
+    protected WebElement alderneyIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-gamblingcommission']")
+    protected WebElement gamblingCommissionIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-ibas']")
+    protected WebElement ibasIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-social_facebook']")
+    protected WebElement facebookIconElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::em[@class='sprite-social_twitter']")
+    protected WebElement twitterIconElement;
+
+
+
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'gamblingcommission.gov.uk')]")
+    protected WebElement gamblingCommissionLinkElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'gamblingcontrol.org')]")
+    protected WebElement gamblingControlLinkElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'begambleaware.org')]")
+    protected WebElement begamblewareLinkElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'shutterstock.com')]")
+    protected WebElement shutterstockLinkElement;
+
+
     public WebElement getLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement); }
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
     public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
@@ -112,15 +162,39 @@ public class MainPage extends BasePage {
     public WebElement getMobileSiteFooterElement() { return getEnabledElement(mobileSiteFooterElement); }
     public WebElement getBlogFooterElement() { return getEnabledElement(blogFooterElement); }
     public WebElement getAffiliatesFooterElement() { return getEnabledElement(affiliatesFooterElement); }
-    public WebElement getOurParntersFooterElement() { return ourParntersFooterElement; }
-    public WebElement getPartnreshipHistoryFooterElement() { return partnreshipHistoryFooterElement; }
+    public WebElement getOurParntersFooterElement() { return getEnabledElement(ourParntersFooterElement); }
+    public WebElement getPartnreshipHistoryFooterElement() { return getEnabledElement(partnreshipHistoryFooterElement); }
 
-    public WebElement getManCityElement() { return manCityElement; }
-    public WebElement getSevillaElement() { return sevillaElement; }
-    public WebElement getGironaElement() { return gironaElement; }
-    public WebElement getDinamoElement() { return dinamoElement; }
-    public WebElement getKarpatyElement() { return karpatyElement; }
-    public WebElement getZaragozaElement() { return zaragozaElement; }
+    public WebElement getManCityElement() { return getEnabledElement(manCityElement); }
+    public WebElement getSevillaElement() { return getEnabledElement(sevillaElement); }
+    public WebElement getGironaElement() { return getEnabledElement(gironaElement); }
+    public WebElement getDinamoElement() { return getEnabledElement(dinamoElement); }
+    public WebElement getKarpatyElement() { return getEnabledElement(karpatyElement); }
+    public WebElement getZaragozaElement() { return getEnabledElement(zaragozaElement); }
+
+    public WebElement getVisaIconElement() { return getEnabledElement(visaIconElement); }
+    public WebElement getMastercardIconElement() { return getEnabledElement(mastercardIconElement); }
+    public WebElement getMaestroIconElement() { return getEnabledElement(maestroIconElement); }
+    public WebElement getBankTransferIconElement() { return getEnabledElement(bankTransferIconElement); }
+    public WebElement getSkrillIconElement() { return getEnabledElement(skrillIconElement); }
+    public WebElement getNetellerIconElement() { return getEnabledElement(netellerIconElement); }
+    public WebElement getPaySafeCardIconElement() { return getEnabledElement(paySafeCardIconElement); }
+    public WebElement getTrustlyIconElement() { return getEnabledElement(trustlyIconElement); }
+    public WebElement getEcoPayzIconElement() { return getEnabledElement(ecoPayzIconElement); }
+
+    public WebElement getRgtDonorIconElement() { return getEnabledElement(rgtDonorIconElement); }
+    public WebElement getGamstopIconElement() { return getEnabledElement(gamstopIconElement); }
+    public WebElement getGamecareIconElement() { return getEnabledElement(gamecareIconElement); }
+    public WebElement getAlderneyIconElement() { return getEnabledElement(alderneyIconElement); }
+    public WebElement getGamblingCommissionIconElement() { return getEnabledElement(gamblingCommissionIconElement); }
+    public WebElement getIbasIconElement() { return getEnabledElement(ibasIconElement); }
+    public WebElement getFacebookIconElement() { return getEnabledElement(facebookIconElement); }
+    public WebElement getTwitterIconElement() { return getEnabledElement(twitterIconElement); }
+
+    public WebElement getGamblingCommissionLinkElement() { return getEnabledElement(gamblingCommissionLinkElement); }
+    public WebElement getGamblingControlLinkElement() { return getEnabledElement(gamblingControlLinkElement); }
+    public WebElement getBegamblewareLinkElement() { return getEnabledElement(begamblewareLinkElement); }
+    public WebElement getShutterstockLinkElement() { return getEnabledElement(shutterstockLinkElement); }
 
 
     public String getTextLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder"); }
@@ -143,6 +217,9 @@ public class MainPage extends BasePage {
     public String getTextAffiliatesFooterElement() { return getAffiliatesFooterElement().getText(); }
     public String getTextOurParntersFooterElement() { return getOurParntersFooterElement().getText(); }
     public String getTextPartnreshipHistoryFooterElement() { return getPartnreshipHistoryFooterElement().getText(); }
+
+
+
 
 
     public void fillLoginInHeader(String login) { getLoginFieldHeaderElement().sendKeys(login); }
