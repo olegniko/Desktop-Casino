@@ -124,22 +124,25 @@ public class MainPage extends BasePage {
 
 
     public String getTextLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement).getAttribute("placeholder"); }
-
     public String getTextPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement).getAttribute("placeholder"); }
-
     public String getTextLoginButtonHeaderElement() { return getClickableElement(loginButtonHeaderElement).getText(); }
-
     public String getTextJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement).getText(); }
-
     public String getTextLostPasswordHeaderElement() { return getClickableElement(lostPasswordHeaderElement).getText(); }
-
     public String getTextLogoutButtonHeaderElement() { return getClickableElement(logoutButtonHeaderElement).getText(); }
-
     public String getTextDepositButtonHeaderElement() { return getClickableElement(depositButtonHeaderElement).getText(); }
-
     public String getTextMyAccountButtonHeaderElement() { return getClickableElement(myAccountButtonHeaderElement).getText(); }
 
-
+    public String getTextAboutUsFooterElement() { return getAboutUsFooterElement().getText(); }
+    public String getTextPrivacyPolicyFooterElement() { return getPrivacyPolicyFooterElement().getText(); }
+    public String getTextResponsibleGamingFooterElement() { return getResponsibleGamingFooterElement().getText(); }
+    public String getTextTermsAndConditionsFooterElement() { return getTermsAndConditionsFooterElement().getText(); }
+    public String getTextContactUsFooterElement() { return getContactUsFooterElement().getText(); }
+    public String getTextPaymentsFooterElement() { return getPaymentsFooterElement().getText(); }
+    public String getTextMobileSiteFooterElement() { return getMobileSiteFooterElement().getText(); }
+    public String getTextBlogFooterElement() { return getBlogFooterElement().getText(); }
+    public String getTextAffiliatesFooterElement() { return getAffiliatesFooterElement().getText(); }
+    public String getTextOurParntersFooterElement() { return getOurParntersFooterElement().getText(); }
+    public String getTextPartnreshipHistoryFooterElement() { return getPartnreshipHistoryFooterElement().getText(); }
 
 
     public void fillLoginInHeader(String login) { getLoginFieldHeaderElement().sendKeys(login); }
