@@ -139,7 +139,7 @@ public class MainPage extends BasePage {
         return getEnabledElement(loginMessageElement);
     }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() { return loginMessageOkButtonElement; }
+    public WebElement getLoginMessageOkButtonElement() { return getEnabledElement(loginMessageOkButtonElement); }
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }

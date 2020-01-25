@@ -28,7 +28,7 @@ public class LoginHeaderLogged {
 
     @AfterClass(alwaysRun = true)
     public void tearDown() {
-        casinoPage.clickIfElementIsClickable(casinoPage.getLogoutButtonHeaderElement());
+
         casinoPage.close();
     }
 

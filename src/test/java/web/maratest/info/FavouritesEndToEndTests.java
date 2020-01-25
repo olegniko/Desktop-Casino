@@ -56,6 +56,15 @@ public class FavouritesEndToEndTests {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "6");
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "6");
+
+    }
+
+    @Test(priority = 2)
+    public void removeSavedFavoritesTest() {
+
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
+        casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "6");
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.removeFromFavourites(casinoPage.getYggdrasilGameFavouriteElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
@@ -77,9 +86,10 @@ public class FavouritesEndToEndTests {
     }
 
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void addSeveralAndSafeUnloggedToLoggedFavoritesTest() {
 
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.addToFavourites(casinoPage.getYggdrasilGameFavouriteElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
@@ -98,11 +108,12 @@ public class FavouritesEndToEndTests {
         casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.addToFavourites(casinoPage.getMgGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "6");
-        casinoPage.clearField(casinoPage.getSearchFieldElement());
+        casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "6");
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void addSavedTwiceFavoritesTest() {
 
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
@@ -130,7 +141,7 @@ public class FavouritesEndToEndTests {
 
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void removeSavedTwiceFavoritesTest() {
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
