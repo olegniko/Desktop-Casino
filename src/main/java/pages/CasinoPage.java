@@ -5,9 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Set;
 
 public class CasinoPage extends MainPage {
 
@@ -108,61 +105,61 @@ public class CasinoPage extends MainPage {
     @FindBy(css = "div[id='errorMessage'] button")
     protected WebElement incorrectLoginMessageOkButtonPopupElement;
 
-    @FindBy(css = "svg-button[class='gi-modal-header__close gi-svg-button ng-isolate-scope']")
+    @FindBy(xpath = "//div[@class='gi-iframe-modal']//descendant::svg-button[contains(@class,'modal-header__close')]")
     protected WebElement crossInGameElement;
 
-    public WebElement getSearchFieldElement() { return getClickableElement(searchFieldElement); }
+    public WebElement getSearchFieldElement() { return getEnabledElement(searchFieldElement); }
     public WebElement getCrossIconSearchFieldElement() { return getClickableElement(crossIconSearchFieldElement); }
     public WebElement getSearchIconSearchFieldElement() { return getClickableElement(searchIconSearchFieldElement); }
-    public WebElement getSearchResultHeaderElement() { return searchResultHeaderElement; }
+    public WebElement getSearchResultHeaderElement() { return getEnabledElement(searchResultHeaderElement); }
     public WebElement getSearchResultBodyElement() { return searchResultBodyElement; }
     public WebElement getFavoriteIconElement() { return favoriteIconElement; }
     public WebElement getFavoriteNumberElement() { return favoriteNumberElement; }
 
-    public WebElement getMgGameElement() { return mgGameElement; }
+    public WebElement getMgGameElement() { return getEnabledElement(mgGameElement); }
     public WebElement getMgGamePlayElement() { return mgGamePlayElement; }
     public WebElement getMgGameDemoElement() { return mgGameDemoElement; }
     public WebElement getMgGameFavouriteElement() { return getEnabledElement(mgGameFavouriteElement); }
 
-    public WebElement getRelaxGameElement() { return relaxGameElement; }
+    public WebElement getRelaxGameElement() { return getEnabledElement(relaxGameElement); }
     public WebElement getRelaxGamePlayElement() { return relaxGamePlayElement; }
     public WebElement getRelaxGameDemoElement() { return relaxGameDemoElement; }
     public WebElement getRelaxGameFavouriteElement() { return getEnabledElement(relaxGameFavouriteElement); }
 
-    public WebElement getPlayngoGameElement() { return playngoGameElement; }
+    public WebElement getPlayngoGameElement() { return getEnabledElement(playngoGameElement); }
     public WebElement getPlayngoGamePlayElement() { return playngoGamePlayElement; }
     public WebElement getPlayngoGameDemoElement() { return playngoGameDemoElement; }
     public WebElement getPlayngoGameFavouriteElement() { return getEnabledElement(playngoGameFavouriteElement); }
 
 
-    public WebElement getIssoftGameElement() { return issoftGameElement; }
+    public WebElement getIssoftGameElement() { return getEnabledElement(issoftGameElement); }
     public WebElement getIssoftGamePlayElement() { return issoftGamePlayElement; }
     public WebElement getIssoftGameDemoElement() { return issoftGameDemoElement; }
     public WebElement getIssoftGameFavouriteElement() { return getEnabledElement(issoftGameFavouriteElement); }
 
 
-    public WebElement getEvolutionGameElement() { return evolutionGameElement; }
+    public WebElement getEvolutionGameElement() { return getEnabledElement(evolutionGameElement); }
     public WebElement getEvolutionGamePlayElement() { return evolutionGamePlayElement; }
     public WebElement getEvolutionGameDemoElement() { return evolutionGameDemoElement; }
     public WebElement getEvolutionGameFavouriteElement() { return getEnabledElement(evolutionGameFavouriteElement); }
 
-    public WebElement getYggdrasilGameElement() { return yggdrasilGameElement; }
+    public WebElement getYggdrasilGameElement() { return getEnabledElement(yggdrasilGameElement); }
     public WebElement getYggdrasilGamePlayElement() { return yggdrasilGamePlayElement; }
     public WebElement getYggdrasilGameDemoElement() { return yggdrasilGameDemoElement; }
     public WebElement getYggdrasilGameFavouriteElement() { return getEnabledElement(yggdrasilGameFavouriteElement); }
 
-    public WebElement getLoginPopupElement() { return loginPopupElement; }
-    public WebElement getLoginPopupCrossElement() { return loginPopupCrossElement; }
-    public WebElement getLoginPopupTitleElement() { return loginPopupTitleElement; }
-    public WebElement getLoginFieldLoginPopupElement() { return getClickableElement(loginFieldLoginPopupElement); }
-    public WebElement getPasswordFieldLoginPopupElement() { return getClickableElement(passwordFieldLoginPopupElement); }
+    public WebElement getLoginPopupElement() { return getEnabledElement(loginPopupElement); }
+    public WebElement getLoginPopupCrossElement() { return getEnabledElement(loginPopupCrossElement); }
+    public WebElement getLoginPopupTitleElement() { return getEnabledElement(loginPopupTitleElement); }
+    public WebElement getLoginFieldLoginPopupElement() { return getEnabledElement(loginFieldLoginPopupElement); }
+    public WebElement getPasswordFieldLoginPopupElement() { return getEnabledElement(passwordFieldLoginPopupElement); }
     public WebElement getLostPasswordLoginPopupElement() { return getEnabledElement(lostPasswordLoginPopupElement); }
     public WebElement getLoginButtonPopupElement() { return getEnabledElement(loginButtonPopupElement); }
     public WebElement getJoinNowButtonPopupElement() { return getEnabledElement(joinNowButtonPopupElement); }
     public WebElement getIncorrectLoginMessagePopupElement() { return getClickableElement(incorrectLoginMessagePopupElement); }
     public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getClickableElement(incorrectLoginMessageOkButtonPopupElement); }
 
-    public WebElement getCrossInGameElement() { return crossInGameElement; }
+    public WebElement getCrossInGameElement() { return getEnabledElement(crossInGameElement); }
 
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
@@ -200,16 +197,15 @@ public class CasinoPage extends MainPage {
         clickLoginButtonInPopup();
     }
 
-    public void correctLoginByPopup(String login, String password) {
+    public void correctLoginByPopup(String login, String password)  {
         fillLoginInPopup(login);
         loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
         clickLoginButtonInPopup();
-        if(getLoginMessageOkButtonElement().isEnabled()){
-            clickIfElementIsClickable(getLoginMessageOkButtonElement());
+
         }
 
     }
-}
+
 
 

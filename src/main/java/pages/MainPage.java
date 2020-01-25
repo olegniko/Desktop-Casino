@@ -27,9 +27,9 @@ public class MainPage extends BasePage {
     protected WebElement incorrectLoginMessageElement;
     @FindBy(css = "div[id='any_message'] button")
     protected WebElement incorrectLoginMessageOkButtonElement;
-    @FindBy(css = "div[id='loginMessage']")
+    @FindBy(xpath = "//div[@id='simplemodal-container']//descendant::div[@id='loginMessage']")
     protected WebElement loginMessageElement;
-    @FindBy(xpath="//div[@id='simplemodal-container']//descendant::button[@class='button yes simplemodal-close']")
+    @FindBy(xpath="//div[@id='loginMessage']//descendant::button[@aria-label='OK']")
     protected WebElement loginMessageOkButtonElement;
     @FindBy(css = "img[alt='Marathonbet Logo']")
     protected WebElement marathonbetIconHeaderElement;
@@ -39,7 +39,7 @@ public class MainPage extends BasePage {
     protected WebElement depositButtonHeaderElement;
     @FindBy(css = "a[class='button btn-deposit']")
     protected WebElement myAccountButtonHeaderElement;
-
+//descendant::svg-button[contains(@class,'modal-header__close')]
 
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'help')]")
     protected WebElement aboutUsFooterElement;
@@ -136,10 +136,10 @@ public class MainPage extends BasePage {
     }
     public WebElement getIncorrectLoginMessageElement() { return getClickableElement(incorrectLoginMessageElement); }
     public WebElement getLoginMessageElement() {
-        return getClickableElement(loginMessageElement);
+        return getEnabledElement(loginMessageElement);
     }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() { return getClickableFluentElement(loginMessageOkButtonElement); }
+    public WebElement getLoginMessageOkButtonElement() { return loginMessageOkButtonElement; }
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }
@@ -243,10 +243,10 @@ public class MainPage extends BasePage {
         fillPasswordInHeader(password);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
-        if(getDepositButtonHeaderElement().isEnabled()){ }
-        else
-            waitIfElementIsClickable(getLoginMessageOkButtonElement());
+
+        if (getLoginMessageOkButtonElement().isDisplayed()) {
             clickIfElementIsClickable(getLoginMessageOkButtonElement());
+        }
         waitIfElementIsEnabled(getDepositButtonHeaderElement());
     }
 

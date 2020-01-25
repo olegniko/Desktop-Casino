@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.interactions.Actions;
 
@@ -145,4 +146,8 @@ public abstract class BasePage {
 
     }
 
+    public void driverWait(int time) {
+
+        driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+    }
 }
