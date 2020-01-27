@@ -28,19 +28,19 @@ public class GameEvolution {
     }
 
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = { "ES1", "CUR2", "ALD2"})
     public void playButtonEnabledTest() {
         assertFalse(casinoPage.getEvolutionGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGamePlayElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = { "ES1", "CUR2", "ALD2"})
     public void demoButtonEnabledTest() {
         assertFalse(casinoPage.getEvolutionGameDemoElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGameDemoElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = { "ES1", "CUR2", "ALD2"})
     public void favouritesEnabledTest() {
         assertTrue(casinoPage.getEvolutionGameFavouriteElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGameFavouriteElement().isEnabled());

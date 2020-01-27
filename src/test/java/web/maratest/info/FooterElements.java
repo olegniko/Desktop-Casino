@@ -39,7 +39,7 @@ public class FooterElements {
         assertEquals(casinoPage.getTextPrivacyPolicyFooterElement(), exampleBundle.getString("privacy_policy_footer"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "CUR2", "ALD2"})
     public void responsibleGamblingEnabledTest() {
         assertTrue(casinoPage.getResponsibleGamingFooterElement().isDisplayed());
         assertTrue(casinoPage.getResponsibleGamingFooterElement().isEnabled());
@@ -156,7 +156,7 @@ public class FooterElements {
         assertTrue(casinoPage.getMaestroIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "CUR2", "ALD2"})
     public void bankTransferIconEnabledTest() {
         assertTrue(casinoPage.getBankTransferIconElement().isDisplayed());
         assertTrue(casinoPage.getBankTransferIconElement().isEnabled());
@@ -186,43 +186,43 @@ public class FooterElements {
         assertTrue(casinoPage.getTrustlyIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "CUR2", "ALD2"})
     public void ecoPayzIconEnabledTest() {
         assertTrue(casinoPage.getEcoPayzIconElement().isDisplayed());
         assertTrue(casinoPage.getEcoPayzIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "CUR2", "ALD2"})
     public void rgtDonorIconEnabledTest() {
         assertTrue(casinoPage.getRgtDonorIconElement().isDisplayed());
         assertTrue(casinoPage.getRgtDonorIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "CUR2", "ALD2"})
     public void gamstopIconEnabledTest() {
         assertTrue(casinoPage.getGamstopIconElement().isDisplayed());
         assertTrue(casinoPage.getGamstopIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void gamecareIconEnabledTest() {
         assertTrue(casinoPage.getGamecareIconElement().isDisplayed());
         assertTrue(casinoPage.getGamecareIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void alderneyIconEnabledTest() {
         assertTrue(casinoPage.getAlderneyIconElement().isDisplayed());
         assertTrue(casinoPage.getAlderneyIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamblingCommissionIconEnabledTest() {
         assertTrue(casinoPage.getGamblingCommissionIconElement().isDisplayed());
         assertTrue(casinoPage.getGamblingCommissionIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void ibasIconEnabledTest() {
         assertTrue(casinoPage.getIbasIconElement().isDisplayed());
         assertTrue(casinoPage.getIbasIconElement().isEnabled());
@@ -240,19 +240,19 @@ public class FooterElements {
         assertTrue(casinoPage.getTwitterIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamblingCommissionLinkEnabledTest() {
         assertTrue(casinoPage.getGamblingCommissionLinkElement().isDisplayed());
         assertTrue(casinoPage.getGamblingCommissionLinkElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void gamblingControlLinkEnabledTest() {
         assertTrue(casinoPage.getGamblingControlLinkElement().isDisplayed());
         assertTrue(casinoPage.getGamblingControlLinkElement().isEnabled());
     }
 
-    @Test
+    @Test(groups = {"DK1","ALD2"})
     public void begamblewareLinkEnabledTest() {
         assertTrue(casinoPage.getBegamblewareLinkElement().isDisplayed());
         assertTrue(casinoPage.getBegamblewareLinkElement().isEnabled());

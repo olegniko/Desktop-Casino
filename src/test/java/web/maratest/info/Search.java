@@ -10,7 +10,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
-public class Search {
+public class Search  {
 
     CasinoPage casinoPage;
 
@@ -130,7 +130,7 @@ public class Search {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"ES1", "CUR2", "ALD2"})
     public void evolutionSearchBodyMessageTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         assertTrue(casinoPage.getEvolutionGameElement().isDisplayed());

@@ -67,7 +67,7 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = { "ALD2"})
     public void issoftAddRemoveFavoritesTest() {
         casinoPage.search(exampleBundle.getString("issoft_game"));
         casinoPage.addToFavourites(casinoPage.getIssoftGameFavouriteElement());
@@ -79,7 +79,7 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = { "ES1", "CUR2", "ALD2"})
     public void evolutionAddRemoveFavoritesTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.addToFavourites(casinoPage.getEvolutionGameFavouriteElement());

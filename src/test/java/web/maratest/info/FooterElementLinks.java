@@ -68,35 +68,35 @@ public class FooterElementLinks {
         assertEquals(url, exampleBundle.getString("zaragoza_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamstopLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getGamstopIconElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("gamstop_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void gamecareLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getGamecareIconElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("gamecare_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",   "ALD2"})
     public void alderneyLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getAlderneyIconElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("alderney_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamblingComissionLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getGamblingCommissionIconElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("gambling_commission_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void ibasLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getIbasIconElement());
         String url = casinoPage.getNextTabUrlPage();
@@ -117,28 +117,28 @@ public class FooterElementLinks {
         assertEquals(url, exampleBundle.getString("twitter_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamblingComissionLinkLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getGamblingCommissionLinkElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("gambling_commission_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void gamblingControlLinkLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getGamblingControlLinkElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("alderney_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ALD2"})
     public void begamblewareLinkLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getBegamblewareLinkElement());
         String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("begambleware_url"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ES1","CUR2", "ALD2"})
     public void shutterstockLinkLinkLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getShutterstockLinkElement());
         String url = casinoPage.getNextTabUrlPage();

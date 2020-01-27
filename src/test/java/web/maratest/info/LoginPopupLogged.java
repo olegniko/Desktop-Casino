@@ -26,7 +26,7 @@ public class LoginPopupLogged {
     }
 
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"ES1", "CUR2", "ALD2"})
     public void loginEvolutionTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());

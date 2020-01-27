@@ -26,7 +26,7 @@ public class LoginPopupUnlogged {
     }
 
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"ES1", "CUR2", "ALD2"})
     public void loginPopupAppearenceEvolutionTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());
@@ -73,7 +73,7 @@ public class LoginPopupUnlogged {
 
     @Test(groups = {"ALD2"})
     public void loginPopupAppearenceIssoftTest() {
-        casinoPage.search(exampleBundle.getString("mg_game"));
+        casinoPage.search(exampleBundle.getString("issoft_game"));
         casinoPage.moveToElement(casinoPage.getIssoftGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getIssoftGamePlayElement());
         assertTrue(casinoPage.getLoginPopupElement().isDisplayed());
@@ -96,8 +96,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginPopupTitleTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getLoginPopupTitleElement().isDisplayed());
         assertTrue(casinoPage.getLoginPopupTitleElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -107,8 +107,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginFieldPopupLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getLoginFieldLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginFieldLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -118,8 +118,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void passwordFieldPopupLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getPasswordFieldLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getPasswordFieldLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -129,8 +129,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginButtonPopupLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getLoginButtonPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginButtonPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -140,8 +140,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void joinNowButtonPopupLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getJoinNowButtonPopupElement().isDisplayed());
         assertTrue(casinoPage.getJoinNowButtonPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -151,8 +151,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void lostPasswordPopupLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         assertTrue(casinoPage.getLostPasswordLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLostPasswordLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
@@ -162,8 +162,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
@@ -176,8 +176,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectPasswordTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
@@ -190,8 +190,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectLoginAndPasswordTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("incorrect_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
@@ -204,8 +204,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankLoginAndPasswordTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup("", "");
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
@@ -218,8 +218,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankLoginTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup("", exampleBundleServer.getString("correct_password"));
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
@@ -232,8 +232,8 @@ public class LoginPopupUnlogged {
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankPasswordTest() {
         casinoPage.search(exampleBundle.getString("mg_game"));
-        casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
+        casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), "");
         assertTrue(casinoPage.getIncorrectLoginMessagePopupElement().isDisplayed());
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
