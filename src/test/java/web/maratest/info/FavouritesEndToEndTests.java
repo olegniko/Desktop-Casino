@@ -1,6 +1,8 @@
 package web.maratest.info;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
@@ -22,15 +24,13 @@ public class FavouritesEndToEndTests {
     }
 
 
-
     @AfterMethod
     public void tearDown() {
         casinoPage.close();
     }
 
 
-
-    @Test (priority=1)
+    @Test(priority = 1)
     public void addSeveralAndRemoveUnloggedToLoggedAddFavoritesTest() {
 
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");

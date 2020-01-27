@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "chrome Regress">
+
+<test name="Search">
+    <groups>
+        <run>
+            <include name="CUR2" />
+        </run>
+    </groups>
+        <classes>
+
+            <class name="web.maratest.info.Search">
+
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginHeaderUnlogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginHeaderUnlogged">
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginHeaderLogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginHeaderLogged">
+            </class>
+
+        </classes>
+    </test>
+    <test name="MGGame">
+        <classes>
+
+            <class name="web.maratest.info.GameMG">
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="EvolutionGame">
+        <classes>
+
+            <class name="web.maratest.info.GameEvolution">
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="Favourites">
+        <classes>
+
+            <class name="web.maratest.info.Favourites">
+            </class>
+
+        </classes>
+    </test>
+    <test name="FavouritesEntToEnd">
+        <classes>
+
+            <class name="web.maratest.info.FavouritesEndToEndTests">
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginPopupUnlogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginPopupUnlogged">
+            </class>
+
+        </classes>
+    </test>
+    <test name="LoginPopupLogged">
+        <classes>
+
+            <class name="web.maratest.info.LoginPopupLogged">
+            </class>
+
+        </classes>
+    </test>
+ <test name="Footer">
+        <classes>
+
+            <class name="web.maratest.info.FooterElements">
+            </class>
+
+        </classes>
+    </test>
+    <test name="FooterLinks">
+        <classes>
+
+            <class name="web.maratest.info.FooterElementLinks">
+            </class>
+
+        </classes>
+    </test>
+</suite>
+
+
+
+

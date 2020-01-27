@@ -5,9 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.CasinoPage;
 
-import static helper.factory.Browser.exampleBundle;
 import static helper.factory.Browser.exampleBundleServer;
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
@@ -31,7 +29,6 @@ public class LoginHeaderLogged {
 
         casinoPage.close();
     }
-
 
 
     @Test

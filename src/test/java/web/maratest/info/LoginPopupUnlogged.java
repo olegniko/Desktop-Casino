@@ -7,7 +7,6 @@ import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
 import static helper.factory.Browser.exampleBundleServer;
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
@@ -32,7 +31,7 @@ public class LoginPopupUnlogged {
     }
 
 
-   @Test
+    @Test
     //
     public void loginPopupAppearenceEvolutionTest() {
 
@@ -45,6 +44,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     //
     public void loginPopupAppearenceMgTest() {
@@ -58,6 +58,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     //
     public void loginPopupAppearenceRelaxTest() {
@@ -71,6 +72,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     //
     public void loginPopupAppearencePlayngoTest() {
@@ -84,6 +86,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     //
     public void loginPopupAppearenceIssoftTest() {
@@ -97,6 +100,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     //
     public void loginPopupAppearenceYggdrasilTest() {
@@ -110,6 +114,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void loginPopupTitleTest() {
 
@@ -122,6 +127,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void loginFieldPopupLoginTest() {
 
@@ -134,6 +140,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void passwordFieldPopupLoginTest() {
 
@@ -146,6 +153,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void loginButtonPopupLoginTest() {
 
@@ -158,6 +166,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void joinNowButtonPopupLoginTest() {
 
@@ -170,6 +179,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
+
     @Test
     public void lostPasswordPopupLoginTest() {
 
@@ -199,7 +209,7 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-   @Test
+    @Test
     //
     public void incorectPasswordTest() {
 
@@ -211,8 +221,8 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getIncorrectLoginMessageOkButtonPopupElement());
         casinoPage.clearField(casinoPage.getLoginFieldLoginPopupElement());
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
-       casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
-       casinoPage.clearField(casinoPage.getSearchFieldElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
 
     }
 

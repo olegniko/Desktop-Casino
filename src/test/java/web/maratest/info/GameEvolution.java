@@ -33,8 +33,6 @@ public class GameEvolution {
     }
 
 
-
-
     @Test
     //
     public void playButtonEnabledTest() {
@@ -43,6 +41,7 @@ public class GameEvolution {
         assertTrue(casinoPage.getEvolutionGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -51,6 +50,7 @@ public class GameEvolution {
         assertTrue(casinoPage.getEvolutionGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {

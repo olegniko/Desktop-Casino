@@ -6,7 +6,8 @@ import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 
 public class GameMG {
@@ -36,6 +37,7 @@ public class GameMG {
         assertTrue(casinoPage.getMgGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -44,6 +46,7 @@ public class GameMG {
         assertTrue(casinoPage.getMgGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {

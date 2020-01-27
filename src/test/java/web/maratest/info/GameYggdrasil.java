@@ -32,8 +32,6 @@ public class GameYggdrasil {
     }
 
 
-
-
     @Test
     //
     public void playButtonEnabledTest() {
@@ -42,6 +40,7 @@ public class GameYggdrasil {
         assertTrue(casinoPage.getYggdrasilGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -50,6 +49,7 @@ public class GameYggdrasil {
         assertTrue(casinoPage.getYggdrasilGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {

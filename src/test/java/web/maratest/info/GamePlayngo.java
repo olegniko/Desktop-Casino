@@ -32,8 +32,6 @@ public class GamePlayngo {
     }
 
 
-
-
     @Test
     //
     public void playButtonEnabledTest() {
@@ -42,6 +40,7 @@ public class GamePlayngo {
         assertTrue(casinoPage.getPlayngoGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -50,6 +49,7 @@ public class GamePlayngo {
         assertTrue(casinoPage.getPlayngoGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {

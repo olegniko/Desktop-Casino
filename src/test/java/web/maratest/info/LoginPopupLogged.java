@@ -1,6 +1,8 @@
 package web.maratest.info;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
@@ -29,18 +31,18 @@ public class LoginPopupLogged {
     }
 
 
-  @Test
+    @Test
     //
     public void loginEvolutionTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getEvolutionGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-      casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-      casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
-      casinoPage.moveToElement(casinoPage.getCrossInGameElement());
-      casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
-      assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
+        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        casinoPage.moveToElement(casinoPage.getCrossInGameElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
+        assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
 
 
     }
@@ -75,7 +77,6 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
 
 
     }

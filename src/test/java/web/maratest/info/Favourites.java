@@ -2,47 +2,37 @@ package web.maratest.info;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.CasinoPage;
 
 import static helper.factory.Browser.exampleBundle;
-import static helper.factory.Browser.exampleBundleServer;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 
 public class Favourites {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
-
     }
 
 
-
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void numberOfFavoritesTest() {
-
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
 
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void mgAddRemoveFavoritesTest() {
-
         casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.addToFavourites(casinoPage.getMgGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -53,9 +43,8 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
+    @Test(groups = { "ALD2"})
     public void relaxAddRemoveFavoritesTest() {
-
         casinoPage.search(exampleBundle.getString("relax_game"));
         casinoPage.addToFavourites(casinoPage.getRelaxGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -65,9 +54,9 @@ public class Favourites {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
-    @Test
-    public void playngoAddRemoveFavoritesTest() {
 
+    @Test(groups = { "ALD2"})
+    public void playngoAddRemoveFavoritesTest() {
         casinoPage.search(exampleBundle.getString("playngo_game"));
         casinoPage.addToFavourites(casinoPage.getPlayngoGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -78,9 +67,8 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void issoftAddRemoveFavoritesTest() {
-
         casinoPage.search(exampleBundle.getString("issoft_game"));
         casinoPage.addToFavourites(casinoPage.getIssoftGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -90,9 +78,9 @@ public class Favourites {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
-    @Test
-    public void evolutionAddRemoveFavoritesTest() {
 
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    public void evolutionAddRemoveFavoritesTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.addToFavourites(casinoPage.getEvolutionGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -103,9 +91,8 @@ public class Favourites {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-       @Test
+    @Test(groups = {"ALD2"})
     public void yggdrasilAddRemoveFavoritesTest() {
-
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.addToFavourites(casinoPage.getYggdrasilGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
@@ -115,9 +102,6 @@ public class Favourites {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
-
-
-
 }
 
 

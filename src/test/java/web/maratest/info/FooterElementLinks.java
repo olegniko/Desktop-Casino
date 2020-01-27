@@ -4,13 +4,10 @@ package web.maratest.info;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.BasePage;
 import pages.CasinoPage;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 import static helper.factory.Browser.exampleBundle;
-import static helper.factory.Browser.exampleBundleServer;
+import static org.testng.Assert.assertEquals;
 
 
 public class FooterElementLinks {
@@ -44,7 +41,7 @@ public class FooterElementLinks {
     @Test
     public void sevilyaLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getSevillaElement());
-        String url =casinoPage.getNextTabUrlPage();
+        String url = casinoPage.getNextTabUrlPage();
         assertEquals(url, exampleBundle.getString("sevilya_url"));
     }
 
@@ -59,7 +56,7 @@ public class FooterElementLinks {
     public void dinamoLinkTest() throws InterruptedException {
         casinoPage.clickIfElementIsClickable(casinoPage.getDinamoElement());
         String url = casinoPage.getNextTabUrlPage();
-        assertEquals(url,exampleBundle.getString("dinamo_url"));
+        assertEquals(url, exampleBundle.getString("dinamo_url"));
     }
 
     @Test

@@ -32,8 +32,6 @@ public class GameIssoft {
     }
 
 
-
-
     @Test
     //
     public void playButtonEnabledTest() {
@@ -42,6 +40,7 @@ public class GameIssoft {
         assertTrue(casinoPage.getIssoftGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -50,6 +49,7 @@ public class GameIssoft {
         assertTrue(casinoPage.getIssoftGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {

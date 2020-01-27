@@ -25,7 +25,7 @@
             <id>regress chrome EN cur2</id>
             <properties>
                 <browser>chrome</browser>
-                <suite>Regress</suite>
+                <suite>Regress_CUR2</suite>
                 <locale>en</locale>
                 <localeServer>cur</localeServer>
             </properties>
@@ -34,7 +34,7 @@
             <id>regress chrome EN ald2</id>
             <properties>
                 <browser>chrome</browser>
-                <suite>Regress</suite>
+                <suite>Regress_ALD2</suite>
                 <locale>en</locale>
                 <localeServer>ald</localeServer>
             </properties>
@@ -43,7 +43,7 @@
             <id>regress chrome EN es1</id>
             <properties>
                 <browser>chrome</browser>
-                <suite>Regress</suite>
+                <suite>Regress_ES1</suite>
                 <locale>en</locale>
                 <localeServer>es</localeServer>
             </properties>
@@ -52,7 +52,7 @@
             <id>regress chrome EN dk1</id>
             <properties>
                 <browser>chrome</browser>
-                <suite>Regress</suite>
+                <suite>Regress_DK1</suite>
                 <locale>en</locale>
                 <localeServer>dk</localeServer>
             </properties>

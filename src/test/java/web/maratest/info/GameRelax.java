@@ -39,6 +39,7 @@ public class GameRelax {
         assertTrue(casinoPage.getRelaxGamePlayElement().isEnabled());
 
     }
+
     @Test
     //
     public void demoButtonEnabledTest() {
@@ -47,6 +48,7 @@ public class GameRelax {
         assertTrue(casinoPage.getRelaxGameDemoElement().isEnabled());
 
     }
+
     @Test
     //
     public void favouritesEnabledTest() {
