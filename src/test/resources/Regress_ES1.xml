@@ -1,101 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-    <suite name = "chrome Regress">
+<suite name="chrome Regress">
 
-<test name="Search">
-    <groups>
-        <run>
-            <include name="ES1" />
-        </run>
-    </groups>
+    <test name="Search">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.Search">
             </class>
-
         </classes>
     </test>
     <test name="LoginHeaderUnlogged">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.LoginHeaderUnlogged">
             </class>
-
         </classes>
     </test>
     <test name="LoginHeaderLogged">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.LoginHeaderLogged">
             </class>
-
         </classes>
     </test>
     <test name="MGGame">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.GameMG">
             </class>
-
         </classes>
     </test>
-
     <test name="EvolutionGame">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.GameEvolution">
             </class>
-
         </classes>
     </test>
-
     <test name="Favourites">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.Favourites">
             </class>
-
         </classes>
     </test>
     <test name="FavouritesEntToEnd">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.FavouritesEndToEndTests">
             </class>
-
         </classes>
     </test>
     <test name="LoginPopupUnlogged">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.LoginPopupUnlogged">
             </class>
-
         </classes>
     </test>
     <test name="LoginPopupLogged">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.LoginPopupLogged">
             </class>
-
         </classes>
     </test>
- <test name="Footer">
+    <test name="Footer">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.FooterElements">
             </class>
-
         </classes>
     </test>
     <test name="FooterLinks">
+        <groups>
+            <run>
+                <include name="ES1"/>
+            </run>
+        </groups>
         <classes>
-
             <class name="web.maratest.info.FooterElementLinks">
             </class>
-
         </classes>
     </test>
 </suite>

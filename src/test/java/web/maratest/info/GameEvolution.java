@@ -15,49 +15,35 @@ public class GameEvolution {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
         casinoPage.search(exampleBundle.getString("evolution_game"));
-
-
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
 
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void playButtonEnabledTest() {
-
         assertFalse(casinoPage.getEvolutionGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGamePlayElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void demoButtonEnabledTest() {
-
         assertFalse(casinoPage.getEvolutionGameDemoElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGameDemoElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void favouritesEnabledTest() {
-
         assertTrue(casinoPage.getEvolutionGameFavouriteElement().isDisplayed());
         assertTrue(casinoPage.getEvolutionGameFavouriteElement().isEnabled());
-
     }
 }
 

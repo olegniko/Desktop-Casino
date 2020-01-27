@@ -14,45 +14,34 @@ public class GameMG {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
         casinoPage = new CasinoPage();
         casinoPage.search(exampleBundle.getString("mg_game"));
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
 
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void playButtonEnabledTest() {
-
         assertFalse(casinoPage.getMgGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getMgGamePlayElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void demoButtonEnabledTest() {
-
         assertFalse(casinoPage.getMgGameDemoElement().isDisplayed());
         assertTrue(casinoPage.getMgGameDemoElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void favouritesEnabledTest() {
-
         assertTrue(casinoPage.getMgGameFavouriteElement().isDisplayed());
         assertTrue(casinoPage.getMgGameFavouriteElement().isEnabled());
-
     }
 }

@@ -14,49 +14,35 @@ public class GameRelax {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
         casinoPage.search(exampleBundle.getString("relax_game"));
-
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
 
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void playButtonEnabledTest() {
-
         assertFalse(casinoPage.getRelaxGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getRelaxGamePlayElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = { "ALD2"})
     public void demoButtonEnabledTest() {
-
         assertFalse(casinoPage.getRelaxGameDemoElement().isDisplayed());
         assertTrue(casinoPage.getRelaxGameDemoElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void favouritesEnabledTest() {
-
         assertTrue(casinoPage.getRelaxGameFavouriteElement().isDisplayed());
         assertTrue(casinoPage.getRelaxGameFavouriteElement().isEnabled());
-
     }
-
 }
 

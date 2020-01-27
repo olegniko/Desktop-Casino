@@ -14,14 +14,9 @@ public class LoginPopupLogged {
 
     CasinoPage casinoPage;
 
-    @BeforeMethod
-
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
-
-
     }
 
 
@@ -31,8 +26,7 @@ public class LoginPopupLogged {
     }
 
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginEvolutionTest() {
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());
@@ -43,14 +37,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginMgTest() {
-
         casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
@@ -60,14 +50,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginIssoftTest() {
-
         casinoPage.search(exampleBundle.getString("issoft_game"));
         casinoPage.moveToElement(casinoPage.getIssoftGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getIssoftGamePlayElement());
@@ -77,14 +63,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginRelaxTest() {
-
         casinoPage.search(exampleBundle.getString("relax_game"));
         casinoPage.moveToElement(casinoPage.getRelaxGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getRelaxGamePlayElement());
@@ -94,14 +76,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginPlayngoTest() {
-
         casinoPage.search(exampleBundle.getString("playngo_game"));
         casinoPage.moveToElement(casinoPage.getPlayngoGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getPlayngoGamePlayElement());
@@ -111,14 +89,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginYggdrasilTest() {
-
         casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
@@ -128,8 +102,6 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
-
-
     }
 }
 

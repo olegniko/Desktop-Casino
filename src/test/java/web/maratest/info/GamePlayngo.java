@@ -14,49 +14,35 @@ public class GamePlayngo {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
         casinoPage.search(exampleBundle.getString("playngo_game"));
-
-
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
 
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void playButtonEnabledTest() {
-
         assertFalse(casinoPage.getPlayngoGamePlayElement().isDisplayed());
         assertTrue(casinoPage.getPlayngoGamePlayElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void demoButtonEnabledTest() {
-
         assertFalse(casinoPage.getPlayngoGameDemoElement().isDisplayed());
         assertTrue(casinoPage.getPlayngoGameDemoElement().isEnabled());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void favouritesEnabledTest() {
-
         assertTrue(casinoPage.getPlayngoGameFavouriteElement().isDisplayed());
         assertTrue(casinoPage.getPlayngoGameFavouriteElement().isEnabled());
-
     }
 }
 

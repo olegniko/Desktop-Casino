@@ -14,14 +14,9 @@ public class LoginPopupUnlogged {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
-
-
     }
 
 
@@ -31,10 +26,8 @@ public class LoginPopupUnlogged {
     }
 
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginPopupAppearenceEvolutionTest() {
-
         casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getEvolutionGamePlayElement());
@@ -42,13 +35,10 @@ public class LoginPopupUnlogged {
         assertTrue(casinoPage.getLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginPopupAppearenceMgTest() {
-
         casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
@@ -59,10 +49,8 @@ public class LoginPopupUnlogged {
 
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginPopupAppearenceRelaxTest() {
-
         casinoPage.search(exampleBundle.getString("relax_game"));
         casinoPage.moveToElement(casinoPage.getRelaxGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getRelaxGamePlayElement());
@@ -70,13 +58,10 @@ public class LoginPopupUnlogged {
         assertTrue(casinoPage.getLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = { "ALD2"})
     public void loginPopupAppearencePlayngoTest() {
-
         casinoPage.search(exampleBundle.getString("playngo_game"));
         casinoPage.moveToElement(casinoPage.getPlayngoGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getPlayngoGamePlayElement());
@@ -84,120 +69,99 @@ public class LoginPopupUnlogged {
         assertTrue(casinoPage.getLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"ALD2"})
     public void loginPopupAppearenceIssoftTest() {
-
-        casinoPage.search(exampleBundle.getString("issoft_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getIssoftGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getIssoftGamePlayElement());
         assertTrue(casinoPage.getLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = { "ALD2"})
     public void loginPopupAppearenceYggdrasilTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginPopupTitleTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLoginPopupTitleElement().isDisplayed());
         assertTrue(casinoPage.getLoginPopupTitleElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginFieldPopupLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLoginFieldLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginFieldLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void passwordFieldPopupLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getPasswordFieldLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getPasswordFieldLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void loginButtonPopupLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLoginButtonPopupElement().isDisplayed());
         assertTrue(casinoPage.getLoginButtonPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void joinNowButtonPopupLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getJoinNowButtonPopupElement().isDisplayed());
         assertTrue(casinoPage.getJoinNowButtonPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void lostPasswordPopupLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLostPasswordLoginPopupElement().isDisplayed());
         assertTrue(casinoPage.getLostPasswordLoginPopupElement().isEnabled());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("correct_password"));
@@ -209,11 +173,9 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectPasswordTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("incorrect_password"));
@@ -223,14 +185,11 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getPasswordFieldLoginPopupElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
-
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void incorectLoginAndPasswordTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("incorrect_login"), exampleBundleServer.getString("incorrect_password"));
@@ -242,11 +201,9 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankLoginAndPasswordTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup("", "");
@@ -258,11 +215,9 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankLoginTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup("", exampleBundleServer.getString("correct_password"));
@@ -274,11 +229,9 @@ public class LoginPopupUnlogged {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
 
-    @Test
-    //
+    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
     public void blankPasswordTest() {
-
-        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.loginByPopup(exampleBundleServer.getString("correct_login"), "");
@@ -289,7 +242,6 @@ public class LoginPopupUnlogged {
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginPopupCrossElement());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
-
 
 }
 

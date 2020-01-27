@@ -10,23 +10,16 @@ public class HeaderElements {
 
     CasinoPage casinoPage;
 
-    @BeforeClass
-
+    @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-
-
         casinoPage = new CasinoPage();
-
-
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         casinoPage.close();
     }
-
-
 }
 
 

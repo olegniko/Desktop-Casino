@@ -252,7 +252,6 @@ public class MainPage extends BasePage {
 
 
     public void logout(){
-
         clickIfElementIsClickableFluent(getLogoutButtonHeaderElement());
         waitIfElementIsClickableFluent(loginButtonHeaderElement);
     }
