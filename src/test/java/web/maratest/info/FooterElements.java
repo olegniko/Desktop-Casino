@@ -39,14 +39,14 @@ public class FooterElements {
         assertEquals(casinoPage.getTextPrivacyPolicyFooterElement(), exampleBundle.getString("privacy_policy_footer"));
     }
 
-    @Test(groups = {"DK1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void responsibleGamblingEnabledTest() {
         assertTrue(casinoPage.getResponsibleGamingFooterElement().isDisplayed());
         assertTrue(casinoPage.getResponsibleGamingFooterElement().isEnabled());
         assertEquals(casinoPage.getTextResponsibleGamingFooterElement(), exampleBundle.getString("responsible_gambling_footer"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ES1", "ALD2"})
     public void termsAndConditionsEnabledTest() {
         assertTrue(casinoPage.getTermsAndConditionsFooterElement().isDisplayed());
         assertTrue(casinoPage.getTermsAndConditionsFooterElement().isEnabled());
@@ -74,7 +74,7 @@ public class FooterElements {
         assertEquals(casinoPage.getTextMobileSiteFooterElement(), exampleBundle.getString("mobile_site_footer"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ES1", "ALD2"})
     public void blogEnabledTest() {
         assertTrue(casinoPage.getBlogFooterElement().isDisplayed());
         assertTrue(casinoPage.getBlogFooterElement().isEnabled());
@@ -180,7 +180,7 @@ public class FooterElements {
         assertTrue(casinoPage.getPaySafeCardIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ES1",  "ALD2"})
     public void trustlyIconEnabledTest() {
         assertTrue(casinoPage.getTrustlyIconElement().isDisplayed());
         assertTrue(casinoPage.getTrustlyIconElement().isEnabled());
@@ -198,7 +198,7 @@ public class FooterElements {
         assertTrue(casinoPage.getRgtDonorIconElement().isEnabled());
     }
 
-    @Test(groups = {"DK1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1",  "ALD2"})
     public void gamstopIconEnabledTest() {
         assertTrue(casinoPage.getGamstopIconElement().isDisplayed());
         assertTrue(casinoPage.getGamstopIconElement().isEnabled());

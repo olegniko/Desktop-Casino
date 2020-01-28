@@ -39,7 +39,7 @@ public class LoginHeaderLogged {
     }
 
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
-    public void loginButtonEnabledTest() {
+    public void logoutButtonEnabledTest() {
         assertTrue(casinoPage.getLogoutButtonHeaderElement().isDisplayed());
         assertTrue(casinoPage.getLogoutButtonHeaderElement().isEnabled());
     }

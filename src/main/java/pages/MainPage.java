@@ -17,11 +17,11 @@ public class MainPage extends BasePage {
     protected WebElement loginFieldHeaderElement;
     @FindBy(css = "input[data-id='auth_login_password']")
     protected WebElement passwordFieldHeaderElement;
-    @FindBy(css = "button[class='button btn-login']")
+    @FindBy(xpath = "//button[contains(@class,'auth-form__submit')]")
     protected WebElement loginButtonHeaderElement;
-    @FindBy(css = "a[class='button btn-join']")
+    @FindBy(xpath = "//a[contains(@class,'auth-form__join-button')]")
     protected WebElement joinNowButtonHeaderElement;
-    @FindBy(css = "a[class='lostpass']")
+    @FindBy(xpath = "//a[contains(@class,'auth-form__input-helper')]")
     protected WebElement lostPasswordHeaderElement;
     @FindBy(css = "div[id='any_message']")
     protected WebElement incorrectLoginMessageElement;
@@ -33,13 +33,13 @@ public class MainPage extends BasePage {
     protected WebElement loginMessageOkButtonElement;
     @FindBy(css = "img[alt='Marathonbet Logo']")
     protected WebElement marathonbetIconHeaderElement;
-    @FindBy(css = "a[id='logoutLink']")
+    @FindBy(xpath = "//a[contains(@class,'logout')]")
     protected WebElement logoutButtonHeaderElement;
-    @FindBy(css = "a[class='button btn-deposit']")
+    @FindBy(xpath = "//a[contains(@class,'deposit')]")
     protected WebElement depositButtonHeaderElement;
-    @FindBy(css = "a[class='button btn-deposit']")
+    @FindBy(xpath = "//span[contains(@class,'marathon_icons-profile')]")
     protected WebElement myAccountButtonHeaderElement;
-//descendant::svg-button[contains(@class,'modal-header__close')]
+
 
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'help')]")
     protected WebElement aboutUsFooterElement;
@@ -57,7 +57,7 @@ public class MainPage extends BasePage {
     protected WebElement mobileSiteFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'blog.marathonbet')]")
     protected WebElement blogFooterElement;
-    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.marathonbet')]")
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'affiliates')]")
     protected WebElement affiliatesFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.htm')]")
     protected WebElement ourParntersFooterElement;
@@ -131,15 +131,13 @@ public class MainPage extends BasePage {
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
     public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
     public WebElement getJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement); }
-    public WebElement getLostPasswordHeaderElement() {
-        return getClickableElement(lostPasswordHeaderElement);
-    }
+    public WebElement getLostPasswordHeaderElement() { return getEnabledElement(lostPasswordHeaderElement); }
     public WebElement getIncorrectLoginMessageElement() { return getClickableElement(incorrectLoginMessageElement); }
     public WebElement getLoginMessageElement() {
         return getEnabledElement(loginMessageElement);
     }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() { return getEnabledElement(loginMessageOkButtonElement); }
+    public WebElement getLoginMessageOkButtonElement() { return loginMessageOkButtonElement; }
     public WebElement getMarathonbetIconHeaderElement() {
         return getClickableElement(marathonbetIconHeaderElement);
     }

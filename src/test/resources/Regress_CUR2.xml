@@ -3,7 +3,7 @@
 
     <suite name = "chrome Regress">
 
-<test name="Search">
+<!--<test name="Search">
     <groups>
         <run>
             <include name="CUR2" />
@@ -13,8 +13,8 @@
             <class name="web.maratest.info.Search">
             </class>
         </classes>
-    </test>
-    <test name="LoginHeaderUnlogged">
+    </test>-->
+    <!--<test name="LoginHeaderUnlogged">
         <groups>
             <run>
                 <include name="CUR2" />
@@ -35,8 +35,8 @@
             <class name="web.maratest.info.LoginHeaderLogged">
             </class>
         </classes>
-    </test>
-    <test name="MGGame">
+    </test>-->
+    <!--<test name="MGGame">
         <groups>
             <run>
                 <include name="CUR2" />
@@ -57,8 +57,8 @@
             <class name="web.maratest.info.GameEvolution">
             </class>
         </classes>
-    </test>
-    <test name="Favourites">
+    </test>-->
+    <!--<test name="Favourites">
         <groups>
             <run>
                 <include name="CUR2" />
@@ -79,7 +79,7 @@
             <class name="web.maratest.info.FavouritesEndToEndTests">
             </class>
         </classes>
-    </test>
+    </test>-->
     <test name="LoginPopupUnlogged">
         <groups>
             <run>
@@ -102,7 +102,7 @@
             </class>
         </classes>
     </test>
- <test name="Footer">
+ <!--<test name="Footer">
      <groups>
          <run>
              <include name="CUR2" />
@@ -123,7 +123,7 @@
             <class name="web.maratest.info.FooterElementLinks">
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
 
 

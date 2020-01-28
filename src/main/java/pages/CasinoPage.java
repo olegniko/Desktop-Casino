@@ -202,7 +202,6 @@ public class CasinoPage extends MainPage {
         loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
         clickLoginButtonInPopup();
-
         }
 
     }

@@ -32,8 +32,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getEvolutionGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getEvolutionGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
+       if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
         casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+       }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
@@ -45,8 +47,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getMgGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getMgGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
+            casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+            casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
@@ -58,8 +62,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getIssoftGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getIssoftGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
+            casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+            casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
@@ -71,8 +77,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getRelaxGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getRelaxGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
+            casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+            casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
@@ -84,8 +92,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getPlayngoGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getPlayngoGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
+            casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+            casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
@@ -97,8 +107,10 @@ public class LoginPopupLogged {
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
-        casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
-        casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        if(casinoPage.getLoginMessageOkButtonElement().isDisplayed()){
+            casinoPage.moveToElement(casinoPage.getLoginMessageOkButtonElement());
+            casinoPage.clickIfElementIsClickable(casinoPage.getLoginMessageOkButtonElement());
+        }
         casinoPage.moveToElement(casinoPage.getCrossInGameElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getCrossInGameElement());
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
