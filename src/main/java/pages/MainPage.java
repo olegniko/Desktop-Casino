@@ -31,7 +31,7 @@ public class MainPage extends BasePage {
     protected WebElement loginMessageElement;
     @FindBy(xpath="//div[@id='loginMessage']//descendant::button[@aria-label='OK']")
     protected WebElement loginMessageOkButtonElement;
-    @FindBy(css = "img[alt='Marathonbet Logo']")
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@title='Marathonbet']")
     protected WebElement marathonbetIconHeaderElement;
     @FindBy(xpath = "//a[contains(@class,'logout')]")
     protected WebElement logoutButtonHeaderElement;
@@ -39,6 +39,49 @@ public class MainPage extends BasePage {
     protected WebElement depositButtonHeaderElement;
     @FindBy(xpath = "//span[contains(@class,'marathon_icons-profile')]")
     protected WebElement myAccountButtonHeaderElement;
+
+
+
+
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Sport']")
+    protected WebElement sportHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Live']")
+    protected WebElement liveHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Toto']")
+    protected WebElement totoHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Casino']")
+    protected WebElement casinoHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Live Casino']")
+    protected WebElement liveCasinoHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='e-Sports']")
+    protected WebElement eSportHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Virtuals']")
+    protected WebElement virtualsHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Financials']")
+    protected WebElement financialsHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Sports Pools']")
+    protected WebElement sportsPoolsHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Constructor']")
+    protected WebElement constructorHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Bingo']")
+    protected WebElement bingoHeaderElement;
+
+
+    @FindBy(xpath = "//div[@id='header_container']//descendant::div[normalize-space(text()) = 'Services']")
+    protected WebElement servicesDropdownHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::div[normalize-space(text()) = 'Results']")
+    protected WebElement resultsDropdownHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::li[@id='language_form']")
+    protected WebElement languageDropdownHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::div[@id='settingsDropdown']")
+    protected WebElement settingsDropdownHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Chat']")
+    protected WebElement chatHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Mobile']")
+    protected WebElement appsHeaderElement;
+    @FindBy(xpath = "//div[@id='header_container']//descendant::span[@id='timer']")
+    protected WebElement timeZoneDropdownHeaderElement;
+
 
 
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::span[contains(@data-show-help,'help')]")
@@ -133,23 +176,36 @@ public class MainPage extends BasePage {
     public WebElement getJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement); }
     public WebElement getLostPasswordHeaderElement() { return getEnabledElement(lostPasswordHeaderElement); }
     public WebElement getIncorrectLoginMessageElement() { return getClickableElement(incorrectLoginMessageElement); }
-    public WebElement getLoginMessageElement() {
-        return getEnabledElement(loginMessageElement);
-    }
+    public WebElement getLoginMessageElement() { return getEnabledElement(loginMessageElement); }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
     public WebElement getLoginMessageOkButtonElement() { return loginMessageOkButtonElement; }
-    public WebElement getMarathonbetIconHeaderElement() {
-        return getClickableElement(marathonbetIconHeaderElement);
-    }
-    public WebElement getLogoutButtonHeaderElement() {
-        return getClickableElement(logoutButtonHeaderElement);
-    }
-    public WebElement getDepositButtonHeaderElement() {
-        return getClickableElement(depositButtonHeaderElement);
-    }
-    public WebElement getMyAccountButtonHeaderElement() {
-        return getClickableElement(myAccountButtonHeaderElement);
-    }
+    public WebElement getMarathonbetIconHeaderElement() { return getClickableElement(marathonbetIconHeaderElement); }
+    public WebElement getLogoutButtonHeaderElement() { return getClickableElement(logoutButtonHeaderElement); }
+    public WebElement getDepositButtonHeaderElement() { return getClickableElement(depositButtonHeaderElement); }
+    public WebElement getMyAccountButtonHeaderElement() { return getClickableElement(myAccountButtonHeaderElement); }
+
+    public WebElement getSportHeaderElement() { return sportHeaderElement; }
+    public WebElement getLiveHeaderElement() { return liveHeaderElement; }
+    public WebElement getTotoHeaderElement() { return totoHeaderElement; }
+    public WebElement getCasinoHeaderElement() { return casinoHeaderElement; }
+    public WebElement getLiveCasinoHeaderElement() { return liveCasinoHeaderElement; }
+    public WebElement getESportHeaderElement() { return eSportHeaderElement; }
+    public WebElement getVirtualsHeaderElement() { return virtualsHeaderElement; }
+    public WebElement getFinancialsHeaderElement() { return financialsHeaderElement; }
+    public WebElement geteSportHeaderElement() { return eSportHeaderElement; }
+    public WebElement getSportsPoolsHeaderElement() { return sportsPoolsHeaderElement; }
+    public WebElement getConstructorHeaderElement() { return constructorHeaderElement; }
+    public WebElement getBingoHeaderElement() { return bingoHeaderElement; }
+
+
+    public WebElement getServicesDropdownHeaderElement() { return servicesDropdownHeaderElement; }
+    public WebElement getResultsDropdownHeaderElement() { return resultsDropdownHeaderElement; }
+    public WebElement getLanguageDropdownHeaderElement() { return languageDropdownHeaderElement; }
+    public WebElement getSettingsDropdownHeaderElement() { return settingsDropdownHeaderElement; }
+    public WebElement getChatHeaderElement() { return chatHeaderElement; }
+    public WebElement getAppsHeaderElement() { return appsHeaderElement; }
+    public WebElement getTimeZoneDropdownHeaderElement() { return timeZoneDropdownHeaderElement; }
+
 
     public WebElement getAboutUsFooterElement() { return getClickableFluentElement(aboutUsFooterElement); }
     public WebElement getPrivacyPolicyFooterElement() { return getEnabledElement(privacyPolicyFooterElement); }
@@ -203,6 +259,26 @@ public class MainPage extends BasePage {
     public String getTextLogoutButtonHeaderElement() { return getClickableElement(logoutButtonHeaderElement).getText(); }
     public String getTextDepositButtonHeaderElement() { return getClickableElement(depositButtonHeaderElement).getText(); }
     public String getTextMyAccountButtonHeaderElement() { return getClickableElement(myAccountButtonHeaderElement).getText(); }
+
+    public String getTextSportHeaderElement() { return  getSportHeaderElement().getText(); }
+    public String getTextLiveHeaderElement() { return  getLiveHeaderElement().getText(); }
+    public String getTextTotoHeaderElement() { return  getTotoHeaderElement().getText(); }
+    public String getTextCasinoHeaderElement() { return  getCasinoHeaderElement().getText(); }
+    public String getTextLiveCasinoHeaderElement() { return  getLiveCasinoHeaderElement().getText(); }
+    public String getTextESportHeaderElement() { return  getESportHeaderElement().getText(); }
+    public String getTextVirtualsHeaderElement() { return  getVirtualsHeaderElement().getText(); }
+    public String getTextFinancialsHeaderElement() { return  getFinancialsHeaderElement().getText(); }
+    public String getTextSportsPoolsHeaderElement() { return getSportsPoolsHeaderElement().getText(); }
+    public String getTextConstructorHeaderElement() { return getConstructorHeaderElement().getText(); }
+    public String getTextBingoHeaderElement() { return getBingoHeaderElement().getText(); }
+
+    public String getTextServicesDropdownHeaderElement() { return getServicesDropdownHeaderElement().getText(); }
+    public String getTextResultsDropdownHeaderElement() { return getResultsDropdownHeaderElement().getText(); }
+    public String getTextLanguageDropdownHeaderElement() { return getLanguageDropdownHeaderElement().getText(); }
+    public String getTextSettingsDropdownHeaderElement() { return getSettingsDropdownHeaderElement().getText(); }
+    public String getTextChatHeaderElement() { return getChatHeaderElement().getText(); }
+    public String getTextAppsHeaderElement() { return getAppsHeaderElement().getText(); }
+    public String getTextTimeZoneDropdownHeaderElement() { return getTimeZoneDropdownHeaderElement().getText(); }
 
     public String getTextAboutUsFooterElement() { return getAboutUsFooterElement().getText(); }
     public String getTextPrivacyPolicyFooterElement() { return getPrivacyPolicyFooterElement().getText(); }

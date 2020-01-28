@@ -2,18 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
     <suite name = "chrome Regress">
-
-<!--<test name="Search">
-    <groups>
-        <run>
-            <include name="CUR2" />
-        </run>
-    </groups>
+    <test name="HeaderElements">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
         <classes>
-            <class name="web.maratest.info.Search">
+            <class name="web.maratest.info.HeaderElements">
             </class>
         </classes>
-    </test>-->
+    </test>
     <!--<test name="LoginHeaderUnlogged">
         <groups>
             <run>
@@ -35,51 +34,7 @@
             <class name="web.maratest.info.LoginHeaderLogged">
             </class>
         </classes>
-    </test>-->
-    <!--<test name="MGGame">
-        <groups>
-            <run>
-                <include name="CUR2" />
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.GameMG">
-            </class>
-        </classes>
     </test>
-    <test name="EvolutionGame">
-        <groups>
-            <run>
-                <include name="CUR2" />
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.GameEvolution">
-            </class>
-        </classes>
-    </test>-->
-    <!--<test name="Favourites">
-        <groups>
-            <run>
-                <include name="CUR2" />
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.Favourites">
-            </class>
-        </classes>
-    </test>
-    <test name="FavouritesEntToEnd">
-        <groups>
-            <run>
-                <include name="CUR2" />
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.FavouritesEndToEndTests">
-            </class>
-        </classes>
-    </test>-->
     <test name="LoginPopupUnlogged">
         <groups>
             <run>
@@ -102,7 +57,62 @@
             </class>
         </classes>
     </test>
- <!--<test name="Footer">
+    <test name="Search">
+    <groups>
+        <run>
+            <include name="CUR2" />
+        </run>
+    </groups>
+        <classes>
+            <class name="web.maratest.info.Search">
+            </class>
+        </classes>
+    </test>
+    <test name="MGGame">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.GameMG">
+            </class>
+        </classes>
+    </test>
+    <test name="EvolutionGame">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.GameEvolution">
+            </class>
+        </classes>
+    </test>
+    <test name="Favourites">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.Favourites">
+            </class>
+        </classes>
+    </test>
+    <test name="FavouritesEntToEnd">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.FavouritesEndToEndTests">
+            </class>
+        </classes>
+    </test>
+    <test name="Footer">
      <groups>
          <run>
              <include name="CUR2" />
