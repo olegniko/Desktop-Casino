@@ -151,6 +151,12 @@ public class HeaderElements {
         assertTrue(casinoPage.getAppsHeaderElement().isEnabled());
         assertEquals(casinoPage.getTextAppsHeaderElement(), exampleBundle.getString("apps_header"));
     }
+
+    @Test(groups ={ "DK1", "ES1","CUR2","ALD2"})
+    public void timeZoneEnabledTest() {
+        assertTrue(casinoPage.getTimeZoneDropdownHeaderElement().isDisplayed());
+        assertTrue(casinoPage.getTimeZoneDropdownHeaderElement().isEnabled());
+    }
 }
 
 

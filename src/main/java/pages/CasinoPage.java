@@ -82,23 +82,31 @@ public class CasinoPage extends MainPage {
     @FindBy(xpath = "//div[normalize-space(text()) = 'olegYggdrasilAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
     protected WebElement yggdrasilGameFavouriteElement;
 
+    @FindBy(xpath = "//*[normalize-space(text()) = 'olegIforiumAutotest']//ancestor::casino-game[@game='game']")
+    protected WebElement iforiumGameElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegIforiumAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__play ng-scope']")
+    protected WebElement iforiumGamePlayElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegIforiumAutotest']//ancestor::casino-game[@game='game']//descendant::span[@class = 'md-trigger gi-casino-buttons__demo ng-scope']")
+    protected WebElement iforiumGameDemoElement;
+    @FindBy(xpath = "//div[normalize-space(text()) = 'olegIforiumAutotest']//ancestor::casino-game[@game='game']//descendant::button[contains(@class,'gi-casino-game__favorite')]")
+    protected WebElement iforiumGameFavouriteElement;
 
 
     @FindBy (css = "div[id='login-popup']")
     protected WebElement loginPopupElement;
-    @FindBy (xpath = "//svg-button[contains(@class,'gi-modal-header__close')]")
+    @FindBy (xpath = "//div[@id='login-popup']//svg-button[contains(@class,'gi-modal-header__close')]")
     protected WebElement loginPopupCrossElement;
-    @FindBy (xpath = "//h2[contains(@class,'gi-login-form__title')]")
+    @FindBy (xpath = "//div[@id='login-popup']//h2[contains(@class,'gi-login-form__title')]")
     protected WebElement loginPopupTitleElement;
-    @FindBy (css = "input[name='login']")
+    @FindBy (xpath = "//div[@id='login-popup']//input[@name='login']")
     protected WebElement loginFieldLoginPopupElement;
-    @FindBy (css = "input[name='login_password']")
+    @FindBy (xpath = "//div[@id='login-popup']//input[@name='login_password']")
     protected WebElement passwordFieldLoginPopupElement;
-    @FindBy (xpath = "//a[contains(@class,'lostpass')]")
+    @FindBy (xpath = "//div[@id='login-popup']//a[contains(@class,'lostpass')]")
     protected WebElement lostPasswordLoginPopupElement;
-    @FindBy (xpath = "//button[contains(@class,'gi-but-login')]")
+    @FindBy (xpath = "//div[@id='login-popup']//button[contains(@class,'gi-but-login')]")
     protected WebElement loginButtonPopupElement;
-    @FindBy (xpath = "//a[contains(@class,'but-join')]")
+    @FindBy (xpath = "//div[@id='login-popup']//a[contains(@class,'but-join')]")
     protected WebElement joinNowButtonPopupElement;
     @FindBy(css = "div[id='errorMessage']")
     protected WebElement incorrectLoginMessagePopupElement;
@@ -148,6 +156,11 @@ public class CasinoPage extends MainPage {
     public WebElement getYggdrasilGameDemoElement() { return yggdrasilGameDemoElement; }
     public WebElement getYggdrasilGameFavouriteElement() { return getEnabledElement(yggdrasilGameFavouriteElement); }
 
+    public WebElement getIforiumGameElement() { return getEnabledElement(iforiumGameElement); }
+    public WebElement getIforiumGamePlayElement() { return iforiumGamePlayElement; }
+    public WebElement getIforiumGameDemoElement() { return iforiumGameDemoElement; }
+    public WebElement getIforiumGameFavouriteElement() { return getEnabledElement(iforiumGameFavouriteElement); }
+
     public WebElement getLoginPopupElement() { return getEnabledElement(loginPopupElement); }
     public WebElement getLoginPopupCrossElement() { return getEnabledElement(loginPopupCrossElement); }
     public WebElement getLoginPopupTitleElement() { return getEnabledElement(loginPopupTitleElement); }
@@ -159,7 +172,7 @@ public class CasinoPage extends MainPage {
     public WebElement getIncorrectLoginMessagePopupElement() { return getClickableElement(incorrectLoginMessagePopupElement); }
     public WebElement getIncorrectLoginMessageOkButtonPopupElement() { return getClickableElement(incorrectLoginMessageOkButtonPopupElement); }
 
-    public WebElement getCrossInGameElement() { return getEnabledElement(crossInGameElement); }
+    public WebElement getCrossInGameElement() { return getClickableFluentElement(crossInGameElement); }
 
 
     public String getTextSearchFieldElement() { return getClickableElement(searchFieldElement).getAttribute("placeholder"); }
@@ -202,9 +215,23 @@ public class CasinoPage extends MainPage {
         loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
         clickLoginButtonInPopup();
+        closeSuccessfulMessagePopup();
         }
 
+    public void closeSuccessfulMessagePopup(){
+        driverWait(5);
+
+            moveToElement(getLoginMessageOkButtonElement());
+            clickIfElementIsClickable(getLoginMessageOkButtonElement());
+
+
     }
+
+    public void closeGame(){
+        moveToElement(getCrossInGameElement());
+        clickIfElementIsClickableFluent(getCrossInGameElement());
+    }
+}
 
 
 

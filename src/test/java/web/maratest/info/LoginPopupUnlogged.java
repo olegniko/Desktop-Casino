@@ -84,7 +84,7 @@ public class LoginPopupUnlogged {
 
     @Test(groups = { "ALD2"})
     public void loginPopupAppearenceYggdrasilTest() {
-        casinoPage.search(exampleBundle.getString("mg_game"));
+        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.moveToElement(casinoPage.getYggdrasilGamePlayElement());
         casinoPage.clickIfElementIsClickable(casinoPage.getYggdrasilGamePlayElement());
         assertTrue(casinoPage.getLoginPopupElement().isDisplayed());

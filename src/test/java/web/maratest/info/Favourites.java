@@ -102,6 +102,18 @@ public class Favourites {
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
+
+    @Test(groups = {"CUR2"})
+    public void iforiumAddRemoveFavoritesTest() {
+        casinoPage.search(exampleBundle.getString("iforium_game"));
+        casinoPage.addToFavourites(casinoPage.getIforiumGameFavouriteElement());
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
+        casinoPage.search(exampleBundle.getString("iforium_game"));
+        casinoPage.removeFromFavourites(casinoPage.getIforiumGameFavouriteElement());
+        assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
+    }
 }
 
 

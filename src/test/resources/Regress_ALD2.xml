@@ -2,15 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="chrome Regress">
-
-    <test name="Search">
+    <!--<test name="HeaderElements">
         <groups>
             <run>
-                <include name="ALD2"/>
+                <include name="ALD2" />
             </run>
         </groups>
         <classes>
-            <class name="web.maratest.info.Search">
+            <class name="web.maratest.info.HeaderElements">
             </class>
         </classes>
     </test>
@@ -35,7 +34,41 @@
             <class name="web.maratest.info.LoginHeaderLogged">
             </class>
         </classes>
+    </test>-->
+    <!--<test name="LoginPopupUnlogged">
+        <groups>
+            <run>
+                <include name="ALD2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.LoginPopupUnlogged">
+            </class>
+        </classes>
+    </test>-->
+    <test name="LoginPopupLogged">
+        <groups>
+            <run>
+                <include name="ALD2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.LoginPopupLogged">
+            </class>
+        </classes>
     </test>
+    <!--<test name="Search">
+        <groups>
+            <run>
+                <include name="ALD2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.Search">
+            </class>
+        </classes>
+    </test>
+
     <test name="MGGame">
         <groups>
             <run>
@@ -101,8 +134,8 @@
             <class name="web.maratest.info.GameIssoft">
             </class>
         </classes>
-    </test>
-    <test name="Favourites">
+    </test>-->
+  <!--  <test name="Favourites">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -112,8 +145,8 @@
             <class name="web.maratest.info.Favourites">
             </class>
         </classes>
-    </test>
-    <test name="FavouritesEntToEnd">
+    </test>-->
+    <!--<test name="FavouritesEndToEnd">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -124,29 +157,8 @@
             </class>
         </classes>
     </test>
-    <test name="LoginPopupUnlogged">
-        <groups>
-            <run>
-                <include name="ALD2"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.LoginPopupUnlogged">
-            </class>
-        </classes>
-    </test>
-    <test name="LoginPopupLogged">
-        <groups>
-            <run>
-                <include name="ALD2"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="web.maratest.info.LoginPopupLogged">
-            </class>
-        </classes>
-    </test>
-    <test name="Footer">
+-->
+   <!-- <test name="Footer">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -167,7 +179,7 @@
             <class name="web.maratest.info.FooterElementLinks">
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
 
 

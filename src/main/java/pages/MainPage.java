@@ -29,7 +29,8 @@ public class MainPage extends BasePage {
     protected WebElement incorrectLoginMessageOkButtonElement;
     @FindBy(xpath = "//div[@id='simplemodal-container']//descendant::div[@id='loginMessage']")
     protected WebElement loginMessageElement;
-    @FindBy(xpath="//div[@id='loginMessage']//descendant::button[@aria-label='OK']")
+    //div[@id='simplemodal-container']//div[@class='buttons messenger-but']
+    @FindBy(xpath="//div[@id='simplemodal-container']//div[@class='buttons messenger-but']")
     protected WebElement loginMessageOkButtonElement;
     @FindBy(xpath = "//div[@id='header_container']//descendant::a[@title='Marathonbet']")
     protected WebElement marathonbetIconHeaderElement;
@@ -40,7 +41,7 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//span[contains(@class,'marathon_icons-profile')]")
     protected WebElement myAccountButtonHeaderElement;
 
-
+//div[@id='simplemodal-container']//button[@type='OK']
 
 
     @FindBy(xpath = "//div[@id='header_container']//descendant::a[@aria-label='Sport']")
@@ -100,7 +101,7 @@ public class MainPage extends BasePage {
     protected WebElement mobileSiteFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'blog.marathonbet')]")
     protected WebElement blogFooterElement;
-    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'affiliates')]")
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.marathonbet.com/login.asp')]")
     protected WebElement affiliatesFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.htm')]")
     protected WebElement ourParntersFooterElement;
@@ -317,11 +318,11 @@ public class MainPage extends BasePage {
         fillPasswordInHeader(password);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
-
-        if (getLoginMessageOkButtonElement().isDisplayed()) {
+        if(getLoginMessageOkButtonElement().isDisplayed()){
+            moveToElement(getLoginMessageOkButtonElement());
             clickIfElementIsClickable(getLoginMessageOkButtonElement());
         }
-        waitIfElementIsEnabled(getDepositButtonHeaderElement());
+
     }
 
 

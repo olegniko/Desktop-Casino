@@ -13,7 +13,7 @@
             </class>
         </classes>
     </test>
-    <!--<test name="LoginHeaderUnlogged">
+    <test name="LoginHeaderUnlogged">
         <groups>
             <run>
                 <include name="CUR2" />
@@ -90,6 +90,17 @@
             </class>
         </classes>
     </test>
+    <test name="IforiumGame">
+        <groups>
+            <run>
+                <include name="CUR2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="web.maratest.info.GameIforium">
+            </class>
+        </classes>
+    </test>
     <test name="Favourites">
         <groups>
             <run>
@@ -133,7 +144,7 @@
             <class name="web.maratest.info.FooterElementLinks">
             </class>
         </classes>
-    </test>-->
+    </test>
 </suite>
 
 
