@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
     <suite name = "chrome Regress">
-    <test name="HeaderElements">
+    <!--<test name="HeaderElements">
         <groups>
             <run>
                 <include name="CUR2" />
@@ -111,7 +111,7 @@
             <class name="web.maratest.info.Favourites">
             </class>
         </classes>
-    </test>
+    </test>-->
     <test name="FavouritesEntToEnd">
         <groups>
             <run>
@@ -123,7 +123,7 @@
             </class>
         </classes>
     </test>
-    <test name="Footer">
+    <!--<test name="Footer">
      <groups>
          <run>
              <include name="CUR2" />
@@ -144,7 +144,7 @@
             <class name="web.maratest.info.FooterElementLinks">
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
 
 

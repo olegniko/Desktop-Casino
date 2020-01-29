@@ -34,7 +34,7 @@ public class MainPage extends BasePage {
     protected WebElement loginMessageOkButtonElement;
     @FindBy(xpath = "//div[@id='header_container']//descendant::a[@title='Marathonbet']")
     protected WebElement marathonbetIconHeaderElement;
-    @FindBy(xpath = "//a[contains(@class,'logout')]")
+    @FindBy(xpath = "//div[@id='header_container']//a[contains(@class,'logout')]")
     protected WebElement logoutButtonHeaderElement;
     @FindBy(xpath = "//a[contains(@class,'deposit')]")
     protected WebElement depositButtonHeaderElement;
@@ -102,7 +102,9 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'blog.marathonbet')]")
     protected WebElement blogFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.marathonbet.com/login.asp')]")
-    protected WebElement affiliatesFooterElement;
+    protected WebElement affiliatesALDFooterElement;
+    @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'affiliates.marathonbet.com')]")
+    protected WebElement affiliatesCURFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partners.htm')]")
     protected WebElement ourParntersFooterElement;
     @FindBy(xpath = "//div[@class='grid-footer']//descendant::a[contains(@href,'partnerName=manchester')]")
@@ -173,15 +175,15 @@ public class MainPage extends BasePage {
 
     public WebElement getLoginFieldHeaderElement() { return getClickableElement(loginFieldHeaderElement); }
     public WebElement getPasswordFieldHeaderElement() { return getClickableElement(passwordFieldHeaderElement); }
-    public WebElement getLoginButtonHeaderElement() { return getClickableFluentElement(loginButtonHeaderElement); }
-    public WebElement getJoinNowButtonHeaderElement() { return getClickableElement(joinNowButtonHeaderElement); }
+    public WebElement getLoginButtonHeaderElement() { return getEnabledElement(loginButtonHeaderElement); }
+    public WebElement getJoinNowButtonHeaderElement() { return getEnabledElement(joinNowButtonHeaderElement); }
     public WebElement getLostPasswordHeaderElement() { return getEnabledElement(lostPasswordHeaderElement); }
-    public WebElement getIncorrectLoginMessageElement() { return getClickableElement(incorrectLoginMessageElement); }
+    public WebElement getIncorrectLoginMessageElement() { return getEnabledElement(incorrectLoginMessageElement); }
     public WebElement getLoginMessageElement() { return getEnabledElement(loginMessageElement); }
     public WebElement getIncorrectLoginMessageOkButtonElement() { return getClickableElement(incorrectLoginMessageOkButtonElement); }
-    public WebElement getLoginMessageOkButtonElement() { return loginMessageOkButtonElement; }
+    public WebElement getLoginMessageOkButtonElement() { return getEnabledElement(loginMessageOkButtonElement); }
     public WebElement getMarathonbetIconHeaderElement() { return getClickableElement(marathonbetIconHeaderElement); }
-    public WebElement getLogoutButtonHeaderElement() { return getClickableElement(logoutButtonHeaderElement); }
+    public WebElement getLogoutButtonHeaderElement() { return getEnabledElement(logoutButtonHeaderElement); }
     public WebElement getDepositButtonHeaderElement() { return getClickableElement(depositButtonHeaderElement); }
     public WebElement getMyAccountButtonHeaderElement() { return getClickableElement(myAccountButtonHeaderElement); }
 
@@ -193,7 +195,6 @@ public class MainPage extends BasePage {
     public WebElement getESportHeaderElement() { return eSportHeaderElement; }
     public WebElement getVirtualsHeaderElement() { return virtualsHeaderElement; }
     public WebElement getFinancialsHeaderElement() { return financialsHeaderElement; }
-    public WebElement geteSportHeaderElement() { return eSportHeaderElement; }
     public WebElement getSportsPoolsHeaderElement() { return sportsPoolsHeaderElement; }
     public WebElement getConstructorHeaderElement() { return constructorHeaderElement; }
     public WebElement getBingoHeaderElement() { return bingoHeaderElement; }
@@ -216,7 +217,8 @@ public class MainPage extends BasePage {
     public WebElement getPaymentsFooterElement() { return getEnabledElement(paymentsFooterElement); }
     public WebElement getMobileSiteFooterElement() { return getEnabledElement(mobileSiteFooterElement); }
     public WebElement getBlogFooterElement() { return getEnabledElement(blogFooterElement); }
-    public WebElement getAffiliatesFooterElement() { return getEnabledElement(affiliatesFooterElement); }
+    public WebElement getAffiliatesALDFooterElement() { return getEnabledElement(affiliatesALDFooterElement); }
+    public WebElement getAffiliatesCURFooterElement() { return getEnabledElement(affiliatesCURFooterElement); }
     public WebElement getOurParntersFooterElement() { return getEnabledElement(ourParntersFooterElement); }
     public WebElement getPartnreshipHistoryFooterElement() { return getEnabledElement(partnreshipHistoryFooterElement); }
 
@@ -289,7 +291,8 @@ public class MainPage extends BasePage {
     public String getTextPaymentsFooterElement() { return getPaymentsFooterElement().getText(); }
     public String getTextMobileSiteFooterElement() { return getMobileSiteFooterElement().getText(); }
     public String getTextBlogFooterElement() { return getBlogFooterElement().getText(); }
-    public String getTextAffiliatesFooterElement() { return getAffiliatesFooterElement().getText(); }
+    public String getTextAffiliatesALDFooterElement() { return getAffiliatesALDFooterElement().getText(); }
+    public String getTextAffiliatesCURFooterElement() { return getAffiliatesCURFooterElement().getText(); }
     public String getTextOurParntersFooterElement() { return getOurParntersFooterElement().getText(); }
     public String getTextPartnreshipHistoryFooterElement() { return getPartnreshipHistoryFooterElement().getText(); }
 
@@ -318,16 +321,20 @@ public class MainPage extends BasePage {
         fillPasswordInHeader(password);
         loginFieldHeaderElement.sendKeys(Keys.TAB);
         clickLoginButtonInHeader();
-        if(getLoginMessageOkButtonElement().isDisplayed()){
-            moveToElement(getLoginMessageOkButtonElement());
-            clickIfElementIsClickable(getLoginMessageOkButtonElement());
+        if(System.getProperty("localeServer")=="ald"){
+            closeSuccessfulMessagePopup();
         }
-
     }
 
+    public void closeSuccessfulMessagePopup(){
+        driverWait(5);
+        moveToElement(getLoginMessageOkButtonElement());
+        clickIfElementIsClickable(getLoginMessageOkButtonElement());
+    }
 
     public void logout(){
         clickIfElementIsClickableFluent(getLogoutButtonHeaderElement());
+        refreshPage();
         waitIfElementIsClickableFluent(loginButtonHeaderElement);
     }
 

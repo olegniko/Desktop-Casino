@@ -126,6 +126,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("mg_game"));
         casinoPage.removeFromFavourites(casinoPage.getMgGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -147,6 +148,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("evolution_game"));
         casinoPage.removeFromFavourites(casinoPage.getEvolutionGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -168,6 +170,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("iforium_game"));
         casinoPage.removeFromFavourites(casinoPage.getIforiumGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -189,6 +192,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("relax_game"));
         casinoPage.removeFromFavourites(casinoPage.getRelaxGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -210,6 +214,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("playngo_game"));
         casinoPage.removeFromFavourites(casinoPage.getPlayngoGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -231,6 +236,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("yggdrasil_game"));
         casinoPage.removeFromFavourites(casinoPage.getYggdrasilGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }
@@ -252,6 +258,7 @@ public class FavouritesEndToEndTests {
         casinoPage.clearField(casinoPage.getSearchFieldElement());
         casinoPage.correctLogin(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "1");
+        casinoPage.search(exampleBundle.getString("issoft_game"));
         casinoPage.removeFromFavourites(casinoPage.getIssoftGameFavouriteElement());
         assertEquals(casinoPage.getTextFavoriteNumberElement(), "0");
     }

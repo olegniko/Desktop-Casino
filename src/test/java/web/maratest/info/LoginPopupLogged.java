@@ -46,6 +46,16 @@ public class LoginPopupLogged {
         assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
     }
 
+    @Test(groups = {"CUR2"})
+    public void loginIforiumTest() {
+        casinoPage.search(exampleBundle.getString("iforium_game"));
+        casinoPage.moveToElement(casinoPage.getIforiumGamePlayElement());
+        casinoPage.clickIfElementIsClickable(casinoPage.getIforiumGamePlayElement());
+        casinoPage.correctLoginByPopup(exampleBundleServer.getString("correct_login"), exampleBundleServer.getString("correct_password"));
+        casinoPage.closeGame();
+        assertTrue(casinoPage.getDepositButtonHeaderElement().isDisplayed());
+    }
+
     @Test(groups = {"ALD2"})
     public void loginIssoftTest() {
         casinoPage.search(exampleBundle.getString("issoft_game"));

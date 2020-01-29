@@ -215,15 +215,10 @@ public class CasinoPage extends MainPage {
         loginFieldLoginPopupElement.sendKeys(Keys.TAB);
         fillPasswordInPopup(password);
         clickLoginButtonInPopup();
-        closeSuccessfulMessagePopup();
+        driverWait(3);
+        if(System.getProperty("localeServer")=="ald"){
+            closeSuccessfulMessagePopup();
         }
-
-    public void closeSuccessfulMessagePopup(){
-        driverWait(5);
-
-            moveToElement(getLoginMessageOkButtonElement());
-            clickIfElementIsClickable(getLoginMessageOkButtonElement());
-
 
     }
 

@@ -143,4 +143,11 @@ public class Search  {
         assertTrue(casinoPage.getYggdrasilGameElement().isDisplayed());
         casinoPage.clearField(casinoPage.getSearchFieldElement());
     }
+
+    @Test(groups = {"CUR2"})
+    public void iforiumSearchBodyMessageTest() {
+        casinoPage.search(exampleBundle.getString("iforium_game"));
+        assertTrue(casinoPage.getIforiumGameElement().isDisplayed());
+        casinoPage.clearField(casinoPage.getSearchFieldElement());
+    }
 }

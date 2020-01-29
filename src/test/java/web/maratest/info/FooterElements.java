@@ -81,11 +81,18 @@ public class FooterElements {
         assertEquals(casinoPage.getTextBlogFooterElement(), exampleBundle.getString("blog_footer"));
     }
 
-    @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})
+    @Test(groups = {"DK1", "ES1", "ALD2"})
     public void affiliatesEnabledTest() {
-        assertTrue(casinoPage.getAffiliatesFooterElement().isDisplayed());
-        assertTrue(casinoPage.getAffiliatesFooterElement().isEnabled());
-        assertEquals(casinoPage.getTextAffiliatesFooterElement(), exampleBundle.getString("affiliates_footer"));
+        assertTrue(casinoPage.getAffiliatesALDFooterElement().isDisplayed());
+        assertTrue(casinoPage.getAffiliatesALDFooterElement().isEnabled());
+        assertEquals(casinoPage.getTextAffiliatesALDFooterElement(), exampleBundle.getString("affiliates_ald_footer"));
+    }
+
+    @Test(groups = {"CUR2"})
+    public void affiliatesCUREnabledTest() {
+        assertTrue(casinoPage.getAffiliatesCURFooterElement().isDisplayed());
+        assertTrue(casinoPage.getAffiliatesCURFooterElement().isEnabled());
+        assertEquals(casinoPage.getTextAffiliatesCURFooterElement(), exampleBundle.getString("affiliates_cur_footer"));
     }
 
     @Test(groups = {"DK1", "ES1", "CUR2", "ALD2"})

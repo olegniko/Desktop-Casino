@@ -60,7 +60,7 @@ public abstract class BasePage {
 
     public void waitIfElementIsEnabled(WebElement element) {
 
-        waitIfElementIsEnabled(element, 20);
+        waitIfElementIsEnabled(element, 30);
 
     }
 
@@ -127,12 +127,10 @@ public abstract class BasePage {
 
         new Actions(driver).moveToElement(element).build().perform();
     }
-    public void moveToElement2(WebElement element){
 
-            new TouchActions(driver).moveToElement(element).build().perform();
-
+    public void refreshPage() {
+        driver.navigate().refresh();
     }
-
 
     public String getNextTabUrlPage() throws InterruptedException {
 

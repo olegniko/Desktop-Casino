@@ -12,8 +12,8 @@
             <class name="web.maratest.info.HeaderElements">
             </class>
         </classes>
-    </test>
-    <test name="LoginHeaderUnlogged">
+    </test>-->
+    <!--<test name="LoginHeaderUnlogged">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -34,8 +34,8 @@
             <class name="web.maratest.info.LoginHeaderLogged">
             </class>
         </classes>
-    </test>-->
-    <!--<test name="LoginPopupUnlogged">
+    </test>
+    <test name="LoginPopupUnlogged">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -57,7 +57,7 @@
             </class>
         </classes>
     </test>
-    <!--<test name="Search">
+    <test name="Search">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -134,8 +134,8 @@
             <class name="web.maratest.info.GameIssoft">
             </class>
         </classes>
-    </test>-->
-  <!--  <test name="Favourites">
+    </test>
+    <test name="Favourites">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -145,8 +145,8 @@
             <class name="web.maratest.info.Favourites">
             </class>
         </classes>
-    </test>-->
-    <!--<test name="FavouritesEndToEnd">
+    </test>
+    <test name="FavouritesEndToEnd">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -157,8 +157,7 @@
             </class>
         </classes>
     </test>
--->
-   <!-- <test name="Footer">
+   <test name="Footer">
         <groups>
             <run>
                 <include name="ALD2"/>
@@ -179,7 +178,7 @@
             <class name="web.maratest.info.FooterElementLinks">
             </class>
         </classes>
-    </test>-->
+    </test>
 </suite>
 
 
